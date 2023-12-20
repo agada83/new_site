@@ -39,3 +39,12 @@
 body {
   height: 2000px;
 }
+
+.font-montserrat-regular {
+  font-family: 'Montserrat';
+  font-size: '124px';
+}
+.font-montserrat-light{
+  font-family: 'Montserrat-Light';
+}
+
