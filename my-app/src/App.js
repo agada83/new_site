@@ -8,14 +8,10 @@ import Carousel from './Companents/Carousel/Carousel.js'
 
 function App() {
   return (
-    // <div>
-    //   <Header />
-    // </div>  
-    <Carousel>
-      <div className='item item-1'>1</div>
-      <div className='item item-2'>2</div>
-      <div className='item item-3'>3</div>
-    </Carousel>
+    <div>
+      <Header />
+    </div>  
+    //<Carousel/>
   );
 }
 

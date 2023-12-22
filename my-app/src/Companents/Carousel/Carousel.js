@@ -1,44 +1,64 @@
-import './Carousel.css'
-import { Children, cloneElement, useEffect, useState } from 'react'
-import {FaChevronLeft, FaChevronRight} from 'react-icons/fa'
+import React, { useState } from 'react';
+import './Carousel.css'; // Подключаем файл со стилями
 
+const Carousel = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-const PAGE_WIDTH = 450
+  // Массив с группами элементов карусели
+  const items = [
+    [
+      'https://via.placeholder.com/150',
+      'https://via.placeholder.com/150',
+      'https://via.placeholder.com/150',
+    ],
+    [
+      'https://via.placeholder.com/150',
+      'https://via.placeholder.com/150',
+      'https://via.placeholder.com/150',
+    ],
+    [
+      'https://via.placeholder.com/150',
+      'https://via.placeholder.com/150',
+      'https://via.placeholder.com/150',
+    ],
+  ];
 
-export const Carousel = ({children}) => {
-    const [pages, setPages] = useState([])
+  const handleDotClick = (index) => {
+    setCurrentSlide(index);
+  };
 
-    const handleLeftArrowClick = () =>{
-        console.log('handleLeftArrowClick')
-    }
-    const handleRightArrowClick = () =>{
-        console.log('handleRightArrowClick')
-    }
-
-
-    useEffect(()=>{
-setPages(
-    Children.map(children, child => {
-        return cloneElement(child, {
-            style:{
-                minWidth:`${PAGE_WIDTH}px`,
-                maxWidth:`${PAGE_WIDTH}px`,
-                height:'100%'
-            }
-        })
-    })
-)
-    },[])
-
-    return (
-        <div className="main-container">
-            <FaChevronLeft className='arrow' onClick={handleLeftArrowClick}/>
-            <div className="window">
-                <div className="all-pages-container">
-                    {children}
+  return (
+    <div className="carousel-container">
+      <div className="carousel">
+        {items.map((_, index) => (
+          <div
+            key={index}
+            className="carousel-item"
+            style={{ transform: `translateX(${(index - currentSlide) * 100}%)` }}
+          >
+            {items[index].map((image, i) => (
+              <div key={i} className="carousel-content">
+                <img src={image} alt={`Image ${i}`} className="carousel-image" />
+                <div className="text-wrapper">
+                  <p>Текст под изображением</p>
+                  <button>Кнопка</button>
                 </div>
-            </div>
-            <FaChevronRight className='arrow' onClick={handleRightArrowClick}/>
-        </div>
-    )
-}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+      <div className="dots">
+        {items.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${currentSlide === index ? 'active' : ''}`}
+            onClick={() => handleDotClick(index)}
+          ></span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Carousel;

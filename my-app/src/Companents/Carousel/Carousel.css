@@ -1,25 +1,72 @@
-.main-container{
-    height: 150px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.window {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.all-pages-container{
-    height: 100%;
-    display: flex;
-    transition: translate;
-    transition-property: transform;
-    transition-duration: 300ms;
-    transition-timing-function: ease-in-out;
-}
-
-.arrow {
-    cursor: pointer;
-}
+/* Контейнер для карусели */
+.carousel-container {
+    display: flex; /* Отображение элементов внутри контейнера в виде flexbox */
+    align-items: center; /* Выравнивание элементов по вертикали */
+    justify-content: center; /* Выравнивание элементов по горизонтали */
+    margin-top: 20px; /* Внешний отступ сверху */
+    position: relative; /* Позиционирование элемента */
+    flex-direction: column; /* Направление основной оси flexbox (в столбец) */
+  }
+  
+  /* Карусель - контейнер, скрывающий превышающее содержимое */
+  .carousel {
+    margin-left: 28%; /* Отступ слева относительно родительского контейнера */
+    overflow: hidden; /* Скрытие содержимого, выходящего за пределы блока */
+    display: flex; /* Отображение элементов в виде flexbox */
+  }
+  
+  /* Элементы карусели */
+  .carousel-item {
+    display: flex; /* Отображение элементов в виде flexbox */
+    transition: transform 0.5s ease; /* Плавное изменение свойства transform */
+  }
+  
+  /* Содержимое элементов карусели */
+  .carousel-content {
+    display: flex; /* Отображение элементов в виде flexbox */
+    flex-direction: column; /* Направление основной оси flexbox (в столбец) */
+    align-items: center; /* Выравнивание элементов по горизонтали */
+    width: 21%; /* Ширина каждого элемента карусели */
+    background-color: #f2f2f2; /* Цвет фона для элемента карусели */
+    border-radius: 10px; /* Закругление углов элемента карусели */
+    padding: 10px; /* Внутренние отступы вокруг содержимого */
+    margin-right: 20px; /* Отступ между элементами карусели */
+  }
+  
+  /* Изображения внутри карусели */
+  .carousel-image {
+    width: 150px; /* Ширина изображения */
+    height: 150px; /* Высота изображения */
+    margin-bottom: 10px; /* Отступ снизу изображения */
+    border-radius: 10px; /* Закругление углов изображения */
+  }
+  
+  /* Обертка для текста и других элементов */
+  .text-wrapper {
+    display: flex; /* Отображение элементов в виде flexbox */
+    flex-direction: column; /* Направление основной оси flexbox (в столбец) */
+    align-items: center; /* Выравнивание элементов по горизонтали */
+  }
+  
+  /* Точки для навигации */
+  .dots {
+    display: flex; /* Отображение элементов в виде flexbox */
+    justify-content: center; /* Выравнивание элементов по горизонтали */
+    margin-top: 20px; /* Внешний отступ сверху для точек */
+  }
+  
+  /* Отдельная точка для навигации */
+  .dot {
+    width: 15px; /* Ширина точки */
+    height: 15px; /* Высота точки */
+    border-radius: 50%; /* Закругление углов для создания круга */
+    background-color: #ccc; /* Цвет точки */
+    margin: 0 5px; /* Внешний отступ для точек */
+    cursor: pointer; /* Изменение курсора при наведении */
+  }
+  
+  /* Активная точка для навигации */
+  .dot.active {
+    background-color: #000; /* Цвет активной точки */
+  }
+  
