@@ -1,17 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-import { Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from "./Companents/Header";
-import Home from "./Pages/Home"
-import Carousel from './Companents/Carousel/Carousel.js'
+// App.js
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './Companents/Header/Header.js';
+import Home from './Pages/Home.js';
+import About from './Pages/About.js';
+import Promo from './Pages/Promo.js';
+import Prices from './Pages/Prices.js';
+import Masters from './Pages/Masters.js';
 
 function App() {
   return (
-    <div>
-      <Header />
-    </div>  
-    //<Carousel/>
+    <Router>
+      <div>
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/promo" element={<Promo />} />
+          <Route exact path="/prices" element={<Prices />} />
+          <Route exact path="/masters" element={<Masters />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

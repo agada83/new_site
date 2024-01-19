@@ -1,0 +1,62 @@
+/* Ваш файл стилей для Header.css */
+
+/* Стили для основного контейнера навигационного меню */
+.navbar {
+    background-color: #474747;
+    color: white;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+  }
+  .navbar-brand {
+    margin-left: 5%;
+    flex-grow: 1;
+  }
+
+  /* Стили для логотипа */
+  .navbar-brand img {
+    width: 84px;
+    height: auto;
+  }
+  
+  /* Стили для ссылок в навигационном меню */
+  .navbar-nav {
+    align-items: center;
+    margin-right: 5%;
+  }
+  .navbar-nav ul{
+    list-style: none;
+    display: flex;
+
+  }  
+  .navbar-nav hr{ 
+    margin-left: 7%;
+    width: 93%;
+    height: 0;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #c9c9c9;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 2vw; /* Отступ между ссылками */
+    font-size: 0.9vw;
+  }
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0; /* Убираем отступ у последней ссылки */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #ffffff57;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    font-family: 'Montserrat-Light';
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffffff; /* Цвет ссылки при наведении */
+  }
+  

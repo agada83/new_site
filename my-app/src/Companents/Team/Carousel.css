@@ -1,0 +1,90 @@
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  display: flexbox;
+  flex-direction: column;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 400px;
+
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center; /* Центрирование слайдов по горизонтали */
+  align-items: center; /* Центрирование слайдов по вертикали */
+}
+
+.content {
+  display: flex;
+  background-color: #474747;
+  border-radius: 30px;
+  height: 400px;
+
+}
+
+.image {
+  flex: 1;
+  overflow: hidden;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.image img {
+  width: auto;
+  height: 100%;
+
+}
+
+.text {
+  font-family: 'Montserrat';
+  color: white;
+  text-align: left;
+  width: 60%;
+  padding: 10px;
+}
+
+.navigation {
+  position: relative;
+  bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Центрирование точек */
+  position: relative;
+  top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+.order-button{
+  height: 53px;
+  width: 209px;
+  margin-right: 3%;
+  margin-top: 200px;
+  border-radius: 27px;
+  font-size: 22px;
+  font-family: 'Montserrat';
+  background-color: #474747;
+  color: white;
+  border:  2px solid white;
+}
