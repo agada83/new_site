@@ -2,7 +2,7 @@
 .carousel {
   position: relative;
   width: 100%;
-  overflow: visible;
+  overflow: hidden;
   display: flexbox;
   flex-direction: column;
 }
@@ -15,7 +15,10 @@
 }
 
 .slide {
-  min-width: 100%;
+  min-width: 80%;
+  max-width: 80%;
+  padding: 10%;
+
   display: flex;
   justify-content: center; /* Центрирование слайдов по горизонтали */
   align-items: center; /* Центрирование слайдов по вертикали */
@@ -34,6 +37,9 @@
   overflow: hidden;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+  flex-shrink: 0;
+  min-width: 300px;
+  max-width: 300px;
 }
 
 .image img {
@@ -43,18 +49,25 @@
 }
 
 .text {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Light';
   color: white;
   text-align: left;
-  width: 60%;
-  padding: 10px;
+  padding: 0px;  
+  flex-shrink: 3;
+  width:max-content;
+  align-self: flex-end;
+  font-size: 25px;
+
 }
 
+.bold{
+  font-family: 'Montserrat-SemiBold';
+}
 .navigation {
   position: relative;
   bottom: 10px;
   width: 100%;
-  height: auto;
+  height: 60px;
 }
 
 .dots {
@@ -77,14 +90,32 @@
   background-color: #333;
 }
 .order-button{
-  height: 53px;
-  width: 209px;
+  height: 65px;
+  width: 219px;
   margin-right: 3%;
   margin-top: 200px;
-  border-radius: 27px;
+  border-radius: 31px;
   font-size: 22px;
   font-family: 'Montserrat';
   background-color: #474747;
   color: white;
   border:  2px solid white;
+  flex-shrink: 1;
+  transition: all 0.5s ease;
+}
+.order-button:hover{
+  background-color: white;
+  border-color: #474747;
+  color:black;
+}
+.obrezka{
+  margin-left: 4svw;
+  max-width: 740px;
+  min-width: 740px;
+  margin-bottom: 4svw;
+}
+.obrez-but{
+  margin-top: 3svw;
+  margin-right: 1.7svw;
+  margin-left: 1svw;
 }

@@ -1,12 +1,13 @@
 // src/App.js
 import React, { useState } from 'react';
-import './Carousel.css';
+import '../Carousel.css';
+import imgOksana from '../../../assets/Oksana.png'
 
 
 const slidesData = [
   {
-    image: 'https://placekitten.com/300/200',
-    text1: 'Топ-стилист',
+    image: imgOksana,
+    text1: 'Топ-',
     text2: 'Оксана',
     text3: 'Опыт работы: 15 лет',
     text4: 'Профессионально подберет форму стрижки, посоветует модные направления, а также опытный специалист по стойкому выпрямлению волос',
@@ -27,7 +28,7 @@ const slidesData = [
   },
 ];
 
-const Carousel = () => {
+const CarouselStyle = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   return (
     <div className="carousel">
@@ -39,12 +40,16 @@ const Carousel = () => {
                 <img src={slide.image} alt={`Slide ${index + 1}`} />
               </div>
               <div className="text">
-                <p>{slide.text1}</p>
+                <div className='obrezka'>
+                <p className='bold'>{slide.text1}</p>
                 <p>{slide.text2}</p>
                 <p>{slide.text3}</p>
                 <p>{slide.text4}</p>
+                </div>
               </div>
+              <div className='obrez-but'>
               <button className='order-button'>Записаться</button>
+              </div>
             </div>
           </div>
         ))}
@@ -66,4 +71,4 @@ const Carousel = () => {
 
 
 
-export default Carousel;
+export default CarouselStyle;
