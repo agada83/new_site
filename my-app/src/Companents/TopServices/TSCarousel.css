@@ -1,0 +1,96 @@
+
+.tscarousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flexbox;
+    flex-direction: column;
+}
+
+.tsslides-container {
+    display: flex;
+    transition: transform 0.9s ease-in-out;
+    height: 610px;
+}
+
+.tsslide {
+    min-width: 80%;
+    max-width: 80%;
+    padding: 10%;
+    display: flex;
+    justify-content: center; /* Центрирование слайдов по горизонтали */
+    align-items: center; /* Центрирование слайдов по вертикали */
+}
+
+.tscontent {
+    display: flex;
+    background-color: #47474700;
+    height: 470px;
+    grid-gap: 8svw;
+    padding: 20px;
+}
+
+.item{
+    display: flexbox;
+    flex-direction: column;
+    width: 15svw;
+    justify-content: flex-start;
+}
+
+.item img{
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    padding-bottom: 5%;
+}
+
+.item a{
+    font-family: 'Montserrat';
+    font-size: 22px;
+    margin-top: 3%;
+}
+
+.item button{
+    font-size: 16px;
+    font-family: 'Montserrat';
+    background-color: #33333300;
+    height: 40px;
+    border-radius: 25px;
+    width: 60%;
+    margin-top: 7%;
+    border: 1px solid black;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.item button:hover{
+    color: white;
+    background-color: #474747;
+}
+
+.tsnavigation {
+    position: relative;
+    bottom: 40px;
+    width: 100%;
+    height: 60px;
+}
+
+.tsdots {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Центрирование точек */
+    position: relative;
+}
+
+.tsdot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    border:   3px solid #474747;
+    cursor: pointer;
+}
+
+.tsdot.active {
+    background-color: #333;
+}

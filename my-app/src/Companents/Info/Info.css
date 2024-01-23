@@ -54,6 +54,7 @@
     text-decoration: none;
     color: rgb(199, 199, 199);
     transition: color 0.5s ease;
+    cursor: pointer;
 
 }
 .divht{

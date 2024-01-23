@@ -29,7 +29,7 @@
   background-color: #474747;
   border-radius: 30px;
   height: 400px;
-
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.247);
 }
 
 .image {
@@ -63,6 +63,7 @@
 .bold{
   font-family: 'Montserrat-SemiBold';
 }
+
 .navigation {
   position: relative;
   bottom: 10px;
@@ -81,7 +82,7 @@
 .dot {
   width: 10px;
   height: 10px;
-  background-color: #ccc;
+  background-color: white;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -89,6 +90,7 @@
 .dot.active {
   background-color: #333;
 }
+
 .order-button{
   height: 65px;
   width: 219px;
@@ -103,17 +105,20 @@
   flex-shrink: 1;
   transition: all 0.5s ease;
 }
+
 .order-button:hover{
   background-color: white;
   border-color: #474747;
   color:black;
 }
+
 .obrezka{
   margin-left: 4svw;
   max-width: 740px;
   min-width: 740px;
   margin-bottom: 4svw;
 }
+
 .obrez-but{
   margin-top: 3svw;
   margin-right: 1.7svw;

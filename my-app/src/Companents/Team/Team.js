@@ -6,12 +6,21 @@ import './Team.css'
 const Team = () => {
   return (
     <div className='team-box'>
+      <h1>Наша команда</h1>
       <div className='separator'>
         <a>Стилисты</a>
         <hr/>
       </div>
       <CarouselStyle/>
+      <div className='separator'>
+        <a>Управляющий</a>
+        <hr/>
+      </div>
       <Manager/>
+      <div className='separator'>
+        <a>Администратор</a>
+        <hr/>
+      </div>
       <CarouselAdmins/>
     </div>
   );
