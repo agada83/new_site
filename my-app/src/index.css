@@ -48,7 +48,9 @@ code {
     url(./fonts/Montserrat-SemiBold.ttf) format('truetype');
   font-weight: bold;
 }
-
-.font-montserrat-light{
-  font-family: "Montserrat-Light";
+@font-face {
+  font-family: 'Jura';
+  src: local('Jura'),
+    url(./fonts/Jura-Light.ttf) format('truetype');
+  font-weight: bold;
 }

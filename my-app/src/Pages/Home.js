@@ -10,6 +10,8 @@ import TopServices from '../Companents/TopServices/TopServices.js';
 import Interior from '../Companents/Interior/Interior.js'
 import AboutUs from '../Companents/AboutUs/AboutUs.js';
 import Advantages from '../Companents/Advantages/Advantages.js';
+import Appointment from '../Companents/Appointment/Appointment.js';
+import PartnerBrands from '../Companents/PartnerBrands/PartnerBrands.js';
 
 class Home extends Component {
   render() {
@@ -23,8 +25,10 @@ class Home extends Component {
         <Sale />
         <TopServices />
         <Interior />
-        <AboutUs /> */}
+        <AboutUs />
         <Advantages />
+        <Appointment /> */}
+        <PartnerBrands />
       </div>
     );
   }

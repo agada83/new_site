@@ -1,0 +1,22 @@
+.apm-body{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apm-body h1{
+    color: black;
+    font-family: 'Montserrat';
+    padding: 50px;
+    font-size: 32px;
+}
+.apm-body iframe{
+    width: 600px;
+    height: 800px;
+    margin: 0;
+    padding: 0;
+
+}
