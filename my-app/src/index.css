@@ -54,3 +54,17 @@ code {
     url(./fonts/Jura-Light.ttf) format('truetype');
   font-weight: bold;
 }
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #b4b4b4;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: #868686;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #b4b4b4;
+}

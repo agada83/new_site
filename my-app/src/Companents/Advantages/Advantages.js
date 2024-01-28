@@ -14,7 +14,7 @@ class Advantages extends Component {
                 <div className='adv-item'>
                     <img src={marker}/>
                     <h2>УДОБНОЕ РАСПОЛОЖЕНИЕ</h2>
-                    <a>10 минут до метро и 5 до остановки</a>
+                    <a>10 минут до метро и <br/>5 до остановки</a>
                 </div>
                 <div className='adv-item'>
                     <img src={stars}/>
@@ -24,7 +24,7 @@ class Advantages extends Component {
                 <div className='adv-item'>
                     <img src={medal}/>
                     <h2>ЛУЧШИЕ МАСТЕРА</h2>
-                    <a>Все наши мастера имеет квалификацию</a>
+                    <a>Все наши мастера имеет<br/> квалификацию</a>
                 </div>
             </div>
         </div>

@@ -13,9 +13,12 @@ class PartnerBrands extends Component {
                     <div className='pb-item keune'><a><b>KEUNE</b><br/>HAIRCOSMETICS</a></div>
                 </div>
                 <div className='second-line'>
-                    <div className='pb-item'><div className='terra'>123</div></div>
-                    <div className='pb-item'>2</div>
-                    <div className='pb-item'>3</div>
+                    <div className='pb-item terra'><div><a>B<br/>Y</a></div><div style={{marginBottom:'5px', marginLeft:'5px'}}><h1>TERRY</h1></div></div>
+                    <div className='pb-item pure'><a>BALMAN</a></div>
+                    <div className='pb-item pure'><a>PROEDIT</a></div>
+                </div>
+                <div className='pb-hr'>
+                    <h1>Бренды с которыми мы работаем</h1> <hr/>
                 </div>
             </div>
         );
