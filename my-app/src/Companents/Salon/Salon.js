@@ -6,10 +6,36 @@ import salonImg from '../../assets/salonImg.png'
 
 const Salon = () => {
     const [expanded, setExpanded] = useState(false);
-    const listItems = ['Элемент 1', 'Элемент 2', 'Элемент 3'];
-    const toggleExpand = () => {
-      setExpanded(!expanded);
-    };
+    const listItems1 = ['Элемент 1', 'Элемент 2', 'Элемент 3'];
+    const listItems2 = ['1', '2', '3'];
+    const listItems3 = ['Элемент 1', 'Элемент 2', 'Элемент 3'];
+    const listItems4 = ['Элемент 1', 'Элемент 2', 'Элемент 3'];
+    const [expanded1, setExpanded1] = useState(false);
+    const [expanded2, setExpanded2] = useState(false);
+    const [expanded3, setExpanded3] = useState(false);
+    const [expanded4, setExpanded4] = useState(false);
+    
+  const toggleExpand = (menuNumber) => {
+    switch (menuNumber) {
+        case 1:
+            setExpanded1(!expanded1);
+            break;
+        case 2:
+            setExpanded2(!expanded2);
+            break;
+        case 3:
+            setExpanded3(!expanded3);
+            break;
+        case 4:
+            setExpanded4(!expanded4);
+            break;
+        default:
+            break;
+    }
+};
+
+ 
+
     const [displayText1, setDisplayText1] = useState('Парикмахерский зал');
     const [displayText2, setDisplayText2] = useState('TINTO beauty salon–пространство для вашей индивидуальности!');
     const [displayText3, setDisplayText3] = useState('Мы предлагаем широкий выбор стрижек, укладок, окрашиваний и других услугдля всех типов и структур волос. Наши опытные мастера используют только качественные материалы и современное оборудование, чтобы гарантировать превосходный результат.');
@@ -45,25 +71,47 @@ const Salon = () => {
                 </div>
             </div>
         </div>
-        <div className={`pr-box ${expanded ? 'expanded' : ''}`}>
-        <div className='pr-content'>
-          <div>
-            <button onClick={toggleExpand}>
-              {expanded ? 'сука' : 'Развернуть'}
-            </button>
-            {expanded && (
-              <ul>
-                {listItems.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-            )}
-          </div>
-        </div>
+
+      <div>
+      <div style={{display:'flex'}}>
+      <button onClick={() => toggleExpand(1)}>Toggle Menu 1</button>
+      <div className={`menu ${expanded1 ? 'expanded' : ''}`}>
+          <h2>Меню 1</h2>
+          <p>Текст и контент для меню 1...</p>
       </div>
-    </div>
+      </div>
+
+      <div style={{display:'flex'}}>
+      <button onClick={() => toggleExpand(2)}>Toggle Menu 2</button>
+      <div className={`menu ${expanded2 ? 'expanded' : ''}`}>
+          <h2>Меню 1</h2>
+          <p>Текст и контент для меню 1...</p>
+      </div>
+      </div>
+
+
+      <div style={{display:'flex'}}>
+      <button onClick={() => toggleExpand(3)}>Toggle Menu 3</button>
+      <div className={`menu ${expanded3 ? 'expanded' : ''}`}>
+          <h2>Меню 1</h2>
+          <p>Текст и контент для меню 1...</p>
+      </div>
+      </div>
+
+      <div style={{display:'flex'}}>
+      <div className={`menu ${expanded4 ? 'expanded' : ''}`}>
+          <h2>Меню 1</h2>
+          <p>Текст и контент для меню 1...</p>
+      </div>
+      <button onClick={() => toggleExpand(4)}>Toggle Menu 4</button>
+
+      </div>
+
+  </div>
+  </div>
     );
-};
+  };
+
 
 export default Salon;
 

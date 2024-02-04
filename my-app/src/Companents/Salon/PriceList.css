@@ -7,11 +7,18 @@
     flex-direction: column;
 }
 
-.pr-content{
-    margin: 10svw;
-    background-color: green;
-    width: 80svw;
-    height: max-content;
+.pr-content {
+  margin: 10vw;
+  background-color: green;
+  width: 80vw;
+  height: 10px;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+
+.expanded .pr-content {
+  height: 10000px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 0.3s ease-in;
 }
 ul {
     max-height: 0;
@@ -20,5 +27,18 @@ ul {
   }
   
   .expanded ul {
-    max-height: 200px; /* Установите максимальную высоту, подходящую для вашего контента */
+    max-height: 100px; /* Установите максимальную высоту, подходящую для вашего контента */
   }
+  .menu {
+    margin: 0;
+    background-color: green;
+    width: 80vw;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+.menu.expanded {
+    height: 200px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.3s ease-in;
+}

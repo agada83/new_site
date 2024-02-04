@@ -12,7 +12,7 @@
     z-index: 1000;
   }
   .navbar-brand {
-    margin-left: 5%;
+    margin-left: 100px;
     flex-grow: 1;
   }
 
@@ -25,15 +25,19 @@
   /* Стили для ссылок в навигационном меню */
   .navbar-nav {
     align-items: center;
-    margin-right: 5%;
+    margin-right: 100px;
   }
   .navbar-nav ul{
     list-style: none;
     display: flex;
-
+    min-height: 30px;
+    margin-bottom: 0px;
   }  
+  .navbar-nav ul li{
+    height: 41px;
+  }
   .navbar-nav hr{ 
-    margin-left: 7%;
+    margin-left: 45px;
     width: 93%;
     height: 0;
     border-top: 0px;
@@ -42,9 +46,10 @@
     border-color: #c9c9c9;
   }
   .navbar-nav .nav-item {
-    margin-right: 2vw; /* Отступ между ссылками */
-    font-size: 0.9vw;
+    margin-right: 40px; /* Отступ между ссылками */
+    font-size: 18px;
   }
+
   .navbar-nav .nav-item:last-child {
     margin-right: 0; /* Убираем отступ у последней ссылки */
   }
