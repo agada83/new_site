@@ -6,7 +6,7 @@ class Appointment extends Component {
     render() {
   
       return (
-            <div className='apm-body'>
+            <div className='apm-body' id='registration'>
                 <h1>ОНЛАЙН ЗАПИСЬ</h1>
                 <iframe
 					title="reg"

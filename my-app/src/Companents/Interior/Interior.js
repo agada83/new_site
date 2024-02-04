@@ -9,7 +9,7 @@ class Interior extends Component {
     render() {
   
       return (
-            <div className='int-body'>
+            <div className='int-body' id='interior'>
                 <h1>ИНТЕРЬЕР</h1>
                 <div className='img-pole'>
                     <div className='first-item-img'><img src={interoirImg1} alt='interoirImg1'/></div>

@@ -5,7 +5,7 @@
 
 .team-box h1{
     color:black;
-    font-family: 'Montserrat-Medium';
+    font-family: 'Montserrat';
     text-align: center;
     margin-top: 3%;
 
@@ -21,7 +21,7 @@
 }
 
 .separator a{
-    font-family: 'Montserrat-Medium';
+    font-family: 'Montserrat';
     font-size: 30px;
 
 }

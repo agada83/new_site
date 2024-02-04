@@ -30,6 +30,13 @@ const slidesData = [
 
 const CarouselAdmins = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const redirectToPage = () => {
+    // Укажите URL страницы, на которую вы хотите перейти
+    const targetPageUrl = "#registration";
+    
+    // Переносим пользователя на указанную страницу
+    window.location.href = targetPageUrl;
+  };
   return (
     <div className="carousel">
       <div className="slides-container" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
@@ -48,7 +55,7 @@ const CarouselAdmins = () => {
                 </div>
               </div>
               <div className='obrez-but'>
-              <button className='order-button'>Записаться</button>
+              <button className='order-button' onClick={redirectToPage}>Записаться</button>
               </div>
             </div>
           </div>

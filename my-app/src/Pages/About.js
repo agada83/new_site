@@ -1,11 +1,27 @@
 import React, { Component } from 'react';
+import AboutSalon from '../Companents/AboutSalon/AboutSalon.js'
+import AboutUs from '../Companents/AboutUs/AboutUs.js'
+import Info from '../Companents/Info/Info.js'
+import Interior from '../Companents/Interior/Interior.js'
+import PartnerBrands from '../Companents/PartnerBrands/PartnerBrands.js'
+import Footer from '../Companents/Footer/Footer.js'
+import Sale from '../Companents/Sale/Sale.js'
+import OurWorks from '../Companents/OurWorks/OurWorks.js';
+
+
 
 class About extends Component {
     render() {
         return (
-            // <img src= />
-            <div>
-                123
+            <div style={{display:'block'}}>
+                <AboutSalon />
+                <AboutUs/>
+                <Info />
+                <Interior />
+                <Sale />
+                <OurWorks />
+                <PartnerBrands />
+                <Footer />
             </div>
         );
     }

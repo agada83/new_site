@@ -1,0 +1,53 @@
+.ow-box {
+    width: 100%;
+    height: auto;
+    font-family: 'Montserrat';
+    padding-bottom: 50px;
+}
+
+.ow-box h1 {
+    font-size: 40px;
+    margin: 0;
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+.ow-content {
+    width: min-content;
+    max-height: 900px; /* Установите начальную максимальную высоту */
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    transition: max-height 1s ease; /* Анимация изменения высоты */
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.ow-row{
+    display: flex;
+    justify-content: space-between;
+    gap:80px
+}
+.ow-row img{
+    width: 400px;
+    height: 400px;
+}
+.ow-content.show-all-rows {
+    max-height: 1300px; /* Установите достаточно большую максимальную высоту для показа всех строк */
+    transition: max-height 1s ease; /* Анимация изменения высоты */
+}
+.toggle-button {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 40px;
+    color: #000000;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}

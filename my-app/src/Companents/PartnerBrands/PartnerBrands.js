@@ -6,7 +6,7 @@ class PartnerBrands extends Component {
     render() {
   
       return (
-            <div className='pb-body'>
+            <div className='pb-body' id='partner-brands'>
                 <div className='first-line'>
                     <div className='pb-item lux'><a><b>LUX</b><br/>ANCEE</a></div>
                     <div className='pb-item pure'><a>SO PURE</a></div>

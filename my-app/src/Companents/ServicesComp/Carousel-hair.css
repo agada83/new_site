@@ -27,6 +27,7 @@
 .sc-content {
   display: flex;
   height: 360px;
+  width: 1300px;
   gap: 200px;
   font-family: 'Montserrat-Light';
 }
@@ -51,14 +52,20 @@
 }
 
 .sc-item button{
-  width: 200px;
-  height: 50px;
+  width: 220px;
+  height: 55px;
   background-color: #00000000;
   border:1px solid white;
   color: white;
-  border-radius: 25px;
+  border-radius: 29px;
   font-size: 20px; 
   font-family: 'Montserrat-Light';
+  cursor: pointer;
+  transition: all 0.9s ease;
+}
+.sc-item button:hover{
+  color: black;
+  background-color: white;
 }
 
 
@@ -78,7 +85,7 @@
 }
 
 .sc-dot {
-  border: 3px solid black;
+  border: 4px solid #474747;
   width: 10px;
   height: 10px;
   background-color: rgb(255, 255, 255);
@@ -87,6 +94,6 @@
 }
 
 .sc-dot.active {
-  background-color: #000000;
+  background-color: #474747;
 }
 

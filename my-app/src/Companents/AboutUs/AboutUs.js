@@ -7,8 +7,6 @@ class AboutUs extends Component {
   
       return (
             <div className='ab-body'>
-              <h1>О НАС</h1>
-              <h2>TINTO beauty salon–пространство для вашей индивидуальности!</h2>
               <div className='ab-text'>
                 <div className='ab-hr'><h3>НАША ФИЛОСОФИЯ<hr/></h3></div>
                 <p>«Тinto» – в переводе означает "красный" – выражает представление о наивысшей красоте. Красный цвет – символ здоровья и процветания. Мы по-особому относимся к слову «ЦВЕТ» </p>

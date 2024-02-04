@@ -30,6 +30,13 @@ const slidesData = [
 ];
 const CarouselStyle = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const redirectToPage = () => {
+      // Укажите URL страницы, на которую вы хотите перейти
+      const targetPageUrl = "#registration";
+      
+      // Переносим пользователя на указанную страницу
+      window.location.href = targetPageUrl;
+    };
     return (
       <div className="tscarousel">
         <div className="tsslides-container" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
@@ -40,19 +47,19 @@ const CarouselStyle = () => {
                         <img src={slide.image1} alt={`Slide ${index + 1}`}/>
                         <a>{slide.text1}</a>
                         <a>{slide.price1}</a>
-                        <button>Записаться</button>
+                        <button onClick={redirectToPage}>Записаться</button>
                     </div>
                     <div className='item'>
                         <img src={slide.image2} alt={`Slide ${index + 1}`}/>
                         <a>{slide.text2}</a>
                         <a>{slide.price2}</a>
-                        <button>Записаться</button>
+                        <button onClick={redirectToPage}>Записаться</button>
                     </div>
                     <div className='item'>
                         <img src={slide.image1} alt={`Slide ${index + 1}`}/>
                         <a>{slide.text3}</a>
                         <a>{slide.price3}</a>
-                        <button>Записаться</button>
+                        <button onClick={redirectToPage}>Записаться</button>
                     </div>
                 </div>
             </div>

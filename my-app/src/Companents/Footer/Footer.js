@@ -7,7 +7,7 @@ class Footer extends Component {
     render() {
   
       return (
-        <div className='ft-body'>
+        <div className='ft-body' id='footer'>
             <div className='ft-content'>
                 <iframe src="https://yandex.ru/map-widget/v1/?ll=37.672792%2C55.776143&mode=search&oid=121516923860&ol=biz&z=17" className="map-frame" allowfullscreen="true"></iframe>
                 <div className='ft-info'>

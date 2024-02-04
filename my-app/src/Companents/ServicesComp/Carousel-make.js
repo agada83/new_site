@@ -9,30 +9,14 @@ const slidesData = [
     image1: hairImg,
     image2: hairImg,
     image3: hairImg,
-    text1: 'Укладки',
-    text2: 'Стрижки',
-    text3: 'Окрашивания',
-  },
-  {
-    image1: hairImg,
-    image2: hairImg,
-    image3: hairImg,
-    text1: 'Уклад3ки',
-    text2: 'Стрижки',
-    text3: 'Окрашивания',
-  },
-  {
-    image1: hairImg,
-    image2: hairImg,
-    image3: hairImg,
-    text1: 'Укладки',
-    text2: 'Стрижки',
+    text1: 'Макияж',
+    text2: 'Услуги бровиста',
     text3: 'Окрашивания',
   },
 
 ];
 
-const CarouselHair = () => {
+const CarouselMake = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const redirectToPage = () => {
     // Укажите URL страницы, на которую вы хотите перейти
@@ -57,11 +41,7 @@ const CarouselHair = () => {
                 <a>{slide.text2}</a>
                 <button  onClick={redirectToPage}>Прайс-лист</button>
               </div>
-              <div className='sc-item'>
-                <img src={slide.image3}/>
-                <a>{slide.text3}</a>
-                <button  onClick={redirectToPage}>Прайс-лист</button>
-              </div>
+
             </div>
           </div>
         ))}
@@ -83,4 +63,4 @@ const CarouselHair = () => {
 
 
 
-export default CarouselHair;
+export default CarouselMake;

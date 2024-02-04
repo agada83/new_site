@@ -19,18 +19,22 @@ class Home extends Component {
 
     return (
       <div style={{display:'block'}}>
-        {/* <FirstComp /> */}
+        <FirstComp />
         <ServicesComp />
-        {/* <Info />
+        <Info />
         <Team />
         <Sale />
         <TopServices />
         <Interior />
+        <div className='hm-au-div'>
+          <h1>О НАС</h1>
+          <h2>TINTO beauty salon–пространство для вашей индивидуальности!</h2>
+        </div>
         <AboutUs />
         <Advantages />
         <Appointment />
         <PartnerBrands />
-        <Footer /> */}
+        <Footer />
       </div>
     );
   }

@@ -80,6 +80,8 @@
 }
 
 .dot {
+  border: 4px solid #474747;
+
   width: 10px;
   height: 10px;
   background-color: white;
