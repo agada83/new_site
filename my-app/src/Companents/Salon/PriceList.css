@@ -1,44 +1,271 @@
 .pr-box{
-    width: 100%;
-    height: 900px;
-    background-color: red;
-    font-family: 'Montserrat';
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  font-family: 'Montserrat';
+  display: flex;
+  flex-direction: column;
+  background-image: url('../../assets/prbgImg.png');
 }
-
+.pr-switch{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
 .pr-content {
-  margin: 10vw;
-  background-color: green;
-  width: 80vw;
-  height: 10px;
+  margin: 3.5svw 5svw 5svw 5svw;
+  min-width: 90svw;
   overflow: hidden;
   transition: height 0.3s ease-out;
 }
 
-.expanded .pr-content {
-  height: 10000px; /* Установите максимальную высоту, подходящую для вашего контента */
-  transition: height 0.3s ease-in;
-}
-ul {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-  }
-  
-  .expanded ul {
-    max-height: 100px; /* Установите максимальную высоту, подходящую для вашего контента */
-  }
-  .menu {
-    margin: 0;
-    background-color: green;
-    width: 80vw;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease-out;
+.menu {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
 }
 
 .menu.expanded {
-    height: 200px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: height 0.3s ease-in;
+  height: 500px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-1 {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
+}
+.menu-1.expanded {
+  height: 600px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-1.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
+
+.menu-2 {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
+}
+.menu-2.expanded {
+  height: 720px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-2.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
+.menu-3 {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
+}
+.menu-3.expanded {
+  height: 720px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-3.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
+
+.menu-4 {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
+}
+.menu-4.expanded {
+  height: 420px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-4.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
+
+.menu-5 {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
+}
+.menu-5.expanded {
+  height: 350px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-5.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
+
+.menu-6 {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
+}
+.menu-6.expanded {
+  height: 900px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-6.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
+
+.menu-7 {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
+}
+.menu-7.expanded {
+  height: 250px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-7.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
+
+.menu-8 {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
+}
+.menu-8.expanded {
+  height: 350px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-8.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
+.menu-9 {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
+}
+.menu-9.expanded {
+  height: 180px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-9.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
+.menu-10 {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
+}
+.menu-10.expanded {
+  height: 250px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-10.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
+.pr-menu{
+  display: flex;
+  flex-direction: column;
+}
+.pr-line{
+  display: flex;
+  justify-content: space-between;
+}
+.pr-menu-visible{
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+.pr-menu-visible h2{
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  padding-left: 100px;
+  font-size: 20px;
+}
+.pr-menu-visible img{
+  margin-right: 100px;
+  width: 40px;
+  height: auto;
+  transition: all 1s ease;
+}
+.menu.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
+
+.pr-menu button{
+  border: 0px;
+  background-color: #ffffff00;
+}
+.pr-hair-full-price{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  line-height: 60px;
+  color: black;
+  font-size: 20px;
+}
+.pr-hair-full-price h3{
+  font-family: "Montserrat-Medium";
+}
+.pr-diva a{
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: color 0.5s ease;
+  cursor: pointer;
+
+}
+.pr-divht{
+  flex: 1;
+  background-color: #ffffff00;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+
+  height: 1px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+
+}
+
+.pr-diva.active .pr-divht {
+  background-color: rgba(255, 255, 255);
 }

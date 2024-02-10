@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Salon.css'
 import './PriceList.css'
 import salonImg from '../../assets/salonImg.png'
+import arrowbottomImg from '../../assets/arrowbottomImg.png'
 
 
 const Salon = () => {
@@ -14,7 +15,14 @@ const Salon = () => {
     const [expanded2, setExpanded2] = useState(false);
     const [expanded3, setExpanded3] = useState(false);
     const [expanded4, setExpanded4] = useState(false);
-    
+    const [expanded5, setExpanded5] = useState(false);
+    const [expanded6, setExpanded6] = useState(false);
+    const [expanded7, setExpanded7] = useState(false);
+    const [expanded8, setExpanded8] = useState(false);
+    const [expanded9, setExpanded9] = useState(false);
+    const [expanded10, setExpanded10] = useState(false);
+    const [expanded11, setExpanded11] = useState(false);
+
   const toggleExpand = (menuNumber) => {
     switch (menuNumber) {
         case 1:
@@ -29,6 +37,27 @@ const Salon = () => {
         case 4:
             setExpanded4(!expanded4);
             break;
+        case 5:
+            setExpanded5(!expanded5);
+            break;
+        case 6:
+            setExpanded6(!expanded6);
+            break;
+        case 7:
+            setExpanded7(!expanded7);
+            break;
+        case 8:
+            setExpanded8(!expanded8);
+            break;
+        case 9:
+            setExpanded9(!expanded9);
+            break;
+        case 10:
+            setExpanded10(!expanded10);
+            break;
+        case 11:
+            setExpanded11(!expanded11);
+            break;
         default:
             break;
     }
@@ -40,8 +69,10 @@ const Salon = () => {
     const [displayText2, setDisplayText2] = useState('TINTO beauty salon–пространство для вашей индивидуальности!');
     const [displayText3, setDisplayText3] = useState('Мы предлагаем широкий выбор стрижек, укладок, окрашиваний и других услугдля всех типов и структур волос. Наши опытные мастера используют только качественные материалы и современное оборудование, чтобы гарантировать превосходный результат.');
     const [displayText4, setDisplayText4] = useState('Мы также предлагаем индивидуальный подход к каждому клиенту, чтобы создать идеальный образ для вас. Посетите наш салон и позвольте нам сделать вашу мечту о красивых и здоровых волосах реальностью!');
+    const [activeButton, setActiveButton] = useState(null);
 
     const handleButtonClick = () => {
+        setActiveButton(1);
         setDisplayText1('Парикмахерский зал');
         setDisplayText2('TINTO beauty salon–пространство для вашей индивидуальности!');
         setDisplayText3('Мы предлагаем широкий выбор стрижек, укладок, окрашиваний и других услугдля всех типов и структур волос. Наши опытные мастера используют только качественные материалы и современное оборудование, чтобы гарантировать превосходный результат.');
@@ -49,6 +80,7 @@ const Salon = () => {
     };
 
     const handleButton2Click = () => {
+        setActiveButton(2);
         setDisplayText1('Макияж и визаж');
         setDisplayText2('TINTO beauty salon–пространство для вашей индивидуальности!');
         setDisplayText3('В нашем салоне вы можете заказать макияж для любого случая: от повседневного до вечернего, а также для фотосессии или свадьбы. Мы предлагаем широкий спектр услуг, наши опытные визажисты помогут вам выбрать подходящий макияж, учитывая ваши индивидуальные особенности, стиль и предпочтения.');
@@ -72,42 +104,187 @@ const Salon = () => {
             </div>
         </div>
 
-      <div>
-      <div style={{display:'flex'}}>
-      <button onClick={() => toggleExpand(1)}>Toggle Menu 1</button>
-      <div className={`menu ${expanded1 ? 'expanded' : ''}`}>
-          <h2>Меню 1</h2>
-          <p>Текст и контент для меню 1...</p>
-      </div>
-      </div>
+    <div className='pr-box'>
+        <div className='pr-content'>
+            <div className='pr-switch'>
+                <div className={`pr-diva ${activeButton === 1 ? 'active' : ''}`} onClick={handleButtonClick}><a>ПАРИКМАХЕРСКИЕ УСЛУГИ</a><div className='pr-divht'/></div>
+                <div className={`pr-diva ${activeButton === 2 ? 'active' : ''}`} onClick={handleButton2Click}><a>МАКИЯЖ И ВИЗАЖ</a><div className='pr-divht'/></div>
+            </div>
+        <div className='pr-menu'>
+            <div className={`menu-1 ${expanded1 ? 'expanded' : ''}`}>
+                <div className='pr-menu-visible'>
+                    <h2>Укладка</h2>
+                    <button onClick={() => toggleExpand(1)}><img src={arrowbottomImg}/></button>
+                </div>
+                <div className='pr-hair-full-price'>
+                    <div className='pr-line'><a>Укладка мужская</a><a>1000 руб.</a></div>
+                    <div className='pr-line'><a>Сушка волос феном S/M/L/XL</a><a>1000/1100/1200/1400 руб.</a></div>
+                    <div className='pr-line'><a>Укладка женская S/M/L/XL</a><a>1600/1800/2000/2300 руб.</a></div>
+                    <div className='pr-line'><a>Укладка Коктейльная Cloud Nine S/M/L/XL</a><a>2100/2900/3300/3600 руб.</a></div>
+                    <div className='pr-line'><a>Укладка празничная S/M/L/XL</a><a>2100/3500/3900/4600 руб.</a></div>
+                    <div className='pr-line'><a>Укладка нарощенных волос</a><a>2800 руб.</a></div>
+                    <div className='pr-line'><a>Эксперсс плетение косы</a><a>1200 руб.</a></div>
+                    <div className='pr-line'><a>Декоротивное плетение косы</a><a>2600 руб.</a></div>
+                </div>
+            </div>
+        </div>
 
-      <div style={{display:'flex'}}>
-      <button onClick={() => toggleExpand(2)}>Toggle Menu 2</button>
-      <div className={`menu ${expanded2 ? 'expanded' : ''}`}>
-          <h2>Меню 1</h2>
-          <p>Текст и контент для меню 1...</p>
-      </div>
-      </div>
+        <div className='pr-menu'>
+            <div className={`menu-2 ${expanded2 ? 'expanded' : ''}`}>
+                <div className='pr-menu-visible'>
+                    <h2>Стрижка</h2>
+                    <button onClick={() => toggleExpand(2)}><img src={arrowbottomImg}/></button>
+                </div>
+                <div className='pr-hair-full-price'>
+                    <div className='pr-line'><a>Стрижка женская + укладка S/M/L/XL + сенсуалирование волос</a><a>2800/3000/3200/3500 руб.</a></div>
+                    <div className='pr-line'><a>Стрижка с укладкой Креативная/Авторская</a><a>3500/4000 руб.</a></div>
+                    <div className='pr-line'><a>Коррекций челки</a><a>800 руб.</a></div>
+                    <div className='pr-line'><a>Создание новой челки</a><a>1500 руб.</a></div>
+                    <div className='pr-line'><a>Стрижка детская до 12 лет/подростковая</a><a>1500/2000 руб.</a></div>
+                    <div className='pr-line'><a>Стрижка мужская + укладка</a><a>2500 руб.</a></div>
+                    <div className='pr-line'><a>Стрижка мужская креативная + укладка</a><a>3300 руб.</a></div>
+                    <div className='pr-line'><a>Стрижка мужская машинкой</a><a>1500 руб.</a></div>
+                    <div className='pr-line'><a>Дизайн бороды</a><a>1000 руб.</a></div>
+                    <div className='pr-line'><a>Дизайн усов</a><a>800 руб.</a></div>
+                </div>            
+            </div>
+        </div>
 
 
-      <div style={{display:'flex'}}>
-      <button onClick={() => toggleExpand(3)}>Toggle Menu 3</button>
-      <div className={`menu ${expanded3 ? 'expanded' : ''}`}>
-          <h2>Меню 1</h2>
-          <p>Текст и контент для меню 1...</p>
-      </div>
-      </div>
+        <div className='pr-menu'>
+            <div className={`menu-3 ${expanded3 ? 'expanded' : ''}`}>
+                <div className='pr-menu-visible'>
+                    <h2>Окрашивание</h2>
+                    <button onClick={() => toggleExpand(3)}><img src={arrowbottomImg}/></button>
+                </div>
+                <div className='pr-hair-full-price'>
+                    <div className='pr-line'><a>Коррекция седины Men Reshade (1фл./20мл.)/(2фл./40мл.)</a><a>3400/6600 руб.</a></div>
+                    <div className='pr-line'><a>Окрашивание волос в 1 тон SO PURE - S/M/L/XL</a><a>7000/10200/13500/16500 руб.</a></div>
+                    <div className='pr-line'><a>Окрашивание волос в 1 тон KEUNE S/M/L/XL</a><a>6000/7700/11500/13800 руб.</a></div>
+                    <div className='pr-line'><a>АНИМАЦИЯ ЦВЕТА @PURE PIGMENTS GW</a><a>500 руб.</a></div>
+                    <div className='pr-line'><a>Color Balancing KEUNE - S/M/L/XL</a><a>7100/8300/10500/12600 руб.</a></div>
+                    <div className='pr-line'><a>Color Balancing SO PURE - S/M/L/XL</a><a>8600/9700/12200/14500 руб.</a></div>
+                    <div className='pr-line'><a>Тонирование волос KEUNE - S/M/L/XL/XLL</a><a>4500/5800/8300/10800/13500 руб.</a></div>
+                    <div className='pr-line'><a>Тонирование волос SO PURE - S/M/L/XL/XLL</a><a>5500/7500/10600/14100/16000 руб.</a></div>
+                    <div className='pr-line'><a>Колорирование волос KEUNE- S/M/L/XL</a><a>7200/9300/13600/16200 руб.</a></div>
+                    <div className='pr-line'><a>Колорирование волос SO PURE - S/M/L/XL</a><a>8600/12000/15000/18000 руб.</a></div>
+                </div>                
+            </div>
+        </div>
 
-      <div style={{display:'flex'}}>
-      <div className={`menu ${expanded4 ? 'expanded' : ''}`}>
-          <h2>Меню 1</h2>
-          <p>Текст и контент для меню 1...</p>
-      </div>
-      <button onClick={() => toggleExpand(4)}>Toggle Menu 4</button>
+        <div className='pr-menu'>
+            <div className={`menu-4 ${expanded4 ? 'expanded' : ''}`}>
+                <div className='pr-menu-visible'>
+                    <h2>Рассветление</h2>
+                    <button onClick={() => toggleExpand(4)}><img src={arrowbottomImg}/></button>
+                </div>
+                <div className='pr-hair-full-price'>
+                    <div className='pr-line'><a>Ультра Блонд 3000+ Tinta-S/M/L/XL</a><a>7800/16500/25100/32500 руб.</a></div>
+                    <div className='pr-line'><a>Обесцвечивание волос KEUNE - S/M/L/XL</a><a>4500/5500/6800/7600 руб.</a></div>
+                    <div className='pr-line'><a>Блики (мелирование нескольких прядей)</a><a>4500руб.</a></div>
+                    <div className='pr-line'><a>Прикорневое мелирование волос</a><a>6000руб.</a></div>
+                    <div className='pr-line'><a>Мелирование волос S S/M/L/XL</a><a>6000/7000/9500/11800 руб.</a></div>
+                </div>  
+            </div>
+        </div>
+        <div className='pr-menu'>
+            <div className={`menu-5 ${expanded5 ? 'expanded' : ''}`}>
+                <div className='pr-menu-visible'>
+                    <h2>Элюмирование</h2>
+                    <button onClick={() => toggleExpand(5)}><img src={arrowbottomImg}/></button>
+                </div>
+                <div className='pr-hair-full-price'>
+                    <div className='pr-line'><a>Элюминирование в 1 тон -S/M/L/XL</a><a>7000/96500/12100/15600руб.</a></div>
+                    <div className='pr-line'><a>Элюминирование Color Balancing (окрашивание корней и тонирование по длине ) S/M/L/XL</a><a>11400/14000/16700/18500 руб.</a></div>
+                    <div className='pr-line'><a>Снятие Элюмен RETURN -S/M/L/XL</a><a>3000/4600/6400/7400 руб.</a></div>
+                    <div className='pr-line'><a>Снятие Элюмен ERASER -S/M/L/XL</a><a>3000/3500/6100/6600 руб.</a></div>
+                </div>  
+            </div>
+        </div>
+        <div className='pr-menu'>
+            <div className={`menu-6 ${expanded6 ? 'expanded' : ''}`}>
+                <div className='pr-menu-visible'>
+                    <h2>Лечение и спа</h2>
+                    <button onClick={() => toggleExpand(6)}><img src={arrowbottomImg}/></button>
+                </div>
+                <div className='pr-hair-full-price'>
+                    <div className='pr-line'><a>Лечебная сенсуалирующая маска/Экспресс уход</a><a>600 руб.</a></div>
+                    <div className='pr-line'><a>Лечение волос BondPro</a><a>2500 руб.</a></div>
+                    <div className='pr-line'><a>Окрашивание волос + лечением BondPro S/M</a><a>2000 руб.</a></div>
+                    <div className='pr-line'><a>Окрашивание волос + лечением BondPro L/XL</a><a>2300 руб.</a></div>
 
-      </div>
+                    <h3>Lebel</h3>
+                    <div className='pr-line'><a>SPA-программа «Hair Skin Relaxing» S/M/L/XL</a><a>2100/3000/3700/4700 руб.</a></div>
+                    <div className='pr-line'><a>Счастье для волос ЖИЗНЕННАЯ СИЛА S/M/L/XL</a><a>2000/3000/4000/5400 руб.</a></div>
+                    <div className='pr-line'><a>Абсолютное счастье для волос S/M/L/XL</a><a>2000/3000/4000/5400 руб.</a></div>
+                    <div className='pr-line'><a>Счастье для волос БЛЕСК и СИЛА S/M/L/XL</a><a>3000/5500/7500/10000 руб.</a></div>
+                    <h3>So pure</h3>
 
-  </div>
+                    <div className='pr-line'><a>СПА-уход SO PURE - S/M/L/XL</a><a>1100/1500/2100/2500 руб.</a></div>
+
+                </div>             
+            </div>
+        </div>
+        <div className='pr-menu'>
+            <div className={`menu-7 ${expanded7 ? 'expanded' : ''}`}>
+                <div className='pr-menu-visible'>
+                    <h2>Трихология</h2>
+                    <button onClick={() => toggleExpand(7)}><img src={arrowbottomImg}/></button>
+                </div>
+                <div className='pr-hair-full-price'>
+                    <div className='pr-line'><a>Детокс-пилинг д/кожи головы MEDAVITA (П25/Ш20/Э15/без ампулы)</a><a>2000 руб.</a></div>
+                    <div className='pr-line'><a>Программа против выпадения волос MEDAVITA (пилинг+ампула)</a><a>3500 руб.</a></div>
+                </div> 
+            </div>
+        </div>
+        <div className='pr-menu'>
+            <div className={`menu-8 ${expanded8 ? 'expanded' : ''}`}>
+                <div className='pr-menu-visible'>
+                    <h2>Техники</h2>
+                    <button onClick={() => toggleExpand(8)}><img src={arrowbottomImg}/></button>
+                </div>
+                <div className='pr-hair-full-price'>
+                    <div className='pr-line'><a>Брондирование Омбре- S/M/L/XL</a><a>11500/14000/17000/18500 руб.</a></div>
+                    <div className='pr-line'><a>Брондирование Шатуш - S/M/L/XL</a><a>12000/15000/17000/21000 руб.</a></div>
+                    <div className='pr-line'><a>Окрашивание Аиртач - М/L/XL</a><a>16500/19500/24000 руб.</a></div>
+                    <div className='pr-line'><a>Окрашивание Airtouch - М/L/XL</a><a>17000/20000/25000 руб.</a></div>
+                </div> 
+            </div>
+        </div>
+        <div className='pr-menu'>
+            <div className={`menu-9 ${expanded9 ? 'expanded' : ''}`}>
+                <div className='pr-menu-visible'>
+                    <h2>Выпрямление</h2>
+                    <button onClick={() => toggleExpand(9)}><img src={arrowbottomImg}/></button>
+                </div> 
+                <div className='pr-hair-full-price'>
+                    <div className='pr-line'><a>Кератиновое выпрямление/восстановление волос -S/M/L/XL</a><a>6500/8500/11000/13500 руб.</a></div>
+                </div>
+            </div>
+        </div>
+        <div className='pr-menu'>
+            <div className={`menu-10 ${expanded10 ? 'expanded' : ''}`}>
+                <div className='pr-menu-visible'>
+                    <h2>Завивка</h2>
+                    <button onClick={() => toggleExpand(10)}><img src={arrowbottomImg}/></button>
+                </div>
+                <div className='pr-hair-full-price'>
+                    <div className='pr-line'><a>Щадящая химическая завивка Evolution - S/M/L</a><a>8500/9700/17600 руб.</a></div>
+                    <div className='pr-line'><a>Мягкая щелочная завивка-уход VITENSITY - S/M/L</a><a>5200/7100/11000 руб.</a></div>
+                </div>
+            </div>
+        </div>
+        <div className='pr-menu'>
+            <div className={`menu ${expanded11 ? 'expanded' : ''}`}>
+                <div className='pr-menu-visible'>
+                    <h2>Доп услуги</h2>
+                    <button onClick={() => toggleExpand(11)}><img src={arrowbottomImg}/></button>
+                </div>
+                <a>Текст и контент для меню 1...</a>
+            </div>
+        </div>
+        </div>
+    </div>
   </div>
     );
   };
@@ -117,8 +294,11 @@ export default Salon;
 
 
 
-        {/* <p>{displayText2}</p>
+        {/*
+            <div className='pr-line'><a>123</a><a>123</a></div>
+
+        <p>{displayText2}</p>
         <p>{displayText3}</p>
         <p>{displayText4}</p>
-        <button onClick={handleButtonClick}>Кнопка 1</button>
-        <button onClick={handleButton2Click}>Кнопка 2</button> */}
+        <button >Кнопка 1</button>
+        <button onClick={}>Кнопка 2</button> */}
