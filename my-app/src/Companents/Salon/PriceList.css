@@ -197,6 +197,54 @@
 .menu-10.expanded .pr-menu-visible img{
   rotate:180deg;
 }
+.menu-11 {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
+}
+.menu-11.expanded {
+  height: 430px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-11.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
+.menu-12 {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
+}
+.menu-12.expanded {
+  height: 500px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-12.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
+.menu-13 {
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 1s ease-out;
+  border-bottom: 1px solid black;
+}
+.menu-13.expanded {
+  height: 600px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: height 1s ease-in;
+}
+.menu-13.expanded .pr-menu-visible img{
+  rotate:180deg;
+}
 .pr-menu{
   display: flex;
   flex-direction: column;

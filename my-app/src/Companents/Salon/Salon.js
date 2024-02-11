@@ -22,6 +22,8 @@ const Salon = () => {
     const [expanded9, setExpanded9] = useState(false);
     const [expanded10, setExpanded10] = useState(false);
     const [expanded11, setExpanded11] = useState(false);
+    const [expanded12, setExpanded12] = useState(false);
+    const [expanded13, setExpanded13] = useState(false);
 
   const toggleExpand = (menuNumber) => {
     switch (menuNumber) {
@@ -57,6 +59,12 @@ const Salon = () => {
             break;
         case 11:
             setExpanded11(!expanded11);
+            break;
+        case 12:
+            setExpanded12(!expanded12);
+            break;
+        case 13:
+            setExpanded13(!expanded13);
             break;
         default:
             break;
@@ -110,7 +118,41 @@ const Salon = () => {
                 <div className={`pr-diva ${activeButton === 1 ? 'active' : ''}`} onClick={handleButtonClick}><a>ПАРИКМАХЕРСКИЕ УСЛУГИ</a><div className='pr-divht'/></div>
                 <div className={`pr-diva ${activeButton === 2 ? 'active' : ''}`} onClick={handleButton2Click}><a>МАКИЯЖ И ВИЗАЖ</a><div className='pr-divht'/></div>
             </div>
-        <div className='pr-menu'>
+            <div className='pr-menu'>
+            <div className={`menu-12 ${expanded12 ? 'expanded' : ''}`}>
+                <div className='pr-menu-visible'>
+                    <h2>Услуги визажиста</h2>
+                    <button onClick={() => toggleExpand(12)}><img src={arrowbottomImg}/></button>
+                </div>
+                <div className='pr-hair-full-price'>
+                    <div className='pr-line'><a>Макияж дневной повседневный - BUSINESS LADY</a><a>2500 руб.</a></div>
+                    <div className='pr-line'><a>Макияж коктейльный - PARTY GIRL</a><a>2500 руб.</a></div>
+                    <div className='pr-line'><a>Макияж вечерний - NIGHT PARTY</a><a>2800 руб.</a></div>
+                    <div className='pr-line'><a>Макияж возрасной- ANTI-AGE</a><a>3000 руб.</a></div>
+                    <div className='pr-line'><a>Макияж пробный свадебный- TEST MARRIDE DAY</a><a>2800 руб.</a></div>
+                    <div className='pr-line'><a>Макияж свадебный- MARRIDE DAY</a><a>3800 руб.</a></div>
+                </div> 
+            </div>
+            </div>
+            <div className='pr-menu'>
+            <div className={`menu-13 ${expanded13 ? 'expanded' : ''}`}>
+                <div className='pr-menu-visible'>
+                    <h2>Услуги бровиста</h2>
+                    <button onClick={() => toggleExpand(13)}><img src={arrowbottomImg}/></button>
+                </div>
+                <div className='pr-hair-full-price'>
+                    <div className='pr-line'><a>Коррекция бровей (раннее созданной формы)</a><a>750 руб.</a></div>
+                    <div className='pr-line'><a>Создание новой формы бровей</a><a>1500 руб.</a></div>
+                    <div className='pr-line'><a>Окрашивание бровей ХНА</a><a>1500 руб.</a></div>
+                    <div className='pr-line'><a>Окрашивание бровей краска</a><a>850 руб.</a></div>
+                    <div className='pr-line'><a>Ламинирование бровей</a><a>3800 руб.</a></div>
+                    <div className='pr-line'><a>Счастье для бровей</a><a>1200 руб.</a></div>
+                    <div className='pr-line'><a>Окрашивание ресниц</a><a>800 руб.</a></div>
+                    <div className='pr-line'><a>Ламинирование ресниц</a><a>4200 руб.</a></div>
+                </div> 
+            </div>
+            </div>
+        {/* <div className='pr-menu'>
             <div className={`menu-1 ${expanded1 ? 'expanded' : ''}`}>
                 <div className='pr-menu-visible'>
                     <h2>Укладка</h2>
@@ -275,14 +317,20 @@ const Salon = () => {
             </div>
         </div>
         <div className='pr-menu'>
-            <div className={`menu ${expanded11 ? 'expanded' : ''}`}>
+            <div className={`menu-11 ${expanded11 ? 'expanded' : ''}`}>
                 <div className='pr-menu-visible'>
                     <h2>Доп услуги</h2>
                     <button onClick={() => toggleExpand(11)}><img src={arrowbottomImg}/></button>
                 </div>
-                <a>Текст и контент для меню 1...</a>
+                <div className='pr-hair-full-price'>
+                    <div className='pr-line'><a>Удаление нежелательного оттенка/декапирование S/M/L/XL</a><a>3300/4000/6500/8500 руб.</a></div>
+                    <div className='pr-line'><a>Препигментация 1 (20гр)</a><a>1700/2400 руб.</a></div>
+                    <div className='pr-line'><a>Препигментация 2 (30гр)</a><a>2500/3100 руб.</a></div>
+                    <div className='pr-line'><a>Препигментация 3 (40гр)</a><a>3300/3700 pуб.</a></div>
+                    <div className='pr-line'><a>3300/3700 pуб.</a><a>1100/1300/1600/2000 руб.</a></div>
+                </div>
             </div>
-        </div>
+        </div> */}
         </div>
     </div>
   </div>
