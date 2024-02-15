@@ -6,11 +6,6 @@ import arrowbottomImg from '../../assets/arrowbottomImg.png'
 
 
 const Salon = () => {
-    const [expanded, setExpanded] = useState(false);
-    const listItems1 = ['Элемент 1', 'Элемент 2', 'Элемент 3'];
-    const listItems2 = ['1', '2', '3'];
-    const listItems3 = ['Элемент 1', 'Элемент 2', 'Элемент 3'];
-    const listItems4 = ['Элемент 1', 'Элемент 2', 'Элемент 3'];
     const [expanded1, setExpanded1] = useState(false);
     const [expanded2, setExpanded2] = useState(false);
     const [expanded3, setExpanded3] = useState(false);
@@ -70,7 +65,18 @@ const Salon = () => {
             break;
     }
 };
-
+    
+  const [showContent1, setShowContent1] = useState(true);
+  const [showContent2, setShowContent2] = useState(false);
+  const showContentHandler = (contentNumber) => {
+    if (contentNumber === 1) {
+      setShowContent1(true);
+      setShowContent2(false);
+    } else if (contentNumber === 2) {
+      setShowContent1(false);
+      setShowContent2(true);
+    }
+  };
  
 
     const [displayText1, setDisplayText1] = useState('Парикмахерский зал');
@@ -115,9 +121,10 @@ const Salon = () => {
     <div className='pr-box'>
         <div className='pr-content'>
             <div className='pr-switch'>
-                <div className={`pr-diva ${activeButton === 1 ? 'active' : ''}`} onClick={handleButtonClick}><a>ПАРИКМАХЕРСКИЕ УСЛУГИ</a><div className='pr-divht'/></div>
-                <div className={`pr-diva ${activeButton === 2 ? 'active' : ''}`} onClick={handleButton2Click}><a>МАКИЯЖ И ВИЗАЖ</a><div className='pr-divht'/></div>
+                <div className={`pr-diva ${activeButton === 1 ? 'active' : ''}`} onClick={() => {handleButtonClick();showContentHandler(1);}}><a>ПАРИКМАХЕРСКИЕ УСЛУГИ</a><div className='pr-divht'/></div>
+                <div className={`pr-diva ${activeButton === 2 ? 'active' : ''}`} onClick={() => {handleButton2Click();showContentHandler(2);}}><a>МАКИЯЖ И ВИЗАЖ</a><div className='pr-divht'/></div>
             </div>
+            {showContent2 && <div>
             <div className='pr-menu'>
             <div className={`menu-12 ${expanded12 ? 'expanded' : ''}`}>
                 <div className='pr-menu-visible'>
@@ -152,7 +159,9 @@ const Salon = () => {
                 </div> 
             </div>
             </div>
-        {/* <div className='pr-menu'>
+            </div>}
+            {showContent1 && <div>
+            <div className='pr-menu'>
             <div className={`menu-1 ${expanded1 ? 'expanded' : ''}`}>
                 <div className='pr-menu-visible'>
                     <h2>Укладка</h2>
@@ -330,7 +339,7 @@ const Salon = () => {
                     <div className='pr-line'><a>3300/3700 pуб.</a><a>1100/1300/1600/2000 руб.</a></div>
                 </div>
             </div>
-        </div> */}
+        </div></div>}
         </div>
     </div>
   </div>
@@ -339,14 +348,3 @@ const Salon = () => {
 
 
 export default Salon;
-
-
-
-        {/*
-            <div className='pr-line'><a>123</a><a>123</a></div>
-
-        <p>{displayText2}</p>
-        <p>{displayText3}</p>
-        <p>{displayText4}</p>
-        <button >Кнопка 1</button>
-        <button onClick={}>Кнопка 2</button> */}

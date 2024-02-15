@@ -5,7 +5,7 @@ import CarouselAdmins from './Carousel-admins/Carousel-admins.js';
 import './Team.css'
 const Team = () => {
   return (
-    <div className='team-box'>
+    <div className='team-box' id='team'>
       <h1>Наша команда</h1>
       <div className='separator'>
         <a>Стилисты</a>

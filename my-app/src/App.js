@@ -8,7 +8,7 @@ import About from './Pages/About.js';
 import Promo from './Pages/Promo.js';
 import Prices from './Pages/Prices.js';
 import Masters from './Pages/Masters.js';
-import Services from './Pages/Services.js';
+import MasterOksana from './Pages/MasterOksana.js';
 
 function App() {
   return (
@@ -18,10 +18,10 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
-          <Route exact path="/services" element={<Services />} />
           <Route exact path="/promo" element={<Promo />} />
           <Route exact path="/prices" element={<Prices />} />
           <Route exact path="/masters" element={<Masters />} />
+          <Route exact path="/oksana-makalkina" element={<MasterOksana />} />
         </Routes>
       </div>
     </Router>

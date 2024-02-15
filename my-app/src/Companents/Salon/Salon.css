@@ -1,6 +1,6 @@
 .sl-body{
     width: 100%;
-    height: 10000px;
+    height: auto;
     display: flex;
     flex-direction: column;
     overflow: hidden;

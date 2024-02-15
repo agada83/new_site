@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../logo1.png';
+import { HashLink } from 'react-router-hash-link';
 import './Header.css'; // Импорт файла стилей
 
 
@@ -20,19 +21,19 @@ class Header extends React.Component {
                 <div className="navbar-nav">
                     <ul>
                         <li className="nav-item">
-                            <Link to="/services" className="nav-link">Услуги</Link>
+                            <HashLink to="/#services" className="nav-link">Услуги</HashLink>
                         </li>
                         <li className="nav-item">
                             <Link to="/about" className="nav-link">О нас</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/promo" className="nav-link">Акции</Link>
+                            <HashLink to="/promo" className="nav-link">Акции</HashLink>
                         </li>
                         <li className="nav-item">
                             <Link to="/prices" className="nav-link">Прайс</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/masters" className="nav-link">Специалисты</Link>
+                            <HashLink to="/#team" className="nav-link">Специалисты</HashLink>
                         </li>
                     </ul> 
                     <hr/>      

@@ -1,16 +1,10 @@
-import React, { Component } from 'react';
-import './Sale.css'
+import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import './Sale.css';
 
-
-class Sale extends Component {
+class Sale extends React.Component {
     render() {
-        const redirectToPage = () => {
-            // Укажите URL страницы, на которую вы хотите перейти
-            const targetPageUrl = "#registration";
-            
-            // Переносим пользователя на указанную страницу
-            window.location.href = targetPageUrl;
-          };
         return (
             <div className='bg-light'>
                 <div className='black-glass'>
@@ -18,12 +12,15 @@ class Sale extends Component {
                         <h1>ЛУЧШЕЕ ДЛЯ НАШИХ КЛИЕНТОВ</h1>
                         <p><b>Скидка 20%</b> на первый визит в салон красоты TINTO</p>
                         <p><b>Скидка 20%</b> в день рождения в салоне красоты TINTO</p>
-                        <button onClick={redirectToPage}>Записаться</button>
+                        {/* Используйте HashLink для прокрутки к нужному элементу */}
+                        <HashLink to="/#registration" smooth="boolean">
+                            <button>Записаться</button>
+                        </HashLink>
                     </div>    
                 </div>
             </div>
         );
     }
-  }
-   
-  export default Sale;
+}
+
+export default Sale;

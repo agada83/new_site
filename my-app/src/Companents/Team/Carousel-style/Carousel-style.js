@@ -11,6 +11,7 @@ const slidesData = [
     text2: 'Оксана',
     text3: 'Опыт работы: 15 лет',
     text4: 'Профессионально подберет форму стрижки, посоветует модные направления, а также опытный специалист по стойкому выпрямлению волос',
+    href:'/oksana-makalkina'
   },
   {
     image: 'https://placekitten.com/300/201',
@@ -18,6 +19,7 @@ const slidesData = [
     text2: 'Slide 2 Text',
     text3: 'Slide 3 Text',
     text4: 'Slide 4 Text',
+    href:'/oksana-makalkina'
   },
   {
     image: 'https://placekitten.com/300/202',
@@ -25,6 +27,7 @@ const slidesData = [
     text2: 'Slide 2 Text',
     text3: 'Slide 3 Text',
     text4: 'Slide 4 Text',
+    href:'/oksana-makalkina'
   },
 ];
 
@@ -44,11 +47,11 @@ const CarouselStyle = () => {
           <div key={index} className="slide">
             <div className="content">
               <div className="image">
-                <img src={slide.image} alt={`Slide ${index + 1}`} />
+                <img src={slide.image} alt={`Slide ${index + 1}`}/>
               </div>
               <div className="text">
                 <div className='obrezka'>
-                <p className='bold'>{slide.text1}</p>
+                <p className='bold'  href={'/oksana-makalkina'}>{slide.text1}</p>
                 <p>{slide.text2}</p>
                 <p>{slide.text3}</p>
                 <p>{slide.text4}</p>
