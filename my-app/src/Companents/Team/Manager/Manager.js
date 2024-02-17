@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import '../Carousel.css';
 import imgOksana from '../../../assets/Oksana.png'
+import { Link } from 'react-router-dom';
 
 
 const slidesData = [
@@ -11,6 +12,7 @@ const slidesData = [
     text2: 'Оксана',
     text3: 'Опыт работы: 15 лет',
     text4: 'Профессионально подберет форму стрижки, посоветует модные направления, а также опытный специалист по стойкому выпрямлению волос',
+    ssilka: '/oksana-123',
   },
   {
     image: 'https://placekitten.com/300/201',
@@ -18,6 +20,7 @@ const slidesData = [
     text2: 'Slide 2 Text',
     text3: 'Slide 3 Text',
     text4: 'Slide 4 Text',
+    ssilka: '/vera-marycheva',
   },
   {
     image: 'https://placekitten.com/300/202',
@@ -25,18 +28,12 @@ const slidesData = [
     text2: 'Slide 2 Text',
     text3: 'Slide 3 Text',
     text4: 'Slide 4 Text',
+    ssilka: '/vera-marycheva',
   },
 ];
 
 const CarouselStyle = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const redirectToPage = () => {
-    // Укажите URL страницы, на которую вы хотите перейти
-    const targetPageUrl = "#registration";
-    
-    // Переносим пользователя на указанную страницу
-    window.location.href = targetPageUrl;
-  };
   return (
     <div className="carousel-man" style={{marginBottom:'3.4svw'}}>
       <div className="slides-container" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
@@ -55,7 +52,9 @@ const CarouselStyle = () => {
                 </div>
               </div>
               <div className='obrez-but'>
-              <button className='order-button' onClick={redirectToPage}>Записаться</button>
+              <Link to={slide.ssilka}>  
+                <button className='order-button'>Записаться</button>
+              </Link>
               </div>
             </div>
           </div>

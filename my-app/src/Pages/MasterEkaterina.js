@@ -1,15 +1,15 @@
 import React from 'react';
 import Reviews from '../Companents/Reviews.js'
-import OksanaPage from '../Companents/OksanaPage/OksanaPage.js';
 import Sale from '../Companents/Sale/Sale.js';
 import PartnerBrands from '../Companents/PartnerBrands/PartnerBrands.js';
 import Footer from '../Companents/Footer/Footer.js';
+import EkaterinaPage from '../Companents/EkaterinaPage/EkaterinaPage.js';
 
 
-function MasterOksana() {
+function MasterEkaterina() {
   return (
     <div>
-      <OksanaPage />
+      <EkaterinaPage />
       <Sale />
       <Reviews />
       <PartnerBrands />
@@ -18,4 +18,4 @@ function MasterOksana() {
   );
 }
 
-export default MasterOksana;
+export default MasterEkaterina;

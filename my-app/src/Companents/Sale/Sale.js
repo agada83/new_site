@@ -6,7 +6,7 @@ import './Sale.css';
 class Sale extends React.Component {
     render() {
         return (
-            <div className='bg-light'>
+            <div className='bg-light' id='promo'>
                 <div className='black-glass'>
                     <div className='pole'>
                         <h1>ЛУЧШЕЕ ДЛЯ НАШИХ КЛИЕНТОВ</h1>

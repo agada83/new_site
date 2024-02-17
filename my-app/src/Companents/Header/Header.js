@@ -27,7 +27,7 @@ class Header extends React.Component {
                             <Link to="/about" className="nav-link">О нас</Link>
                         </li>
                         <li className="nav-item">
-                            <HashLink to="/promo" className="nav-link">Акции</HashLink>
+                            <HashLink to="/#promo" className="nav-link">Акции</HashLink>
                         </li>
                         <li className="nav-item">
                             <Link to="/prices" className="nav-link">Прайс</Link>
