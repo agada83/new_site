@@ -13,7 +13,7 @@ import OurWorks from '../Companents/OurWorks/OurWorks.js';
 class About extends Component {
     render() {
         return (
-            <div style={{display:'block'}}>
+            <div style={{display:'block'}} id='main'>
                 <AboutSalon />
                 <AboutUs/>
                 <Info />

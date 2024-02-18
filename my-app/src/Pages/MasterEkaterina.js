@@ -8,7 +8,7 @@ import EkaterinaPage from '../Companents/EkaterinaPage/EkaterinaPage.js';
 
 function MasterEkaterina() {
   return (
-    <div>
+    <div id='main'>
       <EkaterinaPage />
       <Sale />
       <Reviews />

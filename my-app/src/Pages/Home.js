@@ -18,7 +18,7 @@ class Home extends Component {
   render() {
 
     return (
-      <div style={{display:'block'}}>
+      <div style={{display:'block'}} id='main'>
         <FirstComp />
         <ServicesComp />
         <Info />

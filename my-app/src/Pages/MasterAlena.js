@@ -1,15 +1,15 @@
 import React from 'react';
 import Reviews from '../Companents/Reviews.js'
-import VeraPage from '../Companents/VeraPage/VeraPage.js';
+import AlenaPage from '../Companents/AlenaPage/AlenaPage.js';
 import Sale from '../Companents/Sale/Sale.js';
 import PartnerBrands from '../Companents/PartnerBrands/PartnerBrands.js';
 import Footer from '../Companents/Footer/Footer.js';
 
 
-function MasterVera() {
+function MasterAlena() {
   return (
     <div id='main'>
-      <VeraPage />
+      <AlenaPage />
       <Sale />
       <Reviews />
       <PartnerBrands />
@@ -18,4 +18,4 @@ function MasterVera() {
   );
 }
 
-export default MasterVera;
+export default MasterAlena;

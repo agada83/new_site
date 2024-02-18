@@ -8,7 +8,7 @@ import Footer from '../Companents/Footer/Footer.js';
 
 function MasterOksana() {
   return (
-    <div>
+    <div id='main'>
       <OksanaPage />
       <Sale />
       <Reviews />

@@ -17,7 +17,7 @@ class Info extends Component {
             <div className='divhr' />
             </div>
             <div className='first-about'>
-              <div className='diva'><a href='/masters'>НАШИ СПЕЦИАЛИСТЫ</a><div className='divht' /></div>
+              <div className='diva'><a href='/#team'>НАШИ СПЕЦИАЛИСТЫ</a><div className='divht' /></div>
               <div className='diva'><a href='#interior'>ИНТЕРЬЕР ПОМЕЩЕНИЯ</a><div className='divht' /></div>
               <div className='diva'><a href='/prices'>СТОИМОСТЬ УСЛУГ</a><div className='divht' /></div>
             </div>

@@ -3,6 +3,7 @@ import './Salon.css'
 import './PriceList.css'
 import salonImg from '../../assets/salonImg.png'
 import arrowbottomImg from '../../assets/arrowbottomImg.png'
+import { HashLink } from 'react-router-hash-link';
 
 
 const Salon = () => {
@@ -113,7 +114,9 @@ const Salon = () => {
                     <div className='sl-atext'>
                         <a>{displayText3}</a><br/><a>{displayText4}</a>
                     </div>
-                    <button>Записаться</button>
+                    <HashLink to='/#registration'>
+                        <button>Записаться</button>
+                    </HashLink>
                 </div>
             </div>
         </div>

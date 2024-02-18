@@ -4,7 +4,9 @@ import '../Carousel.css';
 import { Link } from 'react-router-dom';
 import imgOksana from '../../../assets/Oksana_3x4.png'
 import imgVera from '../../../assets/Vera_3x4.jpg'
+import imgAlena from '../../../assets/Alena_3x4.jpg'
 import imgEkaterina from '../../../assets/Ekaterina_3x4.jpg'
+import { HashLink } from 'react-router-hash-link';
 
 
 const slidesData = [
@@ -14,23 +16,31 @@ const slidesData = [
     text2: 'Оксана',
     text3: 'Опыт работы: 15 лет',
     text4: 'Профессионально подберет форму стрижки, посоветует модные направления, а также опытный специалист по стойкому выпрямлению волос',
-    href:'/oksana-makalkina'
+    href:'/oksana-makalkina#main'
   },
   {
     image: imgVera,
     text1: 'Топ-стилист',
     text2: 'Вера Марычева',
     text3: 'Опыт работы: 20 лет',
-    text4: 'Опытный мастер, обладающий более чем 20-летним стажем в профессии. Воплотит ваши пожелания и внесет в образ модные «фишки» и тренды. Прошла обучение в самых престижных мировых школах: VidalSassoon, UweBreuer, Doloresи др.',
-    href:'/vera-marycheva'
+    text4: 'Опытный мастер, обладающий более чем 20-летним стажем в профессии. Воплотит ваши пожелания и внесет в образ модные «фишки» и тренды. ',
+    href:'/vera-marycheva#main'
   },
   {
     image: imgEkaterina,
     text1: 'Топ-стилист',
     text2: 'Екатерина Лосева',
     text3: 'Опыт работы: 20 лет',
-    text4: 'Slide 4 Text',
-    href:'/ekaterina-loseva'
+    text4: 'Профисиональный мастер-универсал, выполнит стрижки и укладки любой сложности. Многократный призёр конкурсов и чемпионатов по парикмахерскому искусству.',
+    href:'/ekaterina-loseva#main'
+  },
+  {
+    image: imgAlena,
+    text1: 'Визажист',
+    text2: 'Алена Галан',
+    text3: 'Опыт работы: 11 лет',
+    text4: 'Выполнение любого вида макияжа, оформление бровей (окрашивание и коррекция), ламинирование бровей и ресниц. Несложный пластический грим.',
+    href:'/alena-galan#main'
   },
 ];
 
@@ -46,7 +56,7 @@ const CarouselStyle = () => {
                 <img src={slide.image} alt={`Slide ${index + 1}`}/>
               </div>
               <div className="text">
-                <div className='obrezka'>
+                <div className='obrezka1'>
                 <p className='bold'>{slide.text1}</p>
                 <p>{slide.text2}</p>
                 <p>{slide.text3}</p>
@@ -54,9 +64,9 @@ const CarouselStyle = () => {
                 </div>
               </div>
               <div className='obrez-but'>
-              <Link to={slide.href} className="nav-link">
+              <HashLink to={slide.href} className="nav-link">
                 <button className='order-button'>Подробнее</button>
-              </Link>
+              </HashLink>
               </div>
             </div>
           </div>

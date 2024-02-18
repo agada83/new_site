@@ -29,6 +29,7 @@
   background-color: #474747;
   border-radius: 30px;
   height: 400px;
+  min-width: 1370px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.247);
 }
 
@@ -73,7 +74,7 @@
 
 .dots {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: center; /* Центрирование точек */
   position: relative;
   top: 20px;
@@ -114,10 +115,20 @@
   color:black;
 }
 
-.obrezka{
+.obrezka1{
   margin-left: 4svw;
+
   max-width: 740px;
   min-width: 740px;
+  margin-bottom: 4svw;
+}
+
+.obrezka2{
+  margin-right: 4svw;
+
+  margin-left: 4svw;
+  max-width: 940px;
+  min-width: 940px;
   margin-bottom: 4svw;
 }
 
