@@ -59,6 +59,7 @@ code {
 }
 ::-webkit-scrollbar {
   width: 10px;
+  height: 50000px;
   background-color: #dddddd;
 }
 

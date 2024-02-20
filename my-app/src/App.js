@@ -10,6 +10,7 @@ import MasterOksana from './Pages/MasterOksana.js';
 import MasterVera from './Pages/MasterVera.js';
 import MasterEkaterina from './Pages/MasterEkaterina.js';
 import MasterAlena from './Pages/MasterAlena.js';
+import MasterTatyana from './Pages/MasterTatyana.js';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -34,6 +35,7 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/prices" element={<Prices />} />
           <Route exact path="/oksana-makalkina" element={<MasterOksana />} />
+          <Route exact path="/tatjana-karruebano" element={<MasterTatyana />} />
           <Route exact path="/vera-marycheva" element={<MasterVera />} />
           <Route exact path="/ekaterina-loseva" element={<MasterEkaterina />} />
           <Route exact path="/alena-galan" element={<MasterAlena />} />

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../fonts/Montserrat-Black.ttf'
 import '../App.css'
 import FirstComp from '../Companents/FirstComp/FirstComp.js'
+import Test from '../Companents/test/test.js'
 import ServicesComp from '../Companents/ServicesComp/ServicesComp.js'
 import Info from '../Companents/Info/Info.js'
 import Team from '../Companents/Team/Team.js'
@@ -20,7 +21,7 @@ class Home extends Component {
     return (
       <div style={{display:'block'}} id='main'>
         <FirstComp />
-        <ServicesComp />
+        {/* <ServicesComp />
         <Info />
         <Team />
         <Sale />
@@ -34,7 +35,7 @@ class Home extends Component {
         <Advantages />
         <Appointment />
         <PartnerBrands />
-        <Footer />
+        <Footer /> */}
       </div>
     );
   }

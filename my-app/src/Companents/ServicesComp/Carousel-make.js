@@ -8,10 +8,9 @@ const slidesData = [
   {
     image1: hairImg,
     image2: hairImg,
-    image3: hairImg,
-    text1: 'Макияж',
+    text1: 'Услуги визажиста',
     text2: 'Услуги бровиста',
-    text3: 'Окрашивания',
+
   },
 
 ];
@@ -46,7 +45,7 @@ const CarouselMake = () => {
           </div>
         ))}
       </div>
-      <div className="sc-navigation">
+      {/* <div className="sc-navigation">
         <div className="sc-dots">
           {slidesData.map((_, index) => (
             <span
@@ -56,7 +55,7 @@ const CarouselMake = () => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

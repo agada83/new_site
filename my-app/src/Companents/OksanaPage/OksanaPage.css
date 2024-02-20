@@ -126,7 +126,7 @@
 }
 .opg-works {
     margin-top: 50px;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -141,6 +141,6 @@
     gap:80px
 }
 .opg-row img{
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 600px;
 }

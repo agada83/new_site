@@ -1,0 +1,100 @@
+.test{
+    min-width: 100%;
+    height: 400px;
+    background-color: #ff0000;
+}
+@media (min-width:100px) {
+    .test{
+        background-color: #5e5e5e;
+    }
+}
+@media (min-width:200px) {
+    .test{
+        background-color: #361010;
+    }
+}
+@media (min-width:300px) {
+    .test{
+        background-color: #4e3838;
+    }
+}
+@media (min-width:400px) {
+    .test{
+        background-color: #c5ff8e;
+    }
+}
+@media (min-width:500px) {
+    .test{
+        background-color: #005326;
+    }
+}
+@media (min-width:600px) {
+    .test{
+        background-color: #a5789a;
+    }
+}
+@media (min-width:700px) {
+    .test{
+        background-color: #2f574d;
+    }
+}
+@media (min-width:800px) {
+    .test{
+        background-color: #427413;
+    }
+}
+
+@media (min-width:900px) {
+    .test{
+        background-color: #814646;
+    }
+}
+
+@media (min-width:1000px) {
+    .test{
+        background-color: #ffffff;
+    }
+}
+
+@media (min-width:1100px) {
+    .test{
+        background-color: #000000;
+    }
+}
+
+@media (min-width:1200px) {
+    .test{
+        background-color: #9ca77d;
+    }
+}
+
+@media (min-width:1300px) {
+    .test{
+        background-color: #3cff00;
+    }
+}
+
+@media (min-width:1400px) {
+    .test{
+        background-color: #00ffbf;
+    }
+}
+
+@media (min-width:1500px) {
+    .test{
+        background-color: #ae00ff;
+    }
+}
+
+@media (min-width:1600px) {
+    .test{
+        background-color: #0004ff;
+    }
+}
+
+@media (min-width:1700px) {
+    .test{
+        background-color: #fbff00;
+    }
+}
+

@@ -8,7 +8,7 @@ const Team = () => {
     <div className='team-box' id='team'>
       <h1>Наша команда</h1>
       <div className='separator'>
-        <a>Стилисты</a>
+        <a>Мастер</a>
         <hr/>
       </div>
       <CarouselStyle/>

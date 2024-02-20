@@ -17,17 +17,17 @@ const slidesData = [
     image1: hairImg,
     image2: hairImg,
     image3: hairImg,
-    text1: 'Уклад3ки',
-    text2: 'Стрижки',
-    text3: 'Окрашивания',
+    text1: 'Рассветление',
+    text2: 'Элюмирование',
+    text3: 'Лечение и спа',
   },
   {
     image1: hairImg,
     image2: hairImg,
     image3: hairImg,
-    text1: 'Укладки',
-    text2: 'Стрижки',
-    text3: 'Окрашивания',
+    text1: 'Трихология',
+    text2: 'Техники',
+    text3: 'Выпрямление',
   },
 
 ];
@@ -65,6 +65,21 @@ const CarouselHair = () => {
             </div>
           </div>
         ))}
+        <div key={4} className="sc-slide">
+            <div className="sc-content">
+              <div className='sc-item'>
+                <img src={hairImg}/>
+                <a>Завивка</a>
+                <button  onClick={redirectToPage}>Прайс-лист</button>
+              </div>
+              <div className='sc-item'>
+                <img src={hairImg}/>
+                <a>Доп услуги</a>
+                <button  onClick={redirectToPage}>Прайс-лист</button>
+              </div>
+
+            </div>
+          </div>
       </div>
       <div className="sc-navigation">
         <div className="sc-dots">
@@ -75,6 +90,10 @@ const CarouselHair = () => {
               onClick={() => setCurrentSlide(index)}
             />
           ))}
+              <span
+              className={`sc-dot ${3 === currentSlide ? 'active' : ''}`}
+              onClick={() => setCurrentSlide(3)}
+            />
         </div>
       </div>
     </div>

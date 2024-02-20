@@ -7,7 +7,7 @@
 }
 .sl-box{
     width: 100%;
-    height: 900px;
+    height: 950px;
     /* background-color: red; */
     text-align: center;
     font-family: 'Montserrat';
@@ -20,8 +20,8 @@
     color: black;
     font-family: 'Montserrat';
     margin: 0;
-    padding: 60px;
-    font-size: 43px;
+    padding: 70px;
+    font-size: 45px;
 }
 .sl-content{
     width: 80%;

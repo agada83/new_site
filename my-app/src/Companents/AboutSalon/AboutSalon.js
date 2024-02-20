@@ -7,7 +7,7 @@ class AboutSalon extends Component {
     render() {
         return (
             <div className='as-box'>
-                <a>О САЛОНЕ</a>
+                <h1>О САЛОНЕ</h1>
                 <div className='as-content'>
                     <img src={asContentImg}/>
                     <div className='as-text'>

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import oksanaImg from '../../assets/Oksana2.png'
-import workImg1 from '../../assets/work1.png';
+import workImg1 from '../../assets/worksImg/oksWork2.jpg';
+import workImg2 from '../../assets/worksImg/oksWork4.jpg';
+import workImg3 from '../../assets/worksImg/oksWork3.jpg';
 import './OksanaPage.css';
 import { HashLink } from 'react-router-hash-link';
 
@@ -71,8 +73,7 @@ class OksanaPage extends Component {
                 <div className='opg-portfolio'>
                     <h1>ПОРТФОЛИО</h1>
                     <div className='opg-works'>
-                        <div className='opg-row'><img src={workImg1} alt=''/><img src={workImg1} alt=''/><img src={workImg1} alt=''/></div>
-                        <div className='opg-row'><img src={workImg1} alt=''/><img src={workImg1} alt=''/><img src={workImg1} alt=''/></div>
+                        <div className='opg-row'><img src={workImg1} alt=''/><img src={workImg2} alt=''/><img src={workImg3} alt=''/></div>
                     </div>
                 </div>
             </div>

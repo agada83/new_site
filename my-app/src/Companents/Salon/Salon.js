@@ -130,9 +130,9 @@ const Salon = () => {
             {showContent2 && <div>
             <div className='pr-menu'>
             <div className={`menu-12 ${expanded12 ? 'expanded' : ''}`}>
-                <div className='pr-menu-visible'>
+                <div className='pr-menu-visible' onClick={() => toggleExpand(12)}>
                     <h2>Услуги визажиста</h2>
-                    <button onClick={() => toggleExpand(12)}><img src={arrowbottomImg}/></button>
+                    <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
                     <div className='pr-line'><a>Макияж дневной повседневный - BUSINESS LADY</a><a>2500 руб.</a></div>
@@ -146,9 +146,9 @@ const Salon = () => {
             </div>
             <div className='pr-menu'>
             <div className={`menu-13 ${expanded13 ? 'expanded' : ''}`}>
-                <div className='pr-menu-visible'>
+                <div className='pr-menu-visible' onClick={() => toggleExpand(13)}>
                     <h2>Услуги бровиста</h2>
-                    <button onClick={() => toggleExpand(13)}><img src={arrowbottomImg}/></button>
+                    <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
                     <div className='pr-line'><a>Коррекция бровей (раннее созданной формы)</a><a>750 руб.</a></div>
@@ -166,9 +166,9 @@ const Salon = () => {
             {showContent1 && <div>
             <div className='pr-menu'>
             <div className={`menu-1 ${expanded1 ? 'expanded' : ''}`}>
-                <div className='pr-menu-visible'>
+                <div className='pr-menu-visible'  onClick={() => toggleExpand(1)}>
                     <h2>Укладка</h2>
-                    <button onClick={() => toggleExpand(1)}><img src={arrowbottomImg}/></button>
+                    <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
                     <div className='pr-line'><a>Укладка мужская</a><a>1000 руб.</a></div>
@@ -185,9 +185,9 @@ const Salon = () => {
 
         <div className='pr-menu'>
             <div className={`menu-2 ${expanded2 ? 'expanded' : ''}`}>
-                <div className='pr-menu-visible'>
+                <div className='pr-menu-visible' onClick={() => toggleExpand(2)}>
                     <h2>Стрижка</h2>
-                    <button onClick={() => toggleExpand(2)}><img src={arrowbottomImg}/></button>
+                    <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
                     <div className='pr-line'><a>Стрижка женская + укладка S/M/L/XL + сенсуалирование волос</a><a>2800/3000/3200/3500 руб.</a></div>
@@ -207,9 +207,9 @@ const Salon = () => {
 
         <div className='pr-menu'>
             <div className={`menu-3 ${expanded3 ? 'expanded' : ''}`}>
-                <div className='pr-menu-visible'>
+                <div className='pr-menu-visible' onClick={() => toggleExpand(3)}>
                     <h2>Окрашивание</h2>
-                    <button onClick={() => toggleExpand(3)}><img src={arrowbottomImg}/></button>
+                    <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
                     <div className='pr-line'><a>Коррекция седины Men Reshade (1фл./20мл.)/(2фл./40мл.)</a><a>3400/6600 руб.</a></div>
@@ -228,9 +228,9 @@ const Salon = () => {
 
         <div className='pr-menu'>
             <div className={`menu-4 ${expanded4 ? 'expanded' : ''}`}>
-                <div className='pr-menu-visible'>
+                <div className='pr-menu-visible' onClick={() => toggleExpand(4)}>
                     <h2>Рассветление</h2>
-                    <button onClick={() => toggleExpand(4)}><img src={arrowbottomImg}/></button>
+                    <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
                     <div className='pr-line'><a>Ультра Блонд 3000+ Tinta-S/M/L/XL</a><a>7800/16500/25100/32500 руб.</a></div>
@@ -243,9 +243,9 @@ const Salon = () => {
         </div>
         <div className='pr-menu'>
             <div className={`menu-5 ${expanded5 ? 'expanded' : ''}`}>
-                <div className='pr-menu-visible'>
+                <div className='pr-menu-visible' onClick={() => toggleExpand(5)}>
                     <h2>Элюмирование</h2>
-                    <button onClick={() => toggleExpand(5)}><img src={arrowbottomImg}/></button>
+                    <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
                     <div className='pr-line'><a>Элюминирование в 1 тон -S/M/L/XL</a><a>7000/96500/12100/15600руб.</a></div>
@@ -257,9 +257,9 @@ const Salon = () => {
         </div>
         <div className='pr-menu'>
             <div className={`menu-6 ${expanded6 ? 'expanded' : ''}`}>
-                <div className='pr-menu-visible'>
+                <div className='pr-menu-visible' onClick={() => toggleExpand(6)}>
                     <h2>Лечение и спа</h2>
-                    <button onClick={() => toggleExpand(6)}><img src={arrowbottomImg}/></button>
+                    <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
                     <div className='pr-line'><a>Лечебная сенсуалирующая маска/Экспресс уход</a><a>600 руб.</a></div>
@@ -281,9 +281,9 @@ const Salon = () => {
         </div>
         <div className='pr-menu'>
             <div className={`menu-7 ${expanded7 ? 'expanded' : ''}`}>
-                <div className='pr-menu-visible'>
+                <div className='pr-menu-visible' onClick={() => toggleExpand(7)}>
                     <h2>Трихология</h2>
-                    <button onClick={() => toggleExpand(7)}><img src={arrowbottomImg}/></button>
+                    <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
                     <div className='pr-line'><a>Детокс-пилинг д/кожи головы MEDAVITA (П25/Ш20/Э15/без ампулы)</a><a>2000 руб.</a></div>
@@ -293,9 +293,9 @@ const Salon = () => {
         </div>
         <div className='pr-menu'>
             <div className={`menu-8 ${expanded8 ? 'expanded' : ''}`}>
-                <div className='pr-menu-visible'>
+                <div className='pr-menu-visible' onClick={() => toggleExpand(8)}>
                     <h2>Техники</h2>
-                    <button onClick={() => toggleExpand(8)}><img src={arrowbottomImg}/></button>
+                    <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
                     <div className='pr-line'><a>Брондирование Омбре- S/M/L/XL</a><a>11500/14000/17000/18500 руб.</a></div>
@@ -307,9 +307,9 @@ const Salon = () => {
         </div>
         <div className='pr-menu'>
             <div className={`menu-9 ${expanded9 ? 'expanded' : ''}`}>
-                <div className='pr-menu-visible'>
+                <div className='pr-menu-visible' onClick={() => toggleExpand(9)}>
                     <h2>Выпрямление</h2>
-                    <button onClick={() => toggleExpand(9)}><img src={arrowbottomImg}/></button>
+                    <button><img src={arrowbottomImg}/></button>
                 </div> 
                 <div className='pr-hair-full-price'>
                     <div className='pr-line'><a>Кератиновое выпрямление/восстановление волос -S/M/L/XL</a><a>6500/8500/11000/13500 руб.</a></div>
@@ -318,9 +318,9 @@ const Salon = () => {
         </div>
         <div className='pr-menu'>
             <div className={`menu-10 ${expanded10 ? 'expanded' : ''}`}>
-                <div className='pr-menu-visible'>
+                <div className='pr-menu-visible' onClick={() => toggleExpand(10)}>
                     <h2>Завивка</h2>
-                    <button onClick={() => toggleExpand(10)}><img src={arrowbottomImg}/></button>
+                    <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
                     <div className='pr-line'><a>Щадящая химическая завивка Evolution - S/M/L</a><a>8500/9700/17600 руб.</a></div>
@@ -330,9 +330,9 @@ const Salon = () => {
         </div>
         <div className='pr-menu'>
             <div className={`menu-11 ${expanded11 ? 'expanded' : ''}`}>
-                <div className='pr-menu-visible'>
+                <div className='pr-menu-visible' onClick={() => toggleExpand(11)}>
                     <h2>Доп услуги</h2>
-                    <button onClick={() => toggleExpand(11)}><img src={arrowbottomImg}/></button>
+                    <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
                     <div className='pr-line'><a>Удаление нежелательного оттенка/декапирование S/M/L/XL</a><a>3300/4000/6500/8500 руб.</a></div>

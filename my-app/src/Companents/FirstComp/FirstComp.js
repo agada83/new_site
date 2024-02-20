@@ -14,6 +14,7 @@ class FirstComp extends Component {
     };
     return (
       <div className='fc-box'>
+        <div className='fc-content'>
         <div className='fc-top'>
             <a>TINTO</a>
             <div className='fc-button'>
@@ -28,6 +29,7 @@ class FirstComp extends Component {
             <a>Нижняя Красносельская 35 стр. 3, п. 2<br/> +7 905 798 16 28</a>
 
           </div>
+          </div>    
       </div>
     );
   }

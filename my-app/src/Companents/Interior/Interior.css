@@ -1,7 +1,7 @@
 .int-body{
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 
@@ -13,23 +13,33 @@
     margin-right: auto;
     gap: 14px;
     overflow: hidden;
-    border-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .int-body h1{
-    font-family: 'Montserrat-Medium';
+    font-family: 'Montserrat';
     text-align: center;
     margin: 0;
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    font-size: 40px;
 }
 
 .first-item-img{
-    width: 630px;
+    min-width: 630px;
+    max-width: 631px;
+    min-height: 806px;
+    max-height: 806px;
+    overflow: hidden;
+
 
 }
 
 .second-item-img{
     width: 929px;
+    height: 806px;
+
     display: flexbox;
     flex-direction: column;
     
@@ -37,24 +47,50 @@
 
 .third-item-img{
     height: 340px;
+    overflow: hidden;
+
 }
 
 .fourth-item-img{
-    margin-top: 14px;
+    margin-top: 16px;
     height: 450px;
     display: flex;
-    gap: 0.8svw;
-
+    gap: 14px;
+    overflow: hidden;
 }
 
 .fifth-item-img{
     flex: 1;
+    overflow: hidden;
+
 }
 .sixth-item-img{
     flex: 2;
+    overflow: hidden;
 
 }
 .img-pole img{
     min-width: 100%;
     min-height: 100%;
+}
+.int-text{
+    margin-top: 16px;
+    width: 1573px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 220px;
+    background-color: #474747;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.int-text1{
+    padding-top: 15px;
+    color: white;
+    font-family: 'Montserrat-Light';
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+    line-height: 44px;
+    text-align: justify;
 }

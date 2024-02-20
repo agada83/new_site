@@ -8,21 +8,21 @@
     font-family: 'Montserrat';
     text-align: center;
     margin-top: 3%;
-
+    font-size: 40px;
 }
 
 .separator{ 
     margin-left: 13%;
-    height: 120px;
+    height: 34px;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-bottom: 35px;
 }
 
 .separator a{
     font-family: 'Montserrat';
-    font-size: 30px;
+    font-size: 28px;
 
 }
 
@@ -32,5 +32,5 @@
     background-color: black;
     margin-left: 1%;
     margin-bottom: 0.8%;
-    
+    align-self: flex-end;
 }

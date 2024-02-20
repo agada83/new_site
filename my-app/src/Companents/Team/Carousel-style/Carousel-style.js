@@ -2,14 +2,22 @@
 import React, { useState } from 'react';
 import '../Carousel.css';
 import { Link } from 'react-router-dom';
+import imgTatyana from '../../../assets/Tatyana_3x4.jpg'
 import imgOksana from '../../../assets/Oksana_3x4.png'
 import imgVera from '../../../assets/Vera_3x4.jpg'
 import imgAlena from '../../../assets/Alena_3x4.jpg'
 import imgEkaterina from '../../../assets/Ekaterina_3x4.jpg'
 import { HashLink } from 'react-router-hash-link';
 
-
 const slidesData = [
+  {
+    image: imgTatyana,
+    text1: 'Арт-директор',
+    text2: 'Татьяна',
+    text3: 'Опыт работы: 20 лет',
+    text4: 'Арт-директор и идейный вдохновитель beauty-проекта «TINTO». Мастер, который «слышит» клиента и приведет к оптимальному результату',
+    href:'/tatjana-karruebano'
+  },
   {
     image: imgOksana,
     text1: 'Топ-стилист',

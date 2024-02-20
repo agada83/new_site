@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import veraImg from '../../assets/Vera.jpg';
-import workImg1 from '../../assets/work1.png';
+import workImg1 from '../../assets/worksImg/vWork1.jpg';
+import workImg2 from '../../assets/worksImg/vWork2.jpg';
+import workImg3 from '../../assets/worksImg/vWork3.jpg';
 import './VeraPage.css';
 import { HashLink } from 'react-router-hash-link';
 
@@ -70,8 +72,7 @@ class VeraPage extends Component {
                 <div className='vrp-portfolio'>
                     <h1>ПОРТФОЛИО</h1>
                     <div className='vrp-works'>
-                        <div className='vrp-row'><img src={workImg1} alt=''/><img src={workImg1} alt=''/><img src={workImg1} alt=''/></div>
-                        <div className='vrp-row'><img src={workImg1} alt=''/><img src={workImg1} alt=''/><img src={workImg1} alt=''/></div>
+                        <div className='vrp-row'><img src={workImg1} alt=''/><img src={workImg2} alt=''/><img src={workImg3} alt=''/></div>
                     </div>
                 </div>
             </div>

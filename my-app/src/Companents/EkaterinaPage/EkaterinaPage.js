@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ekaterinaImg from '../../assets/Ekaterina.jpg';
-import workImg1 from '../../assets/work1.png';
+import workImg1 from '../../assets/worksImg/ektWork1.jpg';
+import workImg2 from '../../assets/worksImg/ektWork2.jpg';
+import workImg3 from '../../assets/worksImg/ektWork3.jpg';
 import './EkaterinaPage.css';
 import { HashLink } from 'react-router-hash-link';
 
@@ -70,8 +72,7 @@ class EkaterinaPage extends Component {
                 <div className='ekp-portfolio'>
                     <h1>ПОРТФОЛИО</h1>
                     <div className='ekp-works'>
-                        <div className='ekp-row'><img src={workImg1} alt=''/><img src={workImg1} alt=''/><img src={workImg1} alt=''/></div>
-                        <div className='ekp-row'><img src={workImg1} alt=''/><img src={workImg1} alt=''/><img src={workImg1} alt=''/></div>
+                        <div className='ekp-row'><img src={workImg1} alt=''/><img src={workImg2} alt=''/><img src={workImg3} alt=''/></div>
                     </div>
                 </div>
             </div>

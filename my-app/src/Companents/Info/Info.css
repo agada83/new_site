@@ -19,13 +19,14 @@
     font-family: 'Montserrat-Light';
     color:white;
     text-align: center;
-    font-size: 32px;
+    font-size: 35px;
+    margin: 25px;
 }
 
 .divhr{
     flex: 1;
     background-color: white;
-    width: 750px;
+    width: 850px;
     margin-left: auto;
     margin-right: auto;
     height: 2px;
