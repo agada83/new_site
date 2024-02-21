@@ -8,12 +8,12 @@ class ServicesComp extends Component {
     render() {
         return (
             <div className='sc-box' id='services'>
-                <h1>НАШИ УСЛУГИ</h1>
-                <div className='sc-hair'>
+                <h1 className='sc-hair'>НАШИ УСЛУГИ</h1>
+                <div>
                     <div className='sc-serv'><h1>Парикмахерские услуги</h1><div><hr/></div></div>
                     <CarouselHair/>
                 </div>
-                <div className='sc-hair'>
+                <div>
                     <div className='sc-serv'><h1>Макияж и визаж</h1><div><hr/></div></div>
                     <CarouselMake/>
                 </div>
