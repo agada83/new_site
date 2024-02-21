@@ -14,22 +14,20 @@ class FirstComp extends Component {
     };
     return (
       <div className='fc-box'>
-        <div className='fc-content'>
+       
         <div className='fc-top'>
             <h1 className='fc-name'>TINTO</h1>
-            {/* <div className='fc-button'>
+            <div className='fc-button'>
               <a><b>Скидка 20%</b><br/>на первое посещение</a>             
               <button onClick={redirectToPage}>Записаться</button>
-            </div> */}
+            </div>
         </div>
         <div className='fc-center'>
           <h1 className='fc-name'>BEAUTY SALON</h1>
         </div>
-          <div className='fc-bottom'>
-            <a>Нижняя Красносельская 35 стр. 3, п. 2<br/> +7 905 798 16 28</a>
-
-          </div>
-          </div>    
+        <div className='fc-bottom'>
+          <a>Нижняя Красносельская 35 стр. 3, п. 2<br/> +7 905 798 16 28</a>
+        </div>
       </div>
     );
   }
