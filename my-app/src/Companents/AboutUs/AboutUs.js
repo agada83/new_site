@@ -14,7 +14,7 @@ class AboutUs extends Component {
                 <h4>Гёте И.В.</h4>
                 <p>Мы понимаем важность и ответственность нашей задачи и сделаем все для того чтобы у Вас остались только положительные эмоции! До встречи в «Тinto beauty»!</p>
               </div>
-              <div className='video'><iframe width="840" height="472" src="https://www.youtube.com/embed/8BIHgnV_VOw?si=JA-YKrcjcKewVJx2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div className='video'><iframe height="472" src="https://www.youtube.com/embed/8BIHgnV_VOw?si=JA-YKrcjcKewVJx2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
             </div>
         );
     }

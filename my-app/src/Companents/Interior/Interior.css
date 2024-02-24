@@ -60,12 +60,15 @@
 .fifth-item-img{
     flex: 1;
     overflow: hidden;
-
 }
+.sixth-item-img img{
+    height: auto;
+}
+
 .sixth-item-img{
     flex: 2;
     overflow: hidden;
-
+    height: auto;
 }
 .img-pole img{
     min-width: 100%;
@@ -91,6 +94,10 @@
     font-size: 22px;
     line-height: 40px;
     text-align: justify;
+}
+.img-pole img{
+    max-width: 100%;
+    max-height: 100%;
 }
 @media (max-width:1500px) {
     .int-body{
@@ -142,15 +149,22 @@
     .int-body{
         height: auto;
         padding-bottom: 100px;
+        gap: 0px;
+
     }
     .img-pole{
         width: 718px;
-        height: 473px;
-        gap: 14px;
+        height: 369px;
+        gap: 10px;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
     }
+    .third-item-img{
+        min-height: 151px;
+        max-height: 151px;
+        overflow: hidden;
     
+    }
     .int-body h1{
         padding-top: 70px;
         padding-bottom: 35px;
@@ -158,19 +172,24 @@
     }
     
     .first-item-img{
-        min-width: 367px;
-        max-width: 367px;
-        min-height: 473px;
-        max-height: 473px;
+        min-width: 286px;
+        max-width: 286px;
+        min-height: 369px;
+        max-height: 369px;
     }
     .int-text{
-        margin-top: 16px;
+        margin-top: 10px;
         width: 718px;
         height: 150px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
     }
-
+    .fourth-item-img{
+        min-height: 206px;
+        max-height: 206px;
+        gap: 10px;
+        margin-top: 10px;
+    }
     .second-item-img{
         width: 557px;
         height: 473px;
@@ -178,7 +197,7 @@
         flex-direction: column;   
     }
     .int-text1{
-        padding-top: 15px;
+        padding-top: 10px;
         width: 90%;
         font-size: 18px;
         line-height: 28px;

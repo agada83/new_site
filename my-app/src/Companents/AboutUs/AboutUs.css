@@ -5,23 +5,6 @@
     font-family: 'Montserrat';
 }
 
-.ab-body h1{
-    margin: 0;
-    font-size: 48px;
-    padding-top: 90px;
-    text-align: center;
-    color: #000000;
-}
-
-.ab-body h2{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 32px;
-    color: #474747AB;
-    width: 40%;
-}
 
 .ab-text{
     margin-top: 70px;
@@ -42,7 +25,7 @@
 
 .ab-hr hr{
     position: relative;
-    top:-38px;
+    top:-40px;
     width: 380px;
     margin-left: 415px;
 }
@@ -61,7 +44,88 @@
 
 .video{
     width: 840px;
+    height: 472px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 75px;
+}
+.video iframe{
+    width: 840px;
+    height: 472px;
+}
+@media (max-width:1500px) {
+    
+    .ab-text{
+        margin-top: 70px;
+        width: 71%;
+    }
+    .ab-hr h3{
+        font-size: 30px;
+    }
+    .ab-hr hr{
+        top:-35px;
+        width: 300px;
+        margin-left: 350px;
+    }
+
+    .ab-text p{
+        margin-top: 0;
+        font-size: 19px;
+    }
+
+    .ab-text h4{
+        font-family: 'Montserrat-Medium';
+        text-align: end;
+        margin-bottom: 5svw;
+        font-size: 19px;
+    }
+    .video{
+        width: 840px;
+        height: 472px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 75px;
+    }
+    .video iframe{
+        width: 840px;
+        height: 472px;
+    }
+}
+@media (max-width:1024px) {
+    
+    .ab-text{
+        margin-top: 70px;
+        width: 71%;
+    }
+    .ab-hr h3{
+        font-size: 27px;
+    }
+    .ab-hr hr{
+        top:-33px;
+        width: 200px;
+        margin-left: 310px;
+    }
+
+    .ab-text p{
+        margin-top: 0;
+        font-size: 17px;
+    }
+
+    .ab-text h4{
+        font-family: 'Montserrat-Medium';
+        text-align: end;
+        margin-bottom: 5svw;
+        font-size: 17px;
+    }
+    .video{
+        width: 580px;
+        height: 372px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 75px;
+    }
+    .video iframe{
+        width: 580px;
+        height: 372px;
+    }
 }
