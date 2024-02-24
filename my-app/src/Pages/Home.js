@@ -22,20 +22,20 @@ class Home extends Component {
       <div style={{display:'block'}} id='main'>
         {/* <FirstComp /> */}
         {/* <ServicesComp /> */}
-        <Info />
-        {/* <Team />
-        <Sale />
-        <TopServices />
+        {/* <Info /> */}
+        {/* <Team /> */}
+        {/* <Sale /> */}
+        {/* <TopServices /> */}
         <Interior />
-        <div className='hm-au-div'>
+        {/* <div className='hm-au-div'>
           <h1>О НАС</h1>
           <h2>TINTO beauty salon–пространство для вашей индивидуальности!</h2>
         </div>
         <AboutUs />
         <Advantages />
         <Appointment />
-        <PartnerBrands />
-        <Footer /> */}
+        <PartnerBrands /> */}
+        {/* <Footer /> */}
       </div>
     );
   }

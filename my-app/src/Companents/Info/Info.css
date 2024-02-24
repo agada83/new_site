@@ -16,17 +16,18 @@
     align-items: center;
 }
 .info-about h1{
+    font-size: 35px;
     font-family: 'Montserrat-Light';
     color:white;
     text-align: center;
-    font-size: 35px;
     margin: 25px;
+    margin-bottom: 20px;
 }
 
 .divhr{
+    width: 820px;
     flex: 1;
     background-color: white;
-    width: 45svw;
     margin-left: auto;
     margin-right: auto;
     height: 2px;
@@ -36,7 +37,7 @@
     width: 80%;
     display: flex; 
     justify-content: space-around; 
-    margin-top: 4.5vw;
+    margin-top: 80px;
     color:white;
     margin-left: auto;
     margin-right: auto;
@@ -45,7 +46,7 @@
     width: 80%;
     display: flex; 
     justify-content: space-around; 
-    margin-top: 2vw;
+    margin-top: 50px;
     color:white;
     margin-left: auto;
     margin-right: auto;
@@ -77,4 +78,26 @@
 .diva:hover .divht{
     background-color: rgba(255, 255, 255);
 
+}
+@media (max-width:1350px) {
+    .diva a{
+        font-size: 17px;
+    }
+    .info-about h1{
+        font-size: 32px;
+    }
+    .divhr{
+        width: 760px;
+    }
+}
+@media (max-width:1024px) {
+    .diva a{
+        font-size: 17px;
+    }
+    .info-about h1{
+        font-size: 30px;
+    }
+    .divhr{
+        width: 690px;
+    }
 }

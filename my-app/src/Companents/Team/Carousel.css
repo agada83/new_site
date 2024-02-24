@@ -46,7 +46,6 @@
 .image img {
   width: auto;
   height: 100%;
-
 }
 
 .text {
@@ -82,7 +81,6 @@
 
 .dot {
   border: 4px solid #474747;
-
   width: 10px;
   height: 10px;
   background-color: white;
@@ -91,11 +89,11 @@
 }
 
 .dot.active {
-  background-color: #333;
+  background-color: #474747;
 }
 
 .order-button{
-  height: 65px;
+  height: 55px;
   width: 219px;
   margin-right: 3%;
   margin-top: 200px;
@@ -104,7 +102,7 @@
   font-family: 'Montserrat';
   background-color: #474747;
   color: white;
-  border:  2px solid white;
+  border:  1px solid white;
   flex-shrink: 1;
   transition: all 0.5s ease;
 }
@@ -116,16 +114,14 @@
 }
 
 .obrezka1{
-  margin-left: 4svw;
-
+  margin-left: 75px;
   max-width: 740px;
   min-width: 740px;
-  margin-bottom: 4svw;
+  margin-bottom: 75px;
 }
 
 .obrezka2{
   margin-right: 4svw;
-
   margin-left: 4svw;
   max-width: 940px;
   min-width: 940px;
@@ -133,7 +129,109 @@
 }
 
 .obrez-but{
-  margin-top: 3svw;
+  margin-top: 55px;
   margin-right: 1.7svw;
   margin-left: 1svw;
 }
+@media (max-width:1500px) {
+  .image {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-width: 240px;
+    max-width: 240px;
+  }
+  .content {
+    border-radius: 30px;
+    height: 330px;
+    min-width: 1150px;
+  }
+  .text {
+    font-size: 23px;
+  }
+  .obrezka1{
+    margin-left: 50px;
+    max-width: 600px;
+    min-width: 600px;
+    margin-bottom: 30px;
+  }
+  .order-button{
+    height: 55px;
+    width: 219px;
+    margin-right: 0;
+    margin-top: 200px;
+    border-radius: 31px;
+    font-size: 22px;
+  }
+  .obrez-but{
+    margin-top: 20px;
+    margin-right: 1svw;
+    margin-left: 1svw;
+  }
+  .obrezka2{
+    margin-right: 50px;
+    margin-left: 50px;
+    max-width: 800px;
+    min-width: 800px;
+    margin-bottom: 30px;
+  }
+  .slides-container {
+    height: 380px;
+  }
+  .dots {
+    gap: 15px;
+  }
+  
+  .dot {
+    border: 4px solid #474747;
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+} 
+@media (max-width:1250px) {
+  .image {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-width: 240px;
+    max-width: 240px;
+  }
+  .content {
+    border-radius: 30px;
+    height: 300px;
+    min-width: 900px;
+  }
+  .text {
+    font-size: 19.3px;
+  }
+  .obrezka1{
+    margin-left: 35px;
+    max-width: auto;
+    min-width: auto;
+    margin-bottom: 30px;
+  }
+  .obrezka2{
+    margin-right: 35px;
+    margin-left: 35px;
+    max-width: auto;
+    min-width: auto;
+    margin-bottom: 30px;
+  }
+  .order-button{
+    height: 50px;
+    width: 180px;
+    margin-right: 0;
+    margin-top: 200px;
+    border-radius: 31px;
+    font-size: 18px;
+  }
+  .obrez-but{
+    margin-top: 20px;
+    margin-right: 1svw;
+    margin-left: 1svw;
+  }
+  .slides-container {
+    height: 340px;
+  }
+} 

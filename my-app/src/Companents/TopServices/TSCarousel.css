@@ -26,14 +26,15 @@
     display: flex;
     background-color: #47474700;
     height: 470px;
-    grid-gap: 8svw;
     padding: 20px;
+    min-width: 1200px;
+    justify-content: space-between;
 }
 
 .item{
-    display: flexbox;
+    display: flex;
     flex-direction: column;
-    width: 15svw;
+    min-width: 280px;
     justify-content: flex-start;
 }
 
@@ -51,12 +52,12 @@
 }
 
 .item button{
-    font-size: 16px;
+    font-size: 22px;
     font-family: 'Montserrat';
     background-color: #33333300;
-    height: 40px;
-    border-radius: 25px;
-    width: 60%;
+    height: 55px;
+    border-radius: 27px;
+    width: 220px;
     margin-top: 7%;
     border: 1px solid black;
     transition: all 0.5s ease;
@@ -93,4 +94,70 @@
 
 .tsdot.active {
     background-color: #333;
+}
+@media (max-width:1500px) {
+    .tscontent {
+        height: 500px;
+        padding: 20px;
+        min-width: 900px;
+        width: 1200px;
+    }    
+    .item{
+        max-width: 200px;
+    }
+    .tsslides-container {
+        height: 540px;
+    }
+    .item button{
+        font-size: 20px;
+        height: 50px;
+        border-radius: 27px;
+        width: 180px;
+    }
+    .item a{
+        font-family: 'Montserrat';
+        font-size: 22px;
+        margin-top: 3%;
+    }
+    .tsdot {
+        width: 9px;
+        height: 9px;
+    }
+    
+}
+@media (max-width:1024px) {
+    .tscontent {
+        max-height: 350px;
+        padding: 20px;
+        min-width: 700px;
+        width: 800px;
+    }    
+    .item{
+        min-width: 150px;
+    }
+    .tsslides-container {
+        height: 450px;
+    }
+    .item a{
+        font-family: 'Montserrat';
+        font-size: 20px;
+        margin-top: 3%;
+    }
+    .item button{
+        font-size: 20px;
+        height: 50px;
+        border-radius: 27px;
+        width: 180px;
+    }
+    .tsslide {
+        height: 80%;
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+    .tsdot {
+        width: 8px;
+        height: 8px;
+        border: 3px solid #474747;
+    }
+    
 }
