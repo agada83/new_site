@@ -20,9 +20,9 @@ class Home extends Component {
 
     return (
       <div style={{display:'block'}} id='main'>
-        <FirstComp />
-        {/* <ServicesComp />
-        <Info />
+        {/* <FirstComp /> */}
+        <ServicesComp />
+        {/* <Info />
         <Team />
         <Sale />
         <TopServices />

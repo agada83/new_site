@@ -1,8 +1,105 @@
+.fcmb-box{
+    background-color: #474747;
+    background-image: url('../../assets/bgmbImg.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 50% 25%;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    font-family: 'Montserrat';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+.fcmb-text{
+    font-size: 9svw;
+    text-align: center;
+    margin-top: 10svh;
+}
+.fcmb-text h1{
+    margin: 0;
+    padding: 0;
+}
+.fcmb-button{
+    margin-top: 4svh;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.fcmb-button b{
+    font-size: 8svw;
+}
+.fcmb-button a{
+    font-size: 4svw;
+    padding: 0;
+    margin: 0;
+    line-height: 3.9svw;
+}
+.fcmb-button button{
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    width: 50svw;
+    height: 10svw;
+    background-color: #eb7a0900;
+    border: 1px solid white;
+    color: white;
+    font-size: 4svw;
+    border-radius: 40px;
+    transition: all 0.9s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fcmb-button button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+@media (max-width:584px) {
+    .fcmb-text{
+        font-size: 9svw;
+        text-align: center;
+        margin-top: 16svh;
+    }
+    .fcmb-button{
+        margin-top: 8svh;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .fcmb-button b{
+        font-size: 10svw;
+    }
+    .fcmb-button a{
+        font-size: 5svw;
+        padding: 0;
+        margin: 0;
+        line-height: 6svw;
+    }
+    .fcmb-button button{
+        margin-top: 9px;
+        width: 50svw;
+        height: 10svw;
+        background-color: #eb7a0900;
+        border: 1px solid white;
+        color: white;
+        font-size: 5svw;
+        border-radius: 40px;
+        transition: all 0.9s ease;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* ___________________________________________________ */
 .fc-box{
     width: 100%;
     height: 92.4svh;
-
     background-color: #474747;
     background-image: url('../../assets/bgImg.png');
     background-repeat: no-repeat;
@@ -25,13 +122,11 @@
     margin-left: auto;
     margin-right: auto;
 }
-/* _______________________________________________________ */
 .fc-name{
     margin: 0;
     padding: 0;
     font-size: 190px;
 }
-/* _______________________________________________________ */
 .fc-button{
     display: flex;
     flex-direction: column;
@@ -79,7 +174,7 @@
 }
 .fc-bottom a{
     font-size: 26px;
-    margin-bottom: 6svw;
+    margin-bottom: 40px;
 }
 .fc-mb-box{
 
@@ -90,10 +185,10 @@
     }
     .fc-bottom a{
         font-size: 26px;
-        margin-bottom: 4svw;
+        margin-bottom: 35px;
     }
     .fc-top{
-        padding-top: 8svw;
+        padding-top: 18svh;
     }
     .fc-button b{
         font-size: 50px;
@@ -114,10 +209,10 @@
     }
     .fc-bottom a{
         font-size: 24px;
-        margin-bottom: 6svw;
+        margin-bottom: 40px;
     }
     .fc-top{
-        padding-top: 10svw;
+        padding-top: 16svh;
     }
     .fc-button b{
         font-size: 45px;
@@ -138,10 +233,10 @@
     }
     .fc-bottom a{
         font-size: 24px;
-        margin-bottom: 6svw;
+        margin-bottom: 40px;
     }
     .fc-top{
-        padding-top: 15svw;
+        padding-top: 15svh;
     }
     .fc-button b{
         font-size: 40px;
@@ -155,6 +250,19 @@
         font-size: 22px;
         border-radius: 32px;
     }
+    .fc-box{
+        width: 100%;
+        height: 92.4svh;
+        background-color: #474747;
+        background-image: url('../../assets/bgImg.png');
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: center;
+        font-family: 'Montserrat';
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media (max-width: 1200px) {
     .fc-name{
@@ -162,10 +270,10 @@
     }
     .fc-bottom a{
         font-size: 22px;
-        margin-bottom: 6svw;
+        margin-bottom: 40px;
     }
     .fc-top{
-        padding-top: 16svw;
+        padding-top: 16svh;
     }
     .fc-button b{
         font-size: 36px;
@@ -186,10 +294,10 @@
     }
     .fc-bottom a{
         font-size: 20px;
-        margin-bottom: 9svw;
+        margin-bottom: 60px;
     }
     .fc-top{
-        padding-top: 17svw;
+        padding-top: 17svh;
     }
     .fc-button b{
         font-size: 33px;
@@ -210,10 +318,10 @@
     }
     .fc-bottom a{
         font-size: 20px;
-        margin-bottom: 6svw;
+        margin-bottom: 60px;
     }
     .fc-top{
-        padding-top: 22svw;
+        padding-top: 22svh;
     }
     .fc-button b{
         font-size: 30px;
@@ -237,10 +345,10 @@
     }
     .fc-bottom a{
         font-size: 18px;
-        margin-bottom: 10svw;
+        margin-bottom: 10svh;
     }
     .fc-top{
-        padding-top: 25svw;
+        padding-top: 25svh;
     }
 }
 @media (max-width: 600px) {

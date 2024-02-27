@@ -31,10 +31,20 @@ handleWindowSizeChange = () => {
       // Переносим пользователя на указанную страницу
       window.location.href = targetPageUrl;
     };
-    if (windowWidth <= 1024) {
+    if (windowWidth <= 768) {
       return (
           <div>
-              <div className='fc-box'>123</div>
+              <div className='fcmb-box'>
+                <div className='fcmb-text'>
+                  <h1>TINTO</h1>
+                  <h1>BEAUTY</h1>
+                  <h1>SALON</h1>
+                </div>
+                <div className='fcmb-button'>
+                  <a><b>Скидка 20%</b><br/>на первое посещение</a>             
+                  <button onClick={redirectToPage}>Записаться</button>
+                </div>
+              </div>
           </div>
       );
   } else {
