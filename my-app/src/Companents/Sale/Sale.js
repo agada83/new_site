@@ -13,8 +13,8 @@ class Sale extends React.Component {
                         <p><b>Скидка 20%</b> на первый визит в салон красоты TINTO</p>
                         <p><b>Скидка 20%</b> в день рождения в салоне красоты TINTO</p>
                         {/* Используйте HashLink для прокрутки к нужному элементу */}
-                        <HashLink to="/#registration" smooth="boolean">
-                            <button>Записаться</button>
+                        <HashLink to="/#registration" style={{textDecoration:'none'}}>
+                            <button><a>Записаться</a></button>
                         </HashLink>
                     </div>    
                 </div>

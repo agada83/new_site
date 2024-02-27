@@ -112,7 +112,7 @@ const Salon = () => {
                 <div className='sl-text'>
                     <h2>{displayText2}</h2>
                     <div className='sl-atext'>
-                        <a>{displayText3}</a><br/><a>{displayText4}</a>
+                        <div className='pzdc1'><a>{displayText3}</a></div><br/><div className='pzdc'><a>{displayText4}</a></div>
                     </div>
                     <HashLink to='/#registration'>
                         <button>Записаться</button>

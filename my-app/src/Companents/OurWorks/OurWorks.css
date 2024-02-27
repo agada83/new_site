@@ -16,7 +16,7 @@
 
 .ow-content {
     width: min-content;
-    max-height: 900px; /* Установите начальную максимальную высоту */
+    max-height: 1150px; /* Установите начальную максимальную высоту */
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -33,10 +33,10 @@
 }
 .ow-row img{
     width: 400px;
-    height: 400px;
+    height: auto;
 }
 .ow-content.show-all-rows {
-    max-height: 1300px; /* Установите достаточно большую максимальную высоту для показа всех строк */
+    max-height: 2500px; /* Установите достаточно большую максимальную высоту для показа всех строк */
     transition: max-height 1s ease; /* Анимация изменения высоты */
 }
 .toggle-button {
@@ -50,4 +50,81 @@
     padding: 5px;
     border-radius: 5px;
     font-size: 20px;
+}
+@media (max-width:1500px) {
+    .ow-box h1 {
+        font-size: 35px;
+        padding-top: 70px;
+        padding-bottom: 55px;
+    }
+    .ow-row img{
+        width: 350px;
+    }
+    .ow-row{
+        gap:45px
+    }
+    .ow-content {
+        max-height: 980px; /* Установите начальную максимальную высоту */
+        gap: 45px;
+    }
+    .ow-content.show-all-rows {
+        max-height: 2010px; /* Установите достаточно большую максимальную высоту для показа всех строк */
+    }
+    .toggle-button {
+        width: 200px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+}
+@media (max-width:1240px) {
+    .ow-box h1 {
+        font-size: 35px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .ow-row img{
+        width: 290px;
+        height: auto;
+    }
+    .ow-row{
+        gap:35px
+    }
+    .ow-content {
+        max-height: 810px; /* Установите начальную максимальную высоту */
+        gap: 35px;
+    }
+    .ow-content.show-all-rows {
+        max-height: 1670px; /* Установите достаточно большую максимальную высоту для показа всех строк */
+    }
+    .toggle-button {
+        width: 200px;
+        margin-top: 40px;
+        font-size: 19px;
+    }
+}
+@media (max-width:1024px) {
+    .ow-box h1 {
+        font-size: 30px;
+        padding-top: 50px;
+        padding-bottom: 38px;
+    }
+    .ow-row img{
+        width: 210px;
+        height: auto;
+    }
+    .ow-row{
+        gap:32px
+    }
+    .ow-content {
+        max-height: 600px; /* Установите начальную максимальную высоту */
+        gap: 32px;
+    }
+    .ow-content.show-all-rows {
+        max-height: 1270px; /* Установите достаточно большую максимальную высоту для показа всех строк */
+    }
+    .toggle-button {
+        width: 200px;
+        margin-top: 40px;
+        font-size: 18px;
+    }
 }

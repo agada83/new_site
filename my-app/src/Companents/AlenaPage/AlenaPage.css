@@ -1,5 +1,5 @@
 .alp-box{
-    width: 80%;
+    width: 1400px;
     height: auto;
     margin-right: auto;
     margin-left: auto;
@@ -21,7 +21,7 @@
     background: linear-gradient(180deg, rgba(71,71,71,0.1) 0%, rgba(71,71,71,0) 100%);
 }
 .alp-prof img{
-    height: 100%;
+    height: 400px;
     width: auto;
 }
 .alp-kostil1{
@@ -40,7 +40,6 @@
 .alp-bold{
     font-family: 'Montserrat-SemiBold';
     font-size: 25px;
-
 }
 .alp-button{
     align-self: flex-end;
@@ -71,7 +70,6 @@
 }
 .alp-hr{
     background-color: #fff;
-
     width: 70%;
     padding-top: 0;
     margin-top: 60px;
@@ -126,7 +124,7 @@
 }
 .alp-works {
     margin-top: 50px;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -138,9 +136,245 @@
 .alp-row{
     display: flex;
     justify-content: space-between;
-    gap:80px
 }
 .alp-row img{
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 560px;
+}
+@media (max-width:1500px) {
+    .alp-box{
+        width: 1120px;    
+    }
+    .alp-prof{
+        margin-top: 50px;
+        width: 100%;
+        height: 320px;
+        overflow: hidden;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        display: flex;
+        gap: 30px;
+        background: rgb(71,71,71);
+        background: linear-gradient(180deg, rgba(71,71,71,0.1) 0%, rgba(71,71,71,0) 100%);
+    }
+    .alp-prof img{
+        height: 320px;
+        width: auto;
+    }
+    .alp-kostil1{
+        padding: 0;
+        width: 100%;
+        display: flex;
+    }
+    .alp-prof-text{
+        width: 72%;
+        text-align: left;
+        font-size: 19px;
+    }
+    .alp-prof-text h1{
+        font-size: 35px;
+    }
+    .alp-bold{
+        font-family: 'Montserrat-SemiBold';
+        font-size: 22px;
+    }
+    .alp-button{
+        align-self: flex-end;
+        width: auto;
+        padding-bottom: 30px;
+    }
+    .alp-button button{
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .alp-about{
+        margin-top: 50px;
+    }
+    .alp-about h1{
+        text-align: center;
+    }
+    .alp-hr{
+        width: 70%;
+        padding-top: 0;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        gap: 15px;
+    }
+    .alp-hr h1{
+        font-size: 26px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .alp-hr hr{
+        height: 0px;
+        width: 300px;
+    }
+    .alp-row img{
+        width: 350px;
+        height: 467px;
+    }
+}
+@media (max-width:1220px) {
+    .alp-box{
+        width: 974px;    
+    }
+    .alp-prof{
+        margin-top: 50px;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        display: flex;
+        gap: 25px;
+        background: rgb(71,71,71);
+        background: linear-gradient(180deg, rgba(71,71,71,0.1) 0%, rgba(71,71,71,0) 100%);
+    }
+    .alp-prof img{
+        height: 300px;
+        width: auto;
+    }
+    .alp-kostil1{
+        padding: 0;
+        width: 100%;
+        display: flex;
+    }
+    .alp-prof-text{
+        width: 72%;
+        text-align: left;
+        font-size: 18px;
+    }
+    .alp-prof-text h1{
+        font-size: 35px;
+    }
+    .alp-prof-text p{
+        margin-top:0px;
+        margin-bottom: 13px;
+    }
+
+    .alp-bold{
+        font-family: 'Montserrat-SemiBold';
+        font-size: 22px;
+    }
+    .alp-button{
+        align-self: flex-end;
+        width: auto;
+        padding-bottom: 30px;
+        padding-right: 30px;
+    }
+    .alp-button button{
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .alp-about{
+        margin-top: 50px;
+    }
+    .alp-about h1{
+        text-align: center;
+    }
+    .alp-hr{
+        width: auto;
+        padding-top: 0;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        gap: 15px;
+    }
+    .alp-hr h1{
+        font-size: 26px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .alp-hr hr{
+        height: 0px;
+        width: 300px;
+    }
+    .alp-row img{
+        width: 300px;
+        height: 400px;
+    }
+}
+@media (max-width:1024px) {
+    .alp-box{
+        width: 718px;    
+    }
+    .alp-prof{
+        margin-top: 50px;
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        display: flex;
+        gap: 25px;
+        background: rgb(71,71,71);
+        background: linear-gradient(180deg, rgba(71,71,71,0.1) 0%, rgba(71,71,71,0) 100%);
+    }
+    .alp-prof img{
+        height: 250px;
+        width: auto;
+    }
+    .alp-kostil1{
+        padding: 0;
+        width: 100%;
+        display: flex;
+    }
+    .alp-prof-text{
+        width: 72%;
+        text-align: left;
+        font-size: 18px;
+    }
+    .alp-prof-text h1{
+        font-size: 35px;
+    }
+    .alp-prof-text p{
+        margin-top:0px;
+        margin-bottom: 13px;
+    }
+
+    .alp-bold{
+        font-family: 'Montserrat-SemiBold';
+        font-size: 22px;
+    }
+    .alp-button{
+        align-self: flex-end;
+        width: auto;
+        padding-bottom: 30px;
+        padding-right: 30px;
+    }
+    .alp-button button{
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .alp-about{
+        margin-top: 50px;
+    }
+    .alp-about h1{
+        text-align: center;
+    }
+    .alp-hr{
+        width: auto;
+        padding-top: 0;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        gap: 15px;
+    }
+    .alp-hr h1{
+        font-size: 26px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .alp-hr hr{
+        height: 0px;
+        width: 300px;
+    }
+    .alp-row img{
+        width: 300px;
+        height: 400px;
+    }
 }

@@ -7,7 +7,7 @@
 .ft-content{
     padding-top: 50px;
     height: 800px;
-    width: 70%;
+    width: 1320px;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between ;
@@ -75,4 +75,140 @@
 }
 .ft-item img{
     
+}
+@media (max-width:1500px) {
+    .ft-body{
+        height: 750px;
+    }
+    .ft-content{
+        padding-top: 50px;
+        height: 650px;
+        width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between ;
+        display: flex;
+    }
+    .map-frame{
+        width: 600px;
+        height: 600px;
+        position: relative;
+        border-radius: 30px;
+        border: 0px;
+    }
+    .ft-info{
+        width: 32%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+    }
+    .ft-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-h{
+        color:white;
+        font-size: 20px;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+    .div-a{
+        font-family: 'Montserrat-Light';
+        color: white;
+        font-size: 16px;
+        justify-self: center;
+    }
+    .a-href{
+        font-family: 'Montserrat-Light';
+        color: white;
+        font-size: 16px;
+        justify-self: center;
+        text-decoration: none;
+        align-self: center;
+        margin-left: 10px;
+    }
+    .metro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ft-line{
+        display: flex;
+    }
+    .ft-bd{
+        align-self: center;
+        height: 11px;
+        width: 11px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+}
+@media (max-width:1024px) {
+    .ft-body{
+        height: 750px;
+    }
+    .ft-content{
+        padding-top: 50px;
+        height: 650px;
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between ;
+        display: flex;
+    }
+    .map-frame{
+        width: 400px;
+        height: 600px;
+        position: relative;
+        border-radius: 30px;
+        border: 0px;
+    }
+    .ft-info{
+        width: 39%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+    }
+    .ft-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-h{
+        color:white;
+        font-size: 18px;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+    .div-a{
+        font-family: 'Montserrat-Light';
+        color: white;
+        font-size: 16px;
+        justify-self: center;
+    }
+    .a-href{
+        font-family: 'Montserrat-Light';
+        color: white;
+        font-size: 16px;
+        justify-self: center;
+        text-decoration: none;
+        align-self: center;
+        margin-left: 10px;
+    }
+    .metro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ft-line{
+        display: flex;
+    }
+    .ft-bd{
+        align-self: center;
+        height: 11px;
+        width: 11px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
 }

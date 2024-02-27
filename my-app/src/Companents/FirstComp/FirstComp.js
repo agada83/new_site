@@ -4,7 +4,26 @@ import '../../App.css'
 import './FirstComp.css'
 
 class FirstComp extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        windowWidth: window.innerWidth
+    };
+}
+
+componentDidMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+}
+
+componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+}
+
+handleWindowSizeChange = () => {
+    this.setState({ windowWidth: window.innerWidth });
+};
   render() {
+    const { windowWidth } = this.state;
     const redirectToPage = () => {
       // Укажите URL страницы, на которую вы хотите перейти
       const targetPageUrl = "#registration";
@@ -12,9 +31,15 @@ class FirstComp extends Component {
       // Переносим пользователя на указанную страницу
       window.location.href = targetPageUrl;
     };
-    return (
+    if (windowWidth <= 1024) {
+      return (
+          <div>
+              <div className='fc-box'>123</div>
+          </div>
+      );
+  } else {
+      return (
       <div className='fc-box'>
-       
         <div className='fc-top'>
             <h1 className='fc-name'>TINTO</h1>
             <div className='fc-button'>
@@ -32,5 +57,5 @@ class FirstComp extends Component {
     );
   }
 }
- 
+}
 export default FirstComp;

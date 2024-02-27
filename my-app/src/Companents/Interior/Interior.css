@@ -21,7 +21,7 @@
     font-family: 'Montserrat';
     text-align: center;
     margin: 0;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 70px;
     font-size: 40px;
 }
@@ -101,8 +101,8 @@
 }
 @media (max-width:1500px) {
     .int-body{
-        height: auto;
-        padding-bottom: 100px;
+        height: 830px;
+        padding-bottom: 0px;
     }
     .img-pole{
         width: 924px;
@@ -113,8 +113,8 @@
     }
     
     .int-body h1{
-        padding-top: 70px;
-        padding-bottom: 35px;
+        padding-top: 60px;
+        padding-bottom: 40px;
         font-size: 35px;
     }
     
@@ -147,8 +147,8 @@
 }
 @media (max-width:1024px) {
     .int-body{
-        height: auto;
-        padding-bottom: 100px;
+        height: 670px;
+        padding-bottom: 50px;
         gap: 0px;
 
     }
@@ -166,8 +166,8 @@
     
     }
     .int-body h1{
-        padding-top: 70px;
-        padding-bottom: 35px;
+        padding-top: 40px;
+        padding-bottom: 50px;
         font-size: 35px;
     }
     
@@ -180,7 +180,7 @@
     .int-text{
         margin-top: 10px;
         width: 718px;
-        height: 150px;
+        height: 170px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
     }

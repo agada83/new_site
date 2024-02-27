@@ -73,3 +73,22 @@
         font-size: 25px;
     }
 }
+@media (max-width:1024px) {
+    .separator{ 
+        width: 704px;
+        height: 34px;
+        margin-bottom: 0px;
+    }
+    .separator hr{
+        width: 250px;
+        align-self: flex-end;
+        margin-bottom: 17px;
+    }
+    .team-box h1{
+        font-size: 30px;
+    }
+    .separator a{
+        font-family: 'Montserrat';
+        font-size: 23px;
+    }
+}

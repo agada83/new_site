@@ -26,6 +26,7 @@
   .navbar-nav {
     align-items: center;
     margin-right: 100px;
+    width: 600px;
   }
   .navbar-nav ul{
     list-style: none;
@@ -34,10 +35,10 @@
     margin-bottom: 0px;
   }  
   .navbar-nav ul li{
-    height: 41px;
+    height: 30px;
   }
   .navbar-nav hr{ 
-    margin-left: 45px;
+    margin-left: 40px;
     width: 93%;
     height: 0;
     border-top: 0px;
@@ -48,6 +49,7 @@
   .navbar-nav .nav-item {
     margin-right: 40px; /* Отступ между ссылками */
     font-size: 18px;
+    width: 70px;
   }
 
   .navbar-nav .nav-item:last-child {
@@ -65,3 +67,38 @@
     color: #ffffff; /* Цвет ссылки при наведении */
   }
   
+  @media (max-width:1024px) {
+    .navbar-nav .nav-item {
+      margin-right: 10px; /* Отступ между ссылками */
+      font-size: 17px;
+    }
+    .navbar-nav {
+      align-items: center;
+      margin-right: 70px;
+      width: 480px;
+
+    }
+    .navbar-brand {
+      margin-left: 70px;
+      flex-grow: 1;
+    }
+    .navbar-nav ul{
+      list-style: none;
+      display: flex;
+      min-height: 30px;
+      margin-bottom: 0px;
+    }  
+    .navbar-nav ul li{
+      height: 30px;
+    }
+    .navbar-nav hr{ 
+      margin-left: 40px;
+      width: 93%;
+      height: 0;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      border-color: #c9c9c9;
+    }
+  
+  }

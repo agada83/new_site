@@ -27,7 +27,8 @@
 .sc-content {
   display: flex;
   height: 360px;
-  min-width: 900px;
+  min-width: 1100px;
+  max-width: 1100px;
   width: auto;
 
   gap: 9svw;
@@ -104,6 +105,7 @@
     display: flex;
     height: 320px;
     min-width: 950px;
+    max-width: 950px;
     width: auto;
     gap: 10svw;
     font-family: 'Montserrat-Light';
@@ -135,7 +137,7 @@
 @media (max-width:1024px) {
   .sc-content {
     height: 260px;
-    width: auto;
+    max-width: 650px;
     min-width: 650px;
     gap: 5svw;
   }

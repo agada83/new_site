@@ -5,7 +5,7 @@
     background-color: #474747;
     background-image: url('../../assets/bgImg.png');
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: auto auto;
     background-position: center;
     font-family: 'Montserrat';
     color: white;
@@ -79,6 +79,9 @@
 .fc-bottom a{
     font-size: 26px;
     margin-bottom: 6svw;
+}
+.fc-mb-box{
+
 }
 @media (max-width: 1800px) {
     .fc-name{
