@@ -1,8 +1,7 @@
-// src/App.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Carousel-hair.css';
-import hairImg from '../../assets/hair.png'
-
+import hairImg from '../../assets/hair.png';
+import { HashLink } from 'react-router-hash-link';
 
 const slidesData = [
   {
@@ -29,77 +28,98 @@ const slidesData = [
     text2: 'Техники',
     text3: 'Выпрямление',
   },
-
 ];
 
-const CarouselHair = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const redirectToPage = () => {
-    // Укажите URL страницы, на которую вы хотите перейти
-    const targetPageUrl = "/prices";
-    
-    // Переносим пользователя на указанную страницу
-    window.location.href = targetPageUrl;
-  };
-  return (
-    <div className="sc-carousel">
-      <div className="sc-slides-container" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-        {slidesData.map((slide, index) => (
-          <div key={index} className="sc-slide">
-            <div className="sc-content">
-              <div className='sc-item'>
-                <img src={slide.image1}/>
-                <a>{slide.text1}</a>
-                <button  onClick={redirectToPage}>Прайс-лист</button>
-              </div>
-              <div className='sc-item'>
-                <img src={slide.image2}/>
-                <a>{slide.text2}</a>
-                <button  onClick={redirectToPage}>Прайс-лист</button>
-              </div>
-              <div className='sc-item'>
-                <img src={slide.image3}/>
-                <a>{slide.text3}</a>
-                <button  onClick={redirectToPage}>Прайс-лист</button>
-              </div>
-            </div>
-          </div>
-        ))}
-        <div key={4} className="sc-slide">
-            <div className="sc-content">
-              <div className='sc-item'>
-                <img src={hairImg}/>
-                <a>Завивка</a>
-                <button  onClick={redirectToPage}>Прайс-лист</button>
-              </div>
-              <div className='sc-item'>
-                <img src={hairImg}/>
-                <a>Доп услуги</a>
-                <button  onClick={redirectToPage}>Прайс-лист</button>
-              </div>
+const useWindowWidth = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-            </div>
-          </div>
-      </div>
-      <div className="sc-navigation">
-        <div className="sc-dots">
-          {slidesData.map((_, index) => (
-            <span
-              key={index}
-              className={`sc-dot ${index === currentSlide ? 'active' : ''}`}
-              onClick={() => setCurrentSlide(index)}
-            />
-          ))}
-              <span
-              className={`sc-dot ${3 === currentSlide ? 'active' : ''}`}
-              onClick={() => setCurrentSlide(3)}
-            />
-        </div>
-      </div>
-    </div>
-  );
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return windowWidth;
 };
 
+const CarouselHair = () => {
+  const windowWidth = useWindowWidth();
+  const [currentSlide, setCurrentSlide] = useState(0);
 
+  return (
+    <>
+      {windowWidth > 768 ? (
+        <div className="sc-carousel">
+          <div className="sc-slides-container" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+            {slidesData.map((slide, index) => (
+              <div key={index} className="sc-slide">
+                <div className="sc-content">
+                  <div className='sc-item'>
+                    <img src={slide.image1} alt={`Hair ${index + 1}`} />
+                    <a>{slide.text1}</a>
+                    <HashLink to={'/prices'}>
+                      <button>Прайс-лист</button>
+                    </HashLink>
+                  </div>
+                  <div className='sc-item'>
+                    <img src={slide.image2} alt={`Hair ${index + 2}`} />
+                    <a>{slide.text2}</a>
+                    <HashLink to={'/prices'}>
+                      <button>Прайс-лист</button>
+                    </HashLink>
+                  </div>
+                  <div className='sc-item'>
+                    <img src={slide.image3} alt={`Hair ${index + 3}`} />
+                    <a>{slide.text3}</a>
+                    <HashLink to={'/prices'}>
+                      <button>Прайс-лист</button>
+                    </HashLink>
+                  </div>
+                </div>
+              </div>
+            ))}
+            <div key={3} className="sc-slide">
+                <div className="sc-content">
+            <div className='sc-item'>
+                    <img src={hairImg} alt={`Hair`} />
+                    <a>Трихология</a>
+                    <HashLink to={'/prices'}>
+                      <button>Прайс-лист</button>
+                    </HashLink>
+                  </div>
+                  <div className='sc-item'>
+                    <img src={hairImg} alt={`Hair`} />
+                    <a>Трихология</a>
+                    <HashLink to={'/prices'}>
+                      <button>Прайс-лист</button>
+                    </HashLink>
+                  </div>
+          </div>
+          </div>
+              </div>
+          <div className="sc-navigation">
+            <div className="sc-dots">
+              {slidesData.map((_, index) => (
+                <span
+                  key={index}
+                  className={`sc-dot ${index === currentSlide ? 'active' : ''}`}
+                  onClick={() => setCurrentSlide(index)}
+                />
+              ))}
+              <span className={`sc-dot ${3 === currentSlide ? 'active' : ''}`} onClick={() => setCurrentSlide(3)} />
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div>123</div>
+      )}
+    </>
+  );
+};
 
 export default CarouselHair;
