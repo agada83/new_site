@@ -99,6 +99,8 @@ const CarouselHair = () => {
                       <button>Прайс-лист</button>
                     </HashLink>
                   </div>
+                  <div className='sc-void'>
+                  </div>
           </div>
           </div>
               </div>
@@ -116,8 +118,48 @@ const CarouselHair = () => {
           </div>
         </div>
       ) : (
-        <div>123</div>
-      )}
+        <div className="scmb-carousel">
+          <div className="scmb-slides-container" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+            {slidesData.map((slide, index) => (
+              <div key={index} className="scmb-slide">
+                <div className="scmb-content">
+                <div className={index === currentSlide ? 'scmb-item active' : 'scmb-item'}>
+                    <img src={slide.image3} alt={`Hair ${index + 3}`} />
+                    <a>{slide.text3}</a>
+                    <HashLink to={'/prices'}>
+                      <button>Прайс-лист</button>
+                    </HashLink>
+                  </div>
+                  <div className='scmb-item'>
+                    <img src={slide.image3} alt={`Hair ${index + 3}`} />
+                    <a>{slide.text3}</a>
+                    <HashLink to={'/prices'}>
+                      <button>Прайс-лист</button>
+                    </HashLink>
+                  </div>                  <div className='scmb-item'>
+                    <img src={slide.image3} alt={`Hair ${index + 3}`} />
+                    <a>{slide.text3}</a>
+                    <HashLink to={'/prices'}>
+                      <button>Прайс-лист</button>
+                    </HashLink>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="scmb-navigation">
+            <div className="scmb-dots">
+              {slidesData.map((_, index) => (
+                <span
+                  key={index}
+                  className={`scmb-dot ${index === currentSlide ? 'active' : ''}`}
+                  onClick={() => setCurrentSlide(index)}
+                />
+              ))}
+              <span className={`scmb-dot ${3 === currentSlide ? 'active' : ''}`} onClick={() => setCurrentSlide(3)} />
+            </div>
+          </div>
+        </div>      )}
     </>
   );
 };

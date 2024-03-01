@@ -1,0 +1,73 @@
+/* Carousel-hair.css */
+.main-carousel {
+    overflow: hidden;
+  }
+  
+  .main-carousel-item {
+    white-space: nowrap;
+    transition: transform 0.5s ease; /* Плавная анимация изменения transform */
+  }
+  
+  .main-carousel-item.active {
+    transform: translateX(0); /* Показывать активный слайд */
+  }
+  
+  .main-carousel-item {
+    transform: translateX(-100%); /* Скрывать слайды влево */
+  }
+  .carousel-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+  }
+  
+  .sub-carousel-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sub-carousel {
+    width: 100%;
+    max-width: 200px; /* Измените ширину в соответствии с вашими требованиями */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .sub-carousel img {
+    width: 100%;
+    display: block;
+  }
+  
+  .sub-carousel-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sub-carousel-navigation button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+  }
+  
+  .main-carousel-navigation {
+    margin-top: 20px;
+  }
+  
+  .main-carousel-navigation button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+  }
+  

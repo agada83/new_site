@@ -1,4 +1,138 @@
 
+.scmb-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flexbox;
+  flex-direction: column;
+}
+
+.scmb-slides-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 330px;
+}
+
+.scmb-slide {
+  min-width: 80%;
+  max-width: 80%;
+  padding: 10%;
+
+  display: flex;
+  justify-content: center; /* Центрирование слайдов по горизонтали */
+  align-items: center; /* Центрирование слайдов по вертикали */
+}
+.scmb-slide {
+  min-width: 80%;
+  max-width: 80%;
+  padding: 10%;
+  display: flex;
+  justify-content: center; /* Центрирование слайдов по горизонтали */
+  align-items: center; /* Центрирование слайдов по вертикали */
+}
+
+
+.scmb-content {
+  display: flex;
+
+  width: auto;
+  justify-content: space-between;
+  font-family: 'Montserrat-Light';
+  height: 260px;
+  max-width: 650px;
+  min-width: 650px;
+}
+.scmb-item{
+
+  height: 100%;
+  background-color: #474747;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  min-width: 191px;
+  max-width: 191px;
+  border-radius: 25px;
+  gap: 16px;
+}
+.scmb-item-active{
+
+  height: 100%;
+  background-color: #0f18b5;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  min-width: 191px;
+  max-width: 191px;
+  border-radius: 25px;
+  gap: 16px;
+}
+.scmb-void{
+  min-width: 191px;
+  max-width: 191px;
+}
+.scmb-item img{
+  width: 100%;
+}
+
+.scmb-item a{
+  color: white;
+  font-size: 21px;
+}
+
+.scmb-item button{
+  background-color: #00000000;
+  border:1px solid white;
+  color: white;
+  border-radius: 29px;
+  font-family: 'Montserrat-Light';
+  cursor: pointer;
+  transition: all 0.9s ease;
+  width: 160px;
+  height: 44px;
+  font-size: 16px; 
+}
+.scmb-item button:hover{
+  color: black;
+  background-color: white;
+}
+
+
+.scmb-navigation {
+  position: relative;
+  bottom: 10px;
+  width: 100%;
+  height: 60px;
+}
+
+.scmb-dots {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Центрирование точек */
+  position: relative;
+  top: 20px;
+}
+
+.scmb-dot {
+  border: 4px solid #474747;
+
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 4px solid #474747;
+  width: 7px;
+  height: 7px;
+}
+
+.scmb-dot.active {
+  background-color: #474747;
+}
+
+
+/*______________________________________________*/
+
+
 .sc-carousel {
   position: relative;
   width: 100%;
@@ -30,12 +164,12 @@
   min-width: 1100px;
   max-width: 1100px;
   width: auto;
-
-  gap: 9svw;
+  justify-content: space-between;
   font-family: 'Montserrat-Light';
 }
 .sc-item{
-  width: 300px;
+  min-width: 285px;
+  max-width: 285px;
   height: 100%;
   background-color: #474747;
   border-radius: 30px;
@@ -44,6 +178,10 @@
   overflow: hidden;
   gap: 25px;
   align-items: center;
+}
+.sc-void{
+  min-width: 285px;
+  max-width: 285px;
 }
 .sc-item img{
   width: 100%;
@@ -107,13 +245,17 @@
     min-width: 950px;
     max-width: 950px;
     width: auto;
-    gap: 10svw;
     font-family: 'Montserrat-Light';
   }
   .sc-item{
-    width: 260px;
+    min-width: 248px;
+    max-width: 248px;
     border-radius: 30px;
     gap: 25px;
+  }
+  .sc-void{
+    min-width: 248px;
+    max-width: 248px;
   }
   .sc-item a{
     font-size: 23px;
@@ -139,12 +281,16 @@
     height: 260px;
     max-width: 650px;
     min-width: 650px;
-    gap: 5svw;
   }
   .sc-item{
-    width: 210px;
+    min-width: 191px;
+    max-width: 191px;
     border-radius: 25px;
     gap: 16px;
+  }
+  .sc-void{
+    min-width: 191px;
+    max-width: 191px;
   }
   .sc-item a{
     font-size: 21px;

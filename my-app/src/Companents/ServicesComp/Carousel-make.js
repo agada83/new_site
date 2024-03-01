@@ -40,7 +40,8 @@ const CarouselMake = () => {
                 <a>{slide.text2}</a>
                 <button  onClick={redirectToPage}>Прайс-лист</button>
               </div>
-
+              <div className='sc-void'>
+              </div>
             </div>
           </div>
         ))}
