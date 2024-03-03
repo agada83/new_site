@@ -1,3 +1,99 @@
+.infomb-box{
+    height: 500px;
+    background-image: url('../../assets/brand.png');
+    background-repeat: no-repeat;
+    background-size: auto 160%;
+    background-position: center;
+    background-color: #474747;
+    display: flexbox;
+    flex-direction: column;
+    border: 1px solid #47474700;
+}
+
+.infomb-about{
+    margin-top: 50px;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+}
+.infomb-about h1{
+    margin-left: 25px;
+    font-size: 35px;
+    font-family: 'Montserrat-Light';
+    color:white;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.mbdivhr{
+    width: 400px;
+    flex: 1;
+    background-color: white;
+    margin-left: 25px;
+    height: 2px;
+    border-radius: 10px;
+}
+.infomb-obrezka{
+    width: 00px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.firstmb-about{
+    width: 500px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around; 
+    margin-top: 40px;
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secondmb-about{
+    width: 80%;
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: 50px;
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mbdiva{
+    margin-top: 20px;
+
+}
+.mbdiva a{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+    transition: color 0.5s ease;
+    cursor: pointer;
+
+}
+.mbdivht{
+    flex: 1;
+    background-color: #ffffff00;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+
+}
+
+.mbdiva:hover a{
+    color:#ffffff;
+
+}
+.mbdiva:hover .divht{
+    background-color: rgba(255, 255, 255);
+
+}
+@media (max-width:540px) {
+    
+}
+
+/* _______________________________________________________________ */
 .info-box{
     height: 390px;
     background-image: url('../../assets/brand.png');

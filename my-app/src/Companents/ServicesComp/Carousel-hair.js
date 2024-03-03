@@ -123,26 +123,17 @@ const CarouselHair = () => {
             {slidesData.map((slide, index) => (
               <div key={index} className="scmb-slide">
                 <div className="scmb-content">
-                <div className={index === currentSlide ? 'scmb-item active' : 'scmb-item'}>
-                    <img src={slide.image3} alt={`Hair ${index + 3}`} />
-                    <a>{slide.text3}</a>
-                    <HashLink to={'/prices'}>
-                      <button>Прайс-лист</button>
-                    </HashLink>
+                <div key={index} className="scmb-slide">
+                <div className="scmb-content">
+                 <div className="scmb-carousel">
+                  <div className="scmb-slides-container" style={{ transform: `translateX(-${currentSlide * 30}%)` }}>
+                    <div className='scmb-item'>
+                      123
+                    </div>
                   </div>
-                  <div className='scmb-item'>
-                    <img src={slide.image3} alt={`Hair ${index + 3}`} />
-                    <a>{slide.text3}</a>
-                    <HashLink to={'/prices'}>
-                      <button>Прайс-лист</button>
-                    </HashLink>
-                  </div>                  <div className='scmb-item'>
-                    <img src={slide.image3} alt={`Hair ${index + 3}`} />
-                    <a>{slide.text3}</a>
-                    <HashLink to={'/prices'}>
-                      <button>Прайс-лист</button>
-                    </HashLink>
-                  </div>
+                 </div>
+                </div>
+              </div>
                 </div>
               </div>
             ))}
