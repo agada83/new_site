@@ -1,5 +1,5 @@
 // src/App.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Carousel.css';
 import { Link } from 'react-router-dom';
 import imgTatyana from '../../../assets/Tatyana_3x4.jpg'
@@ -51,10 +51,29 @@ const slidesData = [
     href:'/alena-galan#main'
   },
 ];
+const useWindowWidth = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return windowWidth;
+};
 const CarouselStyle = () => {
+  const windowWidth = useWindowWidth();
   const [currentSlide, setCurrentSlide] = useState(0);
   return (
+    <>
+    {windowWidth > 768 ? (
+
     <div className="carousel">
       <div className="slides-container" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
         {slidesData.map((slide, index) => (
@@ -92,6 +111,43 @@ const CarouselStyle = () => {
         </div>
       </div>
     </div>
+    ) : (
+      <div className="carousel-mb">
+      <div className="slides-container-mb" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+        {slidesData.map((slide, index) => (
+          <div key={index} className="slide-mb">
+            <div className="content-mb">
+              <div className='tmb-first-line'>
+                <img src={slide.image}/>
+                <div className='text-mb'>
+                  <p className='bold'>{slide.text1}</p>
+                  <p>{slide.text2}</p>
+                  <p>{slide.text3}</p>
+                </div>
+              </div>
+              <div className='tmb-second-line'>
+                <div className='text2-mb'>
+                  <p>{slide.text4}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="navigation-mb">
+        <div className="dots-mb">
+          {slidesData.map((_, index) => (
+            <span
+              key={index}
+              className={`dot-mb ${index === currentSlide ? 'active' : ''}`}
+              onClick={() => setCurrentSlide(index)}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+      )}
+    </>
   );
 };
 

@@ -22,9 +22,9 @@ class Home extends Component {
       <div style={{display:'block'}} id='main'>
         {/* <FirstComp /> */}
         {/* <ServicesComp /> */}
-        <Info />
-        {/*<Team />
-        <Sale />
+        {/* <Info /> */}
+        <Team />
+        {/*<Sale />
         <TopServices />
         <Interior />
         <div className='hm-au-div'>
