@@ -1,3 +1,187 @@
+.mb-bg-light{
+    width: 100%;
+    height: 600px;
+    background-image: url('../../assets/bgsalefull.png');
+    background-repeat: no-repeat;
+    background-size:auto 100%   ;
+    background-position: center;
+}
+.mb-black-glass{
+    width: 100%;
+    background-color: #474747D4;
+    height: 100%;
+
+}
+
+.mb-pole{
+    margin-top:0;
+    height: 100%;
+    width: 600px;    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.mb-pole h1{
+    font-size: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat-Light';
+    color: white;
+    padding-top: 70px;
+    margin-top: 0px;
+}
+
+.mb-pole p{
+    font-size: 22px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat-Light';
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 60px;
+}
+
+.mb-pole b{
+    font-family: 'Montserrat-Semibold';
+}
+
+.mb-pole button{
+    font-family: 'Montserrat';
+    width: 540px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 80px;
+    background-color: #47474700;
+    border: 1px solid white;
+    color:white;
+    border-radius: 32px;
+    font-size: 22px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+
+}
+.mb-pole button a {
+    text-decoration: none;
+}
+.mb-pole button:hover{
+    background-color: white;
+    color: black;
+}
+@media (max-width:690px) {
+    .mb-bg-light{
+        height: 550px;
+    }
+    .mb-pole{
+        width: 500px;    
+    }
+    .mb-pole h1{
+        font-size: 30px;
+        padding-top: 70px;
+    }
+    .mb-pole p{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .mb-pole button{
+        width: 400px;
+        height: 60px;
+        margin-top: 80px;
+        font-size: 20px;
+    }
+}
+@media (max-width:590px) {
+    .mb-bg-light{
+        height: 500px;
+    }
+    .mb-pole{
+        width: 450px;    
+    }
+    .mb-pole h1{
+        font-size: 27px;
+        padding-top: 60px;
+    }
+    .mb-pole p{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .mb-pole button{
+        width: 400px;
+        height: 60px;
+        margin-top: 80px;
+        font-size: 20px;
+    }
+}
+@media (max-width:520px) {
+    .mb-bg-light{
+        height: 500px;
+    }
+    .mb-pole{
+        width: 360px;    
+    }
+    .mb-pole h1{
+        font-size: 26px;
+        padding-top: 60px;
+    }
+    .mb-pole p{
+        font-size: 18px;
+        margin-top: 50px;
+    }
+    .mb-pole button{
+        width: 300px;
+        height: 50px;
+        margin-top: 70px;
+        font-size: 18px;
+    }
+}
+@media (max-width:400px) {
+    .mb-bg-light{
+        height: 470px;
+    }
+    .mb-pole{
+        width: 300px;    
+    }
+    .mb-pole h1{
+        font-size: 24px;
+        padding-top: 60px;
+    }
+    .mb-pole p{
+        font-size: 16px;
+        margin-top: 50px;
+    }
+    .mb-pole button{
+        width: 270px;
+        height:47px;
+        margin-top: 70px;
+        font-size: 18px;
+    }
+}
+@media (max-width:320px) {
+    .mb-bg-light{
+        height: 470px;
+    }
+    .mb-pole{
+        width: 80%;    
+    }
+    .mb-pole h1{
+        font-size: 20px;
+        padding-top: 60px;
+    }
+    .mb-pole p{
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    .mb-pole button{
+        width: 100%;
+        height:47px;
+        margin-top: 70px;
+        font-size: 18px;
+    }
+}
+/* ______________________________________________________________ */
 .bg-light{
     width: 100%;
     height: 900px;
@@ -33,7 +217,6 @@
     padding-top: 20%;
     margin-top: 0px;
 }
-
 .pole p{
     font-size: 27px;
     text-align: left;

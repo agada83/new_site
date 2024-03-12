@@ -118,16 +118,12 @@ const CarouselStyle = () => {
           <div key={index} className="slide-mb">
             <div className="content-mb">
               <div className='tmb-first-line'>
-                <img src={slide.image}/>
-                <div className='text-mb'>
-                  <p className='bold'>{slide.text1}</p>
-                  <p>{slide.text2}</p>
-                  <p>{slide.text3}</p>
-                </div>
+                <a> 
+                  <img src={slide.image}></img><p className='bold-mb'>{slide.text1}</p><p>{slide.text2}</p><p>{slide.text3}</p><p>{slide.text4}</p>
+                </a>
               </div>
               <div className='tmb-second-line'>
                 <div className='text2-mb'>
-                  <p>{slide.text4}</p>
                 </div>
               </div>
             </div>

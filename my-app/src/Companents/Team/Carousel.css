@@ -27,55 +27,45 @@
   background-color: #ffffff;
   border-radius: 30px;
   height: auto;
-  min-width: 500px;
+  min-width: 580px;
+  max-width: 580px;
   width: 700px;
 }
 
 .tmb-first-line{
   overflow: hidden;
-  border-top-left-radius: 30px;
+
   display: flex;
+}
+.tmb-first-line a{
+  text-justify: inherit;
+  margin: 0;
+  font-size: 21px;
+}
+.tmb-first-line a p{
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
 .tmb-first-line img{
-  width: auto;
-  height: 250px;
+  width: 250px;
+  height: auto;
+  float:left;
+  margin: 0px 40px 0px 0px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 .tmb-first-line{
   overflow: hidden;
   border-top-left-radius: 30px;
   display: flex;
 }
-.text-mb {
-  font-family: 'Montserrat';
-  color: rgb(0, 0, 0);
-  text-align: left;
-  padding: 0px;
-  font-size: 22px;
-  margin-left: 50px;
-}
-.text2-mb {
-  font-family: 'Montserrat';
-  color: rgb(0, 0, 0);
-  text-align: left;
-  padding: 0px;
-  font-size: 22px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.text2-mb p{
-  margin-top: 15px;
-}
-.text-mb p{
-  margin-bottom: 40px;
-}
-.text-mb p:first-child{
-  margin-top: 50px;
-}
-
 
 .bold-mb{
   font-family: 'Montserrat-SemiBold';
+  margin-top: 30px;
 }
 
 .navigation-mb {
@@ -147,7 +137,54 @@
   margin-right: 1.7svw;
   margin-left: 1svw;
 }
-
+@media (max-width:630px) {
+  .content-mb {
+    border-radius: 30px;
+    min-width: 480px;
+    max-width: 480px;
+  }
+  .tmb-first-line a{
+    text-justify: inherit;
+    margin: 0;
+    font-size: 21px;
+  }
+  .tmb-first-line a p{
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tmb-first-line img{
+    width: 200px;
+    margin: 0px 30px 0px 0px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 0;
+  }
+}
+@media (max-width:530px) {
+  .content-mb {
+    border-radius: 30px;
+    min-width: 390px;
+    max-width: 390px;
+  }
+  .tmb-first-line a{
+    text-justify: inherit;
+    margin: 0;
+    font-size: 21px;
+  }
+  .tmb-first-line a p{
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tmb-first-line img{
+    width: 200px;
+    margin: 0px 30px 0px 0px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 0;
+  }
+}
 
 /* ___________________________________________________________________________ */
 .carousel {
