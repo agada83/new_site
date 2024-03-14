@@ -7,11 +7,17 @@ import imgOksana from '../../../assets/Oksana_3x4.png'
 import imgVera from '../../../assets/Vera_3x4.jpg'
 import imgAlena from '../../../assets/Alena_3x4.jpg'
 import imgEkaterina from '../../../assets/Ekaterina_3x4.jpg'
+import img2Tatyana from '../../../assets/Tatyana_2x3.jpg'
+import img2Oksana from '../../../assets/Oksana_2x3.png'
+import img2Vera from '../../../assets/Vera_2x3.jpg'
+import img2Alena from '../../../assets/Alena_2x3.jpg'
+import img2Ekaterina from '../../../assets/Ekaterina_2x3.jpg'
 import { HashLink } from 'react-router-hash-link';
 
 const slidesData = [
   {
     image: imgTatyana,
+    image2: img2Tatyana,
     text1: 'Арт-директор',
     text2: 'Татьяна',
     text3: 'Опыт работы: 20 лет',
@@ -20,6 +26,7 @@ const slidesData = [
   },
   {
     image: imgOksana,
+    image2: img2Oksana,
     text1: 'Топ-стилист',
     text2: 'Оксана',
     text3: 'Опыт работы: 15 лет',
@@ -28,6 +35,7 @@ const slidesData = [
   },
   {
     image: imgVera,
+    image2: img2Vera,
     text1: 'Топ-стилист',
     text2: 'Вера Марычева',
     text3: 'Опыт работы: 20 лет',
@@ -36,6 +44,7 @@ const slidesData = [
   },
   {
     image: imgEkaterina,
+    image2: img2Ekaterina,
     text1: 'Топ-стилист',
     text2: 'Екатерина Лосева',
     text3: 'Опыт работы: 20 лет',
@@ -44,6 +53,7 @@ const slidesData = [
   },
   {
     image: imgAlena,
+    image2: img2Alena,
     text1: 'Визажист',
     text2: 'Алена Галан',
     text3: 'Опыт работы: 11 лет',
@@ -119,13 +129,12 @@ const CarouselStyle = () => {
             <div className="content-mb">
               <div className='tmb-first-line'>
                 <a> 
-                  <img src={slide.image}></img><p className='bold-mb'>{slide.text1}</p><p>{slide.text2}</p><p>{slide.text3}</p><p>{slide.text4}</p>
+                  <img src={slide.image2}></img><p className='bold-mb'>{slide.text1}</p><p>{slide.text2}</p><p>{slide.text3}</p><p>{slide.text4}</p>
                 </a>
               </div>
-              <div className='tmb-second-line'>
-                <div className='text2-mb'>
-                </div>
-              </div>
+              <HashLink to={slide.href}>
+                <button>Подробнее</button>
+              </HashLink>
             </div>
           </div>
         ))}
