@@ -19,7 +19,7 @@ const slidesData = [
     image: imgTatyana,
     image2: img2Tatyana,
     text1: 'Арт-директор',
-    text2: 'Татьяна',
+    text2: 'Татьяна Карруэбано',
     text3: 'Опыт работы: 20 лет',
     text4: 'Арт-директор и идейный вдохновитель beauty-проекта «TINTO». Мастер, который «слышит» клиента и приведет к оптимальному результату',
     href:'/tatjana-karruebano'
@@ -28,7 +28,7 @@ const slidesData = [
     image: imgOksana,
     image2: img2Oksana,
     text1: 'Топ-стилист',
-    text2: 'Оксана',
+    text2: 'Оксана Макалкина',
     text3: 'Опыт работы: 15 лет',
     text4: 'Профессионально подберет форму стрижки, посоветует модные направления, а также опытный специалист по стойкому выпрямлению волос',
     href:'/oksana-makalkina#main'
@@ -129,7 +129,11 @@ const CarouselStyle = () => {
             <div className="content-mb">
               <div className='tmb-first-line'>
                 <a> 
-                  <img src={slide.image2}></img><p className='bold-mb'>{slide.text1}</p><p>{slide.text2}</p><p>{slide.text3}</p><p>{slide.text4}</p>
+                  <img src={slide.image2}/>
+                  <p className='tmb-text bold-mb'>{slide.text1}</p>
+                  <p className='tmb-text simple first'>{slide.text2}</p>
+                  <p className='tmb-text simple'>{slide.text3}</p>
+                  <p className='tmb-text tmb-info'>{slide.text4}</p>
                 </a>
               </div>
               <HashLink to={slide.href}>

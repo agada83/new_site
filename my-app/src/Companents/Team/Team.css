@@ -7,8 +7,9 @@
     color:black;
     font-family: 'Montserrat';
     text-align: center;
-    margin-top: 3%;
+    margin-top: 40px;
     font-size: 40px;
+    margin-bottom: 60px;
 }
 
 .separator{ 
@@ -86,9 +87,116 @@
     }
     .team-box h1{
         font-size: 30px;
+        margin-bottom: 40px;
+
     }
     .separator a{
         font-family: 'Montserrat';
         font-size: 23px;
+    }
+}
+@media (max-width:768px) {
+    .separator{ 
+        width: 600px;
+        height: 34px;
+        margin-bottom: 0px;
+    }
+    .separator hr{
+        width: 250px;
+        align-self: flex-end;
+        margin-bottom: 17px;
+    }
+    .team-box h1{
+        font-size: 34px;
+        margin-bottom: 40px;
+
+    }
+    .separator a{
+        font-family: 'Montserrat';
+        font-size: 25px;
+    }
+}
+@media (max-width:630px) {
+    .separator{ 
+        width: 480px;
+        height: 34px;
+        margin-bottom: 0px;
+    }
+    .separator hr{
+        width: 230px;
+        align-self: flex-end;
+        margin-bottom: 17px;
+    }
+    .team-box h1{
+        font-size: 34px;
+        margin-bottom: 40px;
+
+    }
+    .separator a{
+        font-family: 'Montserrat';
+        font-size: 25px;
+    }
+}
+@media (max-width:530px) {
+    .separator{ 
+        width: 400px;
+        height: 34px;
+        margin-bottom: 0px;
+    }
+    .separator hr{
+        width: 210px;
+        align-self: flex-end;
+        margin-bottom: 17px;
+    }
+    .team-box h1{
+        font-size: 30px;
+        margin-bottom: 40px;
+
+    }
+    .separator a{
+        font-family: 'Montserrat';
+        font-size: 24px;
+    }
+}
+@media (max-width:450px) {
+    .separator{ 
+        width: 320px;
+        height: 34px;
+        margin-bottom: 0px;
+    }
+    .separator hr{
+        width: 150px;
+        align-self: flex-end;
+        margin-bottom: 17px;
+    }
+    .team-box h1{
+        font-size: 30px;
+        margin-bottom: 40px;
+
+    }
+    .separator a{
+        font-family: 'Montserrat';
+        font-size: 22px;
+    }
+}
+@media (max-width:340px) {
+    .separator{ 
+        width: 280px;
+        height: 34px;
+        margin-bottom: 0px;
+    }
+    .separator hr{
+        width: 150px;
+        align-self: flex-end;
+        margin-bottom: 17px;
+    }
+    .team-box h1{
+        font-size: 30px;
+        margin-bottom: 40px;
+
+    }
+    .separator a{
+        font-family: 'Montserrat';
+        font-size: 20px;
     }
 }
