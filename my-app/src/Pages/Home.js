@@ -23,11 +23,11 @@ class Home extends Component {
         {/* <FirstComp /> */}
         {/* <ServicesComp /> */}
         {/* <Info /> */}
-        <Team />
-        {/*<Sale />
-        <TopServices />
+        {/* <Team /> */}
+        {/* <Sale /> */}
+        {/* <TopServices /> */}
         <Interior />
-        <div className='hm-au-div'>
+        {/*<div className='hm-au-div'>
           <h1>О НАС</h1>
           <h2>TINTO beauty salon–пространство для вашей индивидуальности!</h2>
         </div>

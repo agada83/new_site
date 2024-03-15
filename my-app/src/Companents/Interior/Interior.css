@@ -1,3 +1,82 @@
+.invmb-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.invmb-box h1{
+    font-family: 'Montserrat';
+    font-size: 40px;
+    text-align: center;
+}
+
+.invmb-content{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: 1.9fr 1fr 2fr;
+    gap: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.invmb-item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.invmb-item2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}.invmb-item3{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}.invmb-item4{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.invmb-img{
+    height: 100%;
+    width: 100%;
+}
+@media (max-width:580px) {
+    .invmb-box h1{
+        font-size: 35px;
+    }
+    .invmb-content{
+        width: 400px;
+    }
+}
+@media (max-width:460px) {
+    .invmb-box h1{
+        font-size: 33px;
+    }
+    .invmb-content{
+        width: 330px;
+    }
+}
+@media (max-width:380px) {
+    .invmb-box h1{
+        font-size: 31px;
+    }
+    .invmb-content{
+        width: 280px;
+    }
+}
+@media (max-width:320px) {
+    .invmb-box h1{
+        font-size: 9svw;
+    }
+    .invmb-content{
+        width: 80svw;
+    }
+}
+
+
+/* _____________________________________________________________________ */
 .int-body{
     width: 100%;
     height: auto;
