@@ -9,9 +9,9 @@ class Appointment extends Component {
             <div className='apm-body' id='registration'>
                 <h1>ОНЛАЙН ЗАПИСЬ</h1>
                 <iframe
-					title="reg"
-					src="https://b475334.yclients.com/"
-				></iframe>
+          title="reg"
+          src="https://b475334.yclients.com/"
+        ></iframe>
             </div>
         );
     }

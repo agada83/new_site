@@ -30,13 +30,6 @@ class Interior extends Component {
     };
     render() {
         const { windowWidth } = this.state;
-        const redirectToPage = () => {
-          // Укажите URL страницы, на которую вы хотите перейти
-          const targetPageUrl = "#registration";
-          
-          // Переносим пользователя на указанную страницу
-          window.location.href = targetPageUrl;
-        };
         if (windowWidth > 768) {
           return (
             <div className='int-body' id='interior'>

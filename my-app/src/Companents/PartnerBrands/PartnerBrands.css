@@ -1,3 +1,189 @@
+.pbmb-body{
+    width: 100%;
+    height: auto;
+    background-color:#474747;
+}
+.pbmb-content{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right:auto;
+}
+.mb-first-line{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.mb-second-line{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pbmb-item{
+    width: 200px; 
+    color: white;
+    justify-content: center;
+    text-align:center;
+    font-family: 'Jura';
+}
+.lux-mb a{
+    font-size: 29px;
+    line-height: 29px;
+}
+.lux-mb b{
+    font-size: 50px;
+}
+.pure-mb a{
+    font-size: 42px;
+}
+.keune-mb a{
+    line-height: 20px;
+    font-size: 17px;
+}
+.keune-mb b{
+    font-size: 42px;
+}
+.terra-mb{
+    display: flex;
+    align-items: center;
+}
+
+.terra-mb p{
+    font-size: 20px;
+    line-height: 0px;
+}
+.terra-mb-kostil{
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.terra-mb-kostil h1{
+    font-size: 42px;
+}
+@media (max-width:600px) {
+    .pbmb-content{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    .pbmb-item{
+        width: 150px; 
+        color: white;
+        justify-content: center;
+        text-align:center;
+        font-family: 'Jura';
+    }
+    .lux-mb a{
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .lux-mb b{
+        font-size: 40px;
+    }
+    .pure-mb a{
+        font-size: 38px;
+    }
+    .keune-mb a{
+        line-height: 10px;
+        font-size: 15px;
+    }
+    .keune-mb b{
+        font-size: 38px;
+    }
+    .terra-mb{
+        display: flex;
+        align-items: center;
+    }
+    .terra-mb p{
+        font-size: 19px;
+        line-height: 0px;
+    }
+    .terra-mb-kostil{
+        margin-bottom: 5px;
+        margin-left: 1px;
+    }
+    .terra-mb-kostil h1{
+        font-size: 38px;
+    }
+
+}
+@media (max-width:500px) {
+    .pbmb-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    .mb-first-line{
+        height: 28svw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .mb-second-line{
+        height: 28svw;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .pbmb-item{
+        width: 30%; 
+        color: white;
+        justify-content: center;
+        text-align:center;
+        font-family: 'Jura';
+    }
+    .lux-mb a{
+        font-size: 4svw;
+        line-height: 4svw;
+    }
+    .lux-mb b{
+        font-size: 8svw;
+        line-height: 4svw;
+
+    }
+    .pure-mb a{
+        font-size: 7.6svw;
+    }
+    .keune-mb a{
+        line-height: 2svw;
+        font-size: 3svw;
+    }
+    .keune-mb b{
+        font-size: 7.6svw;
+    }
+    .terra-mb{
+        display: flex;
+        align-items: center;
+    }
+    .terra-mb p{
+        font-size: 3.8svw;
+        line-height: 0px;
+    }
+    .terra-mb-kostil{
+        margin-bottom: 5px;
+        margin-left: 1px;
+    }
+    .terra-mb-kostil h1{
+        font-size: 7.6svw;
+    }
+
+}
+
+/* _______________________________________________________________________ */
+
 .pb-body{
     padding-top: 40px;
     width: 100%;
@@ -21,11 +207,8 @@
     align-items: center;
 
 }
-
-
 .second-line{
     width: 100%;
-
     margin-left: auto;
     margin-right: auto;
     height: 200px;
@@ -33,7 +216,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .pb-item{
     width: 300px; 
     color: white;

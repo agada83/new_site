@@ -20,6 +20,7 @@
     border-radius: 30px;
     border: 0px;
 }
+
 .ft-info{
     width: 35%;
     height: 750px;
@@ -32,30 +33,34 @@
     flex-direction: column;
 }
 .div-h{
-    color:white;
+    color:#ffffffb0;
     font-size: 24px;
     padding-bottom: 20px;
     margin: 0;
 }
 .div-a{
     font-family: 'Montserrat-Light';
-    color: white;
+    color: #ffffffb0;
     font-size: 18px;
     justify-self: center;
 }
 .a-href{
     font-family: 'Montserrat-Light';
-    color: white;
+    color: #ffffffb0;
     font-size: 18px;
     justify-self: center;
     text-decoration: none;
     align-self: center;
     margin-left: 10px;
+
 }
 .metro{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.wimg{
+    width: 30px;
 }
 .ft-line{
     display: flex;
@@ -73,9 +78,7 @@
 .blue{
     background-color: #2A3DA1;
 }
-.ft-item img{
-    
-}
+
 @media (max-width:1500px) {
     .ft-body{
         height: 750px;
@@ -108,20 +111,20 @@
         flex-direction: column;
     }
     .div-h{
-        color:white;
+        color:#ffffffb0;
         font-size: 20px;
         padding-bottom: 10px;
         margin: 0;
     }
     .div-a{
         font-family: 'Montserrat-Light';
-        color: white;
+        color: #ffffffb0;
         font-size: 16px;
         justify-self: center;
     }
     .a-href{
         font-family: 'Montserrat-Light';
-        color: white;
+        color: #ffffffb0;
         font-size: 16px;
         justify-self: center;
         text-decoration: none;
@@ -176,20 +179,20 @@
         flex-direction: column;
     }
     .div-h{
-        color:white;
+        color:#ffffffb0;
         font-size: 18px;
         padding-bottom: 10px;
         margin: 0;
     }
     .div-a{
         font-family: 'Montserrat-Light';
-        color: white;
+        color: #ffffffb0;
         font-size: 16px;
         justify-self: center;
     }
     .a-href{
         font-family: 'Montserrat-Light';
-        color: white;
+        color: #ffffffb0;
         font-size: 16px;
         justify-self: center;
         text-decoration: none;
@@ -210,5 +213,215 @@
         width: 11px;
         border-radius: 50%;
         margin-right: 10px;
+    }
+}
+@media (max-width:768px) {
+    .ft-body{
+        height: 100svw;
+    }
+    .ft-content{
+        padding-top: 50px;
+        max-height: 79svw;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between ;
+        display: flex;
+    }
+    .map-frame{
+        width: 52svw;
+        height: 79svw;
+        position: relative;
+        border-radius: 30px;
+        border: 0px;
+    }
+    .ft-info{
+        width: 39%;
+        height: 79svw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+    }
+    .ft-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-h{
+        color:#ffffffb0;
+        font-size: 2.3svw;
+        padding-bottom: 1.3svw;
+        margin: 0;
+    }
+    .div-a{
+        font-family: 'Montserrat-Light';
+        color: #ffffffb0;
+        font-size: 2svw;
+        justify-self: center;
+    }
+    .a-href{
+        font-family: 'Montserrat-Light';
+        color: #ffffffb0;
+        font-size: 2svw;
+        justify-self: center;
+        text-decoration: none;
+        align-self: center;
+        margin-left: 1.3svw;
+    }
+    .metro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ft-line{
+        display: flex;
+    }
+    .ft-bd{
+        align-self: center;
+        height: 1.4svw;
+        width: 1.4svw;
+        border-radius: 50%;
+        margin-right: 1.3svw;
+    }
+    .wimg{
+        width: 3.9svw;
+    }
+}
+@media (max-width:580px) {
+    .ft-body{
+        height: 100svw;
+    }
+    .ft-content{
+        padding-top: 50px;
+        height: 100svw;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        display: flex;
+    }
+    .map-frame{
+        width: 45svw;
+        height: 79svw;
+        position: relative;
+        border-radius: 3.9svw;
+        border: 0px;
+    }
+    .ft-info{
+        width: 43svw;
+        height: 79svw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+    }
+    .ft-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-h{
+        color:#ffffffb0;
+        font-size: 3.3svw;
+        padding-bottom: 1.3svw;
+        margin: 0;
+    }
+    .div-a{
+        font-family: 'Montserrat-Light';
+        color: #ffffffb0;
+        font-size: 2.5svw;
+        justify-self: center;
+    }
+    .a-href{
+        font-family: 'Montserrat-Light';
+        color: #ffffffb0;
+        font-size: 2.5svw;
+        justify-self: center;
+        text-decoration: none;
+        align-self: center;
+        margin-left: 1.3svw;
+    }
+    .metro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ft-line{
+        display: flex;
+    }
+    .ft-bd{
+        align-self: center;
+        height: 1.4svw;
+        width: 1.4svw;
+        border-radius: 50%;
+        margin-right: 1.3svw;
+    }
+}
+@media (max-width:440px) {
+    .ft-body{
+        height: 120svw;
+    }
+    .ft-content{
+        padding-top: 50px;
+        height: 120svw;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        display: flex;
+    }
+    .map-frame{
+        width: 40svw;
+        height: 100svw;
+        position: relative;
+        border-radius: 3.9svw;
+        border: 0px;
+    }
+    .ft-info{
+        width: 46svw;
+        height: 100svw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+    }
+    .ft-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-h{
+        color:#ffffffb0;
+        font-size: 3.9svw;
+        padding-bottom: 1.3svw;
+        margin: 0;
+    }
+    .div-a{
+        font-family: 'Montserrat-Light';
+        color: #ffffffb0;
+        font-size: 3svw;
+        justify-self: center;
+    }
+    .a-href{
+        font-family: 'Montserrat-Light';
+        color: #ffffffb0;
+        font-size: 3svw;
+        justify-self: center;
+        text-decoration: none;
+        align-self: center;
+        margin-left: 1.3svw;
+    }
+    .metro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ft-line{
+        display: flex;
+    }
+    .ft-bd{
+        align-self: center;
+        height: 1.4svw;
+        width: 1.4svw;
+        border-radius: 50%;
+        margin-right: 1.3svw;
+    }
+    .wimg{
+        width: 5svw;
     }
 }

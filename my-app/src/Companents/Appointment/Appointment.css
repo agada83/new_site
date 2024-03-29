@@ -1,6 +1,6 @@
 .apm-body{
     width: 100%;
-    height: 100svh;
+    height: 800;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,21 +18,44 @@
     height: 800px;
     margin-bottom: 90px;
     padding: 0;
-
 }
 @media (max-width:1500px) {
     .apm-body h1{
-        color: black;
-        font-family: 'Montserrat';
         padding: 50px;
         font-size: 35px;
     }
 }
 @media (max-width:1024px) {
     .apm-body h1{
-        color: black;
-        font-family: 'Montserrat';
         padding: 30px;
         font-size: 30px;
+    }
+}
+@media (max-width:768px) {
+    .apm-body{
+        height: 800;
+    }
+    
+    .apm-body h1{
+        padding: 28px;
+        font-size: 28px;
+    }
+    .apm-body iframe{
+        width: 80%;
+        height: 600px;
+        margin-bottom: 90px;
+        padding: 0;
+    }
+}
+@media (max-width:500px) {
+    .apm-body h1{
+        padding: 28px;
+        font-size: 24px;
+    }
+    .apm-body iframe{
+        width: 80%;
+        height: 400px;
+        margin-bottom: 90px;
+        padding: 0;
     }
 }

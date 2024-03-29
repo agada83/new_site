@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Footer.css'
 import whatsappImg from '../../assets/whatsappImg.png'
+import { Link } from 'react-router-dom';
 
 
 class Footer extends Component {
@@ -19,7 +20,7 @@ class Footer extends Component {
                         <div className='metro'><div className='ft-line'><div className='ft-bd blue'/><a className='div-a'>Бауманская</a></div></div>
                         <div className='metro'><div className='ft-line'><div className='ft-bd red'/><a className='div-a'>Комсомольская</a></div></div>
                     </div>
-                    <div className='ft-item'><h1 className='div-h'>СОЦСЕТИ</h1><div style={{display:'flex'}}><img src={whatsappImg} width={'30px'} /><a className='a-href' href='https://wa.me/7XXXXXXXXXX'>Чат WhatsApp</a></div></div>
+                    <div className='ft-item'><h1 className='div-h'>СОЦСЕТИ</h1><Link to={'https://wa.me/7XXXXXXXXXX'} style={{textDecoration:'none'}}><div style={{display:'flex'}} href='https://wa.me/7XXXXXXXXXX'><img src={whatsappImg} className='wimg' /><a className='a-href' >Чат WhatsApp</a></div></Link></div>
                 </div>
             </div>
         </div>

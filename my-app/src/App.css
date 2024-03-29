@@ -87,3 +87,16 @@
     width: 78%;
   }
 }
+@media (max-width:600px) {
+  
+  .hm-au-div h1{
+    font-size: 25px;
+    padding-top: 50px;
+  }
+
+  .hm-au-div h2{
+    padding-top: 0px;
+    font-size: 20px;
+    width: 90svw;
+  }
+}
