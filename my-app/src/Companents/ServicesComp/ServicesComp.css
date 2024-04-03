@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    overflow: hidden;
 }
 .sc-serv h1{
     font-size: 26px;
@@ -62,15 +63,75 @@
 
     }
     .sc-serv{
-        width: 748px;/* 768-20 */
+        width: 700px;/* 768-20 */
     }
     .sc-serv h1{
         font-size: 22px;
     }
     .sc-serv hr{
-        width: 30svw;
+        width: 250px;
     }
     .sc-hair{
         font-size: 32px;
+    }
+}
+@media (max-width:768px) {
+    .sc-box{
+        height: 1130px;
+
+    }
+    .sc-serv{
+        width: 500px;/* 768-20 */
+    }
+    .sc-serv h1{
+        font-size: 20px;
+        width: auto;
+    }
+    .sc-serv hr{
+        width: 200px;
+    }
+    .sc-hair{
+        font-size: 29px;
+    }
+}
+@media (max-width:565px) {
+    
+    .sc-box{
+        height: 1130px;
+
+    }
+    .sc-serv{
+        width: 400px;/* 768-20 */
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .sc-serv h1{
+        font-size: 19px;
+    }
+    .sc-serv hr{
+        width: 1000px;
+    }
+    .sc-hair{
+        font-size: 29px;
+    }
+}
+@media (max-width:440px) {
+    .sc-serv h1{
+        font-size: 18px;
+    }
+    .sc-serv{
+        width: auto;/* 768-20 */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .sc-hair{
+        font-size: 28px;
+    }
+}
+
+@media (max-width:360px) {
+    .sc-serv hr{
+        width: 1000px;
+        border: 0px;
     }
 }

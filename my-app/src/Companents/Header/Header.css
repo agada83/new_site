@@ -1,71 +1,217 @@
 /* Ваш файл стилей для Header.css */
 
 /* Стили для основного контейнера навигационного меню */
+.navbarmb {
+  background-color: #474747;
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+.navbarmb-brand {
+  margin-left: 60px;
+  flex-grow: 1;
+}
+
+/* Стили для логотипа */
+.navbarmb-brand img {
+  width: 84px;
+  height: auto;
+}
+
+/* Стили для ссылок в навигационном меню */
+.navbarmb-nav {
+  align-items: center;
+  margin-right: 60px;
+  width: max-content;
+  height: 75px;
+  position: relative;
+
+}
+.navbarmb-toggler {
+  display: flex;
+  top: 5px;
+  right: 0;
+  width: 60px; /* Ширина кнопки меню */
+  height: 60px; /* Высота кнопки меню */
+  justify-self: flex-end;
+  background-color: #47474700;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100
+}
+.navbarmb-toggler div{
+  margin-top: 15px;
+  width: auto;
+  height: auto;
+  transition: all 0.5s ease; /* Плавный переход свойства top */
+
+}
+.navbarmb-toggler div.active{
+  width: auto;
+  height: auto;
+  rotate: 90deg;
+
+}
+.navbarmb-toggler div hr{
+  width: 50px;
+  margin:  0px 0px 17px 0px;
+  padding: 0;
+}
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Устанавливаем прозрачный цвет фона */
+  z-index: 99; /* Помещаем оверлей выше, чем меню */
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+.overlay.active {
+  background-color: rgba(0, 0, 0, 0.5); /* Устанавливаем прозрачный цвет фона */
+  pointer-events: all;
+
+}
+/* Стили для активного оверлея */
+
+.navbarmb-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0px;
+  right: -100%;
+  width: 60vw;
+  height: 100vh;
+  background-color: #474747;
+  transition: right 0.5s ease; /* Плавный переход свойства top */
+  z-index: 99; /* Помещаем оверлей выше, чем меню */
+
+}
+
+.navbarmb-nav ul.active {
+  right: 0;
+}
+
+.navbarmb-nav ul li {
+  height: 30px;
+  padding: 20px;
+
+}
+
+.navbarmb-nav .navmb-item {
+  margin-left: 40px;
+  font-size: 24px;
+  width: 70px;
+}
+
+.navbarmb-nav .navmb-item:first-child {
+  margin-top: 110px;
+}
+
+.navbarmb-nav .navmb-item:last-child {
+margin-right: 0;
+}
+
+.navbarmb-nav .navmb-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  font-family: 'Montserrat-Light';
+}
+
+.navbarmb-nav .navmb-link:hover {
+  color: #ffffff; /* Цвет ссылки при наведении */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Стили для основного контейнера навигационного меню */
 .navbar {
-    background-color: #474747;
-    color: white;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-    z-index: 1000;
-  }
-  .navbar-brand {
-    margin-left: 100px;
-    flex-grow: 1;
-  }
+  background-color: #474747;
+  color: white;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+.navbar-brand {
+  margin-left: 100px;
+  flex-grow: 1;
+}
 
-  /* Стили для логотипа */
-  .navbar-brand img {
-    width: 84px;
-    height: auto;
-  }
-  
-  /* Стили для ссылок в навигационном меню */
-  .navbar-nav {
-    align-items: center;
-    margin-right: 100px;
-    width: 600px;
-  }
-  .navbar-nav ul{
-    list-style: none;
-    display: flex;
-    min-height: 30px;
-    margin-bottom: 0px;
-  }  
-  .navbar-nav ul li{
-    height: 30px;
-  }
-  .navbar-nav hr{ 
-    margin-left: 40px;
-    width: 93%;
-    height: 0;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-color: #c9c9c9;
-  }
-  .navbar-nav .nav-item {
-    margin-right: 40px; /* Отступ между ссылками */
-    font-size: 18px;
-    width: 70px;
-  }
+/* Стили для логотипа */
+.navbar-brand img {
+  width: 84px;
+  height: auto;
+}
 
-  .navbar-nav .nav-item:last-child {
-    margin-right: 0; /* Убираем отступ у последней ссылки */
-  }
-  
-  .navbar-nav .nav-link {
-    color: #ffffff57;
-    text-decoration: none;
-    transition: color 0.5s ease;
-    font-family: 'Montserrat-Light';
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #ffffff; /* Цвет ссылки при наведении */
-  }
+/* Стили для ссылок в навигационном меню */
+.navbar-nav {
+  align-items: center;
+  margin-right: 100px;
+  width: 600px;
+}
+.navbar-nav ul {
+  list-style: none;
+  display: flex;
+  min-height: 30px;
+  margin-bottom: 0px;
+}
+
+.navbar-nav ul li {
+  height: 30px;
+}
+.navbar-nav hr{ 
+  margin-left: 40px;
+  width: 93%;
+  height: 0;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: #c9c9c9;
+}
+.navbar-nav .nav-item {
+  margin-right: 40px;
+  font-size: 18px;
+  width: 70px;
+}
+
+.navbar-nav .nav-item:last-child {
+margin-right: 0;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff57;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  font-family: 'Montserrat-Light';
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff; /* Цвет ссылки при наведении */
+}
   
   @media (max-width:1024px) {
     .navbar-nav .nav-item {
@@ -102,3 +248,14 @@
     }
   
   }
+  @media (max-width: 768px) {
+    /* Скрываем список в основном меню */
+    .navbar-nav ul {
+        display: none;
+    }
+
+    /* Отображаем кнопку меню */
+    .navbar-toggler {
+        display: block;
+    }
+}

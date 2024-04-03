@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Carousel-hair.css';
 import hairImg from '../../assets/hair.png';
 import { HashLink } from 'react-router-hash-link';
+import arrow from '../../assets/arrowbottomImg.png'
 
 const slidesData = [
   {
@@ -29,6 +30,45 @@ const slidesData = [
     text3: 'Выпрямление',
   },
 ];
+const slidesDatamb = [
+  {
+    image: hairImg,
+    text:'Укладки',
+  },
+  {
+    image: hairImg,
+    text:'Стрижки',
+  },
+  {
+    image: hairImg,
+    text:'Окрашивания',
+  },
+  {
+    image: hairImg,
+    text:'Рассветление',
+  },
+  {
+    image: hairImg,
+    text:'Элюмирование',
+  },
+  {
+    image: hairImg,
+    text:'Лечение и спа',
+  },
+  {
+    image: hairImg,
+    text:'Трихология',
+  },
+  {
+    image: hairImg,
+    text:'Техники',
+  },
+  {
+    image: hairImg,
+    text:'Выпрямление',
+  },
+];
+
 
 const useWindowWidth = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -50,7 +90,13 @@ const useWindowWidth = () => {
 const CarouselHair = () => {
   const windowWidth = useWindowWidth();
   const [currentSlide, setCurrentSlide] = useState(0);
+    const nextSlide = () => {
+    setCurrentSlide(currentSlide === slidesDatamb.length - 1 ? 0 : currentSlide + 1);
+  };
 
+  const prevSlide = () => {
+    setCurrentSlide(currentSlide === 0 ? slidesDatamb.length - 1 : currentSlide - 1);
+  };
   return (
     <>
       {windowWidth > 768 ? (
@@ -117,40 +163,40 @@ const CarouselHair = () => {
             </div>
           </div>
         </div>
-      ) : (
-        <div className="scmb-carousel">
-          <div className="scmb-slides-container" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-            {slidesData.map((slide, index) => (
-              <div key={index} className="scmb-slide">
-                <div className="scmb-content">
-                <div key={index} className="scmb-slide">
-                <div className="scmb-content">
-                 <div className="scmb-carousel">
-                  <div className="scmb-slides-container" style={{ transform: `translateX(-${currentSlide * 30}%)` }}>
-                    <div className='scmb-item'>
-                      123
-                    </div>
-                  </div>
-                 </div>
-                </div>
-              </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="scmb-navigation">
-            <div className="scmb-dots">
-              {slidesData.map((_, index) => (
-                <span
-                  key={index}
-                  className={`scmb-dot ${index === currentSlide ? 'active' : ''}`}
-                  onClick={() => setCurrentSlide(index)}
-                />
-              ))}
-              <span className={`scmb-dot ${3 === currentSlide ? 'active' : ''}`} onClick={() => setCurrentSlide(3)} />
-            </div>
-          </div>
-        </div>      )}
+      )
+      //________________________________________________________________________
+      :
+      (
+<div className="sc-carousel">
+  <div className="sc-slides-container" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+    {slidesDatamb.map((slide, index) => (
+      <div key={index} className="sc-slide">
+        <div className='scmb-item'>
+          <img src={slide.image} alt={`Hair ${index}`} />
+          <a>{slide.text}</a>
+          <HashLink to={'/prices'}>
+            <button>Прайс-лист</button>
+          </HashLink>
+        </div>
+      </div>
+    ))}
+  </div>
+  <button className="sc-prevslide" onClick={prevSlide}><img src={arrow}/></button>
+  <button className="sc-nextslide" onClick={nextSlide}><img src={arrow}/></button>
+
+  <div className="sc-navigation">
+    <div className="sc-dots">
+      {slidesDatamb.map((_, index) => (
+        <span
+          key={index}
+          className={`sc-dot ${index === currentSlide ? 'active' : ''}`}
+          onClick={() => setCurrentSlide(index)}
+        />
+      ))}
+    </div>
+  </div>
+</div>
+        )}
     </>
   );
 };
