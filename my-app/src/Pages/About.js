@@ -14,14 +14,14 @@ class About extends Component {
     render() {
         return (
             <div style={{display:'block'}} id='main'>
-                <AboutSalon />
-                <AboutUs/>
-                <Info />
-                <Interior />
-                <Sale />
+                {/* <AboutSalon /> 
+                <AboutUs/> 
+                <Info /> 
+                <Interior /> 
+                <Sale />  */}
                 <OurWorks />
-                <PartnerBrands />
-                <Footer />
+                {/* <PartnerBrands />
+                <Footer /> */}
             </div>
         );
     }

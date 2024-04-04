@@ -1,39 +1,44 @@
-.as-box{
+.as-box {
     width: 100%;
     height: 900px;
     text-align: center;
     padding-top: 60px;
-
 }
 
-.as-box h1{
+.as-box h1 {
     color: rgb(0, 0, 0);
     font-family: 'Montserrat';
     font-size: 40px;
     margin: 0;
 }
 
-.as-content{
+.as-content {
     padding: 50px;
     padding-top: 50px;
     width: 1300px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    flex-direction: row;
     gap: 70px;
 }
 
-.as-content img{
+.as-img-desktop {
     max-width: 500px;
     min-width: 500px;
     height: auto;
     border-radius: 30px;
 }
-.as-text p{
+
+.as-img-mobile {
+    display: none; /* Спрятать изображение на десктопе */
+}
+
+.as-text p {
     color: #000000;
     font-family: 'Montserrat-Light';
     font-size: 27px;
-    text-align:justify;
+    text-align: justify;
     line-height: 37px;
     margin: 0;
     padding: 0;
@@ -53,12 +58,11 @@
     .as-content{
         padding: 25px;
         padding-top: 40px;
-
         width: 924px;
         gap: 30px;
     }
     
-    .as-content img{
+    .as-img-desktop{
         max-width: 390px;
         min-width: 390px;
         border-radius: 25px;
@@ -75,7 +79,6 @@
     .as-box{
         height: 640px;
         padding-top: 30px;
-    
     }
     
     .as-box h1{
@@ -90,7 +93,7 @@
         gap: 20px;
     }
     
-    .as-content img{
+    .as-img-desktop{
         max-width: 300px;
         min-width: 300px;
         border-radius: 30px;
@@ -101,5 +104,56 @@
         line-height: 22px;
         margin: 0;
         padding: 0;
+    }
+}
+@media (max-width:768px) {
+    .as-img-desktop {
+        display: none; /* Спрятать изображение на мобильных устройствах */
+    }
+    .as-box h1{
+        font-size: 27px;
+        margin: 0;
+    }
+    .as-img-mobile {
+        max-width: 100%;
+        min-width: 100%;
+        border-radius: 30px;
+        display: block; /* Показать изображение на мобильных устройствах */
+    }
+
+    .as-content {
+        width: auto;
+        padding: 50px;
+        padding-top: 50px;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media (max-width:480px) {
+    .as-text p {
+        color: #000000;
+        font-family: 'Montserrat-Light';
+        font-size: 18px;
+        text-align: justify;
+        line-height: 25px;
+        margin: 0;
+        padding: 0;
+    }
+    .as-content {
+        padding: 25px;
+    }
+}
+@media (max-width:390px) {
+    .as-text p {
+        color: #000000;
+        font-family: 'Montserrat-Light';
+        font-size: 16px;
+        text-align: justify;
+        line-height: 23px;
+        margin: 0;
+        padding: 0;
+    }
+    .as-content {
+        padding: 20px;
     }
 }

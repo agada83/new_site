@@ -1,3 +1,63 @@
+/* 
+
+
+.toggle-button {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 40px;
+    color: #000000;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+*/
+.owmb-box {
+    width: 100%;
+    height: auto;
+    font-family: 'Montserrat';
+    padding-bottom: 50px;
+}
+
+.owmb-box h1 {
+    font-size: 28px;
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.owmb-content {
+    width: min-content;
+    max-height: 565px; 
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.owmb-content.show-all-rows {
+    max-height: 1800px;
+    transition: max-height 1s ease;
+}
+.owmb-row{
+    display: flex;
+    justify-content: space-between;
+    gap:30px
+}
+.owmb-row img{
+    width: 200px;
+    height: auto;
+}
+
+
+
+
+/*________________________________________________________________________________ */
 .ow-box {
     width: 100%;
     height: auto;
@@ -125,6 +185,74 @@
     .toggle-button {
         width: 200px;
         margin-top: 40px;
+        font-size: 18px;
+    }
+}
+@media (max-width:768px) {
+    .ow-box h1 {
+        font-size: 30px;
+        padding-top: 50px;
+        padding-bottom: 38px;
+    }
+    .ow-row img{
+        width: 160px;
+        height: auto;
+    }
+    .ow-row{
+        gap:32px
+    }
+    .ow-content {
+        max-height: 460px; /* Установите начальную максимальную высоту */
+        gap: 32px;
+    }
+    .ow-content.show-all-rows {
+        max-height: 960px; /* Установите достаточно большую максимальную высоту для показа всех строк */
+    }
+    .toggle-button {
+        width: 150px;
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}
+@media (max-width:480px) {
+
+    .owmb-row img{
+        width: 160px;
+        height: auto;
+    }
+    .owmb-row{
+        gap:32px
+    }
+    .owmb-content {
+        max-height: 460px; /* Установите начальную максимальную высоту */
+        gap: 32px;
+    }
+    .owmb-content.show-all-rows {
+        max-height: 1600px; /* Установите достаточно большую максимальную высоту для показа всех строк */
+    }
+
+}
+@media (max-width:400px) {
+    .owmb-box h1 {
+        font-size: 26px;
+    }    
+    .owmb-row img{
+        width: 130px;
+        height: auto;
+    }
+    .owmb-row{
+        gap:20px
+    }
+    .owmb-content {
+        max-height: 380px; /* Установите начальную максимальную высоту */
+        gap: 20px;
+    }
+    .owmb-content.show-all-rows {
+        max-height: 1600px; /* Установите достаточно большую максимальную высоту для показа всех строк */
+    }
+    .toggle-button {
+        width: 150px;
+        margin-top: 20px;
         font-size: 18px;
     }
 }

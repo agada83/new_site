@@ -28,16 +28,23 @@
     height: auto;
     /* background-color: #3cff00; */
     display: flex;
+    flex-direction: row;
     margin-left: auto;
     margin-right: auto;
 }
 
-.sl-content img{
+.sl-desctop-img{
     border-radius: 20px;
     min-width: 680px;
     max-width: 680px;
     min-height: 740px;
     max-height: 740px;
+    display: block;
+}
+.sl-mobile-img{
+    width: 100%;
+    height: auto;
+    display: none;
 }
 .sl-text{
     font-family: 'Montserrat';
@@ -85,6 +92,9 @@
     color:white;
 }
 @media (max-width:1500px) {
+    .sl-box{
+        height: 700px;
+    }
     .sl-box h1{
         color: black;
         font-family: 'Montserrat';
@@ -100,7 +110,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .sl-content img{
+    .sl-desctop-img{
         border-radius: 20px;
         min-width: 450px;
         max-width: 450px;
@@ -142,6 +152,9 @@
     }
 }
 @media (max-width:1024px) {
+    .sl-box{
+        height: 750px;
+    }
     .sl-box h1{
         color: black;
         font-family: 'Montserrat';
@@ -157,7 +170,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .sl-content img{
+    .sl-desctop-img{
         border-radius: 20px;
         min-width: 350px;
         max-width: 350px;
@@ -210,5 +223,136 @@
         font-size: 22px;
         transition: all 1s ease;
         color:#474747
+    }
+}
+@media (max-width:768px) {
+    .sl-body h1{
+        font-size: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .sl-box{
+        height: auto;
+    }
+    .sukablat{
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .sl-content{
+        flex-direction: column;
+        margin-left: 4svw;
+        margin-right: 4svw;
+        width: auto;
+        height: auto;
+    }
+    .sl-desctop-img{
+        display: none;
+    }
+    .sl-mobile-img{
+        display: block;
+    }
+    .pzdc{
+        width: 92svw;
+        min-width: 92svw;
+        max-width: 92svw;
+        position: static;
+    }
+    .pzdc1{
+        width: 92svw;
+        min-width: 92svw;
+        max-width: 92svw;
+        position: static;
+        left: 0px;
+        top: 0px;
+        margin-top: 30px;
+    }
+    .sl-atext{
+        width: 92svw;
+        height: auto;
+        text-align: justify;
+        padding: 0;
+    }
+    .sl-text{
+        margin: 0;
+        width: 92svw;
+        height: auto;
+        position: relative;
+    }
+    .sl-text a{
+        font-size: 23px;
+        line-height: 45px;
+        text-align: justify;
+        position: relative;
+    }
+    .sl-text h2{
+        width: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 25px;
+        color:#474747;
+        text-align: left;
+        margin-top: 40px;
+    }
+    .sl-text button{
+        width: 92svw;
+        height: 75px;
+        border-radius: 39px;
+        font-size: 23px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        padding: 0;   
+        position: relative;
+        left:initial;
+        right: initial;
+        top: auto;
+        margin-top: 30px;
+
+    }
+    .sl-text button:hover{
+        background-color: #474747;
+        color:white;
+    }
+}
+@media (max-width:480px) {
+    .sl-text a{
+        font-size: 19px;
+        line-height: 33px;
+    }
+    .sl-text button{
+        width: 92svw;
+        height: 55px;
+        border-radius: 39px;
+        font-size: 19px;
+        margin-top: 30px;
+    }
+    .sl-body h1{
+        font-size: 24px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+@media (max-width:350px) {
+    .sl-text a{
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .sl-text button{
+        width: 92svw;
+        height: 60px;
+        border-radius: 39px;
+        font-size: 17px;
+        margin-top: 30px;
+    }
+    .sl-body h1{
+        font-size: 24px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }

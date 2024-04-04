@@ -140,7 +140,38 @@ const CarouselStyle = () => {
             //________________________________________________________________________
             :
             (
-              <div>123</div>
+              <div className="tsmbcarousel">
+              <div className="tsmbslides-container" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+                {slidesDatamb.map((slide, index) => (
+                  <div key={index} className="tsmbslide">
+                      <div className="tsmbcontent">
+                          <div className='itemmb'>
+                              <img src={slide.image} alt={`Slide ${index + 1}`}/>
+                              <a>{slide.text}</a>
+                              <a>{slide.price}</a>
+                              <HashLink to={'/prices'}>
+                                <button>Записаться</button>
+                              </HashLink>
+                          </div>
+                      </div>
+                  </div>
+                ))}
+              </div>
+              <button className="ts-prevslide" onClick={prevSlide}><img src={arrow}/></button>
+              <button className="ts-nextslide" onClick={nextSlide}><img src={arrow}/></button>
+
+              <div className="tsnavigation">
+                <div className="tsmbdots">
+                  {slidesDatamb.map((_, index) => (
+                    <span
+                      key={index}
+                      className={`tsmbdot ${index === currentSlide ? 'active' : ''}`}
+                      onClick={() => setCurrentSlide(index)}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
               )}
               </>
     );

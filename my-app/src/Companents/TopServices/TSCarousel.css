@@ -1,3 +1,274 @@
+/*
+.tscontent {
+    display: flex;
+    background-color: #47474700;
+    height: 470px;
+    padding: 20px;
+    min-width: 1200px;
+    justify-content: space-between;
+}
+
+.item img{
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    padding-bottom: 5%;
+}
+
+.item a{
+    font-family: 'Montserrat';
+    font-size: 22px;
+    margin-top: 3%;
+}
+
+.item button{
+    font-size: 22px;
+    font-family: 'Montserrat';
+    background-color: #33333300;
+    height: 55px;
+    border-radius: 27px;
+    width: 220px;
+    margin-top: 7%;
+    border: 1px solid black;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.item button:hover{
+    color: white;
+    background-color: #474747;
+}
+
+.tsnavigation {
+    position: relative;
+    bottom: 40px;
+    width: 100%;
+    height: 60px;
+}
+
+*/
+
+.itemmb{
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    max-width: 280px;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.itemmb img{
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    padding-bottom: 5%;
+}
+
+.itemmb a{
+    font-family: 'Montserrat';
+    font-size: 22px;
+    margin-top: 3%;
+}
+
+.itemmb button{
+    font-size: 22px;
+    font-family: 'Montserrat';
+    background-color: #33333300;
+    height: 55px;
+    border-radius: 27px;
+    width: 220px;
+    margin-top: 7%;
+    border: 1px solid black;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.itemmb button:hover{
+    color: white;
+    background-color: #474747;
+}
+.tsmbcontent {
+    display: flex;
+    background-color: #47474700;
+    height: 400px;
+    padding: 20px;
+    min-width: 1200px;
+    justify-content: space-between;
+}
+.tsmbcarousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.tsmbslides-container {
+    display: flex;
+    transition: all 0.9s ease-in-out;
+    height: 600px;
+}
+
+.tsmbslide {
+    min-width: 90%;
+    max-width: 90%;
+    padding: 5%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 400px;
+}
+.ts-nextslide,
+.ts-prevslide {
+  transform: translateY(-50%);
+  width: 70px; /* Настройте ширину и высоту по вашему усмотрению */
+  height: 80px;
+  background-color: rgba(230, 0, 0, 0); /* Прозрачный черный цвет фона */
+  color: #fff; /* Цвет текста */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Установите z-index, чтобы элементы навигации были поверх слайдов */
+  position: absolute;
+  top: 30%;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 0;
+}
+
+
+.ts-nextslide {
+  right: 10px; /* Поместите элемент вправо */
+}
+.ts-nextslide img{
+  rotate: -90deg;
+}
+.ts-prevslide {
+  left: 10px; /* Поместите элемент влево */
+}
+.ts-prevslide img{
+  rotate: 90deg;
+}
+.tsmbdots {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    position: relative;
+}
+
+.tsmbdot {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    border:   3px solid #474747;
+    cursor: pointer;
+}
+
+.tsmbdot.active {
+    background-color: #333;
+} 
+@media (max-width:550px) {
+    .ts-nextslide {
+        right: -5px; /* Поместите элемент вправо */
+    }
+    .ts-prevslide {
+        left: -5px; /* Поместите элемент влево */
+    }
+    .itemmb{
+        min-width: 200px;
+        max-width: 200px;
+    }
+    .itemmb img{
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+        padding-bottom: 5%;
+    }
+    .itemmb a{
+        font-size: 20px;
+        margin-top: 3%;
+    }
+    
+    .itemmb button{
+        font-size: 20px;
+        height: 48px;
+        border-radius: 27px;
+        width: 200px;
+        margin-top: 7%;
+    }
+    .tsmbslides-container {
+        display: flex;
+        transition: all 0.9s ease-in-out;
+        height: 500px;
+    }
+}
+@media (max-width:500px) {
+    .ts-nextslide {
+        right: -30px; /* Поместите элемент вправо */
+    }
+    .ts-prevslide {
+        left: -30px; /* Поместите элемент влево */
+    }
+}
+@media (max-width:420px) {
+    .ts-nextslide {
+        right: -60px; /* Поместите элемент вправо */
+    }
+    .ts-prevslide {
+        left: -60px; /* Поместите элемент влево */
+    }
+
+
+    .itemmb a{
+        font-size: 20px;
+        margin-top: 3%;
+    }
+    
+    .itemmb button{
+        font-size: 20px;
+        height: 48px;
+        border-radius: 27px;
+        width: 200px;
+        margin-top: 7%;
+    }
+    .tsmbslides-container {
+        display: flex;
+        transition: all 0.9s ease-in-out;
+        height: 500px;
+    }
+}
+@media (max-width:360px) {
+    .ts-nextslide {
+        right: -60px; /* Поместите элемент вправо */
+    }
+    .ts-prevslide {
+        left: -60px; /* Поместите элемент влево */
+    }
+
+    .itemmb a{
+        font-size: 20px;
+        margin-top: 3%;
+    }
+    
+    .itemmb button{
+        font-size: 20px;
+        height: 48px;
+        border-radius: 27px;
+        width: 200px;
+        margin-top: 7%;
+    }
+    .tsmbslides-container {
+        display: flex;
+        transition: all 0.9s ease-in-out;
+        height: 450px;
+    }
+}
+/* ________________________________________________________ */
+
 
 .tscarousel {
     position: relative;

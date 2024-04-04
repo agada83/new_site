@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Salon.css'
 import './PriceList.css'
 import salonImg from '../../assets/salonImg.png'
+import salonImgmb from '../../assets/salonImgmb.png'
 import arrowbottomImg from '../../assets/arrowbottomImg.png'
 import { HashLink } from 'react-router-hash-link';
 
@@ -108,13 +109,14 @@ const Salon = () => {
         <div className='sl-box'>
             <h1>{displayText1}</h1>
             <div className='sl-content'>
-                <img src={salonImg}/>
+                <img className='sl-desctop-img' src={salonImg}/>
+                <img className='sl-mobile-img' src={salonImgmb}/>
                 <div className='sl-text'>
                     <h2>{displayText2}</h2>
                     <div className='sl-atext'>
                         <div className='pzdc1'><a>{displayText3}</a></div><br/><div className='pzdc'><a>{displayText4}</a></div>
                     </div>
-                    <HashLink to='/#registration'>
+                    <HashLink to='/#registration' className='sukablat'>
                         <button>Записаться</button>
                     </HashLink>
                 </div>
@@ -135,12 +137,12 @@ const Salon = () => {
                     <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
-                    <div className='pr-line'><a>Макияж дневной повседневный - BUSINESS LADY</a><a>2500 руб.</a></div>
-                    <div className='pr-line'><a>Макияж коктейльный - PARTY GIRL</a><a>2500 руб.</a></div>
-                    <div className='pr-line'><a>Макияж вечерний - NIGHT PARTY</a><a>2800 руб.</a></div>
-                    <div className='pr-line'><a>Макияж возрасной- ANTI-AGE</a><a>3000 руб.</a></div>
-                    <div className='pr-line'><a>Макияж пробный свадебный- TEST MARRIDE DAY</a><a>2800 руб.</a></div>
-                    <div className='pr-line'><a>Макияж свадебный- MARRIDE DAY</a><a>3800 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Макияж дневной повседневный - BUSINESS LADY</a><a className='pr-list-price'>2500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Макияж коктейльный - PARTY GIRL</a><a className='pr-list-price'>2500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Макияж вечерний - NIGHT PARTY</a><a className='pr-list-price'>2800 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Макияж возрасной- ANTI-AGE</a><a className='pr-list-price'>3000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Макияж пробный свадебный- TEST MARRIDE DAY</a><a className='pr-list-price'>2800 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Макияж свадебный- MARRIDE DAY</a><a className='pr-list-price'>3800 руб.</a></div>
                 </div> 
             </div>
             </div>
@@ -151,14 +153,14 @@ const Salon = () => {
                     <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
-                    <div className='pr-line'><a>Коррекция бровей (раннее созданной формы)</a><a>750 руб.</a></div>
-                    <div className='pr-line'><a>Создание новой формы бровей</a><a>1500 руб.</a></div>
-                    <div className='pr-line'><a>Окрашивание бровей ХНА</a><a>1500 руб.</a></div>
-                    <div className='pr-line'><a>Окрашивание бровей краска</a><a>850 руб.</a></div>
-                    <div className='pr-line'><a>Ламинирование бровей</a><a>3800 руб.</a></div>
-                    <div className='pr-line'><a>Счастье для бровей</a><a>1200 руб.</a></div>
-                    <div className='pr-line'><a>Окрашивание ресниц</a><a>800 руб.</a></div>
-                    <div className='pr-line'><a>Ламинирование ресниц</a><a>4200 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Коррекция бровей (раннее созданной формы)</a><a className='pr-list-price'>750 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Создание новой формы бровей</a><a className='pr-list-price'>1500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Окрашивание бровей ХНА</a><a className='pr-list-price'>1500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Окрашивание бровей краска</a><a className='pr-list-price'>850 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Ламинирование бровей</a><a className='pr-list-price'>3800 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Счастье для бровей</a><a className='pr-list-price'>1200 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Окрашивание ресниц</a><a className='pr-list-price'>800 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Ламинирование ресниц</a><a className='pr-list-price'>4200 руб.</a></div>
                 </div> 
             </div>
             </div>
@@ -171,14 +173,14 @@ const Salon = () => {
                     <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
-                    <div className='pr-line'><a>Укладка мужская</a><a>1000 руб.</a></div>
-                    <div className='pr-line'><a>Сушка волос феном S/M/L/XL</a><a>1000/1100/1200/1400 руб.</a></div>
-                    <div className='pr-line'><a>Укладка женская S/M/L/XL</a><a>1600/1800/2000/2300 руб.</a></div>
-                    <div className='pr-line'><a>Укладка Коктейльная Cloud Nine S/M/L/XL</a><a>2100/2900/3300/3600 руб.</a></div>
-                    <div className='pr-line'><a>Укладка празничная S/M/L/XL</a><a>2100/3500/3900/4600 руб.</a></div>
-                    <div className='pr-line'><a>Укладка нарощенных волос</a><a>2800 руб.</a></div>
-                    <div className='pr-line'><a>Эксперсс плетение косы</a><a>1200 руб.</a></div>
-                    <div className='pr-line'><a>Декоротивное плетение косы</a><a>2600 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Укладка мужская</a><a className='pr-list-price'>1000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Сушка волос феном S/M/L/XL</a><a className='pr-list-price'>1000/ 1100/ 1200/ 1400 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Укладка женская S/M/L/XL</a><a className='pr-list-price'>1600/ 1800/ 2000/ 2300 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Укладка Коктейльная Cloud Nine S/M/L/XL</a><a className='pr-list-price'>2100/2900/3300/3600 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Укладка празничная S/M/L/XL</a><a className='pr-list-price'>2100/ 3500/ 3900/ 4600 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Укладка нарощенных волос</a><a className='pr-list-price'>2800 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Эксперсс плетение косы</a><a className='pr-list-price'>1200 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Декоротивное плетение косы</a><a className='pr-list-price'>2600 руб.</a></div>
                 </div>
             </div>
         </div>
@@ -190,16 +192,16 @@ const Salon = () => {
                     <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
-                    <div className='pr-line'><a>Стрижка женская + укладка S/M/L/XL + сенсуалирование волос</a><a>2800/3000/3200/3500 руб.</a></div>
-                    <div className='pr-line'><a>Стрижка с укладкой Креативная/Авторская</a><a>3500/4000 руб.</a></div>
-                    <div className='pr-line'><a>Коррекций челки</a><a>800 руб.</a></div>
-                    <div className='pr-line'><a>Создание новой челки</a><a>1500 руб.</a></div>
-                    <div className='pr-line'><a>Стрижка детская до 12 лет/подростковая</a><a>1500/2000 руб.</a></div>
-                    <div className='pr-line'><a>Стрижка мужская + укладка</a><a>2500 руб.</a></div>
-                    <div className='pr-line'><a>Стрижка мужская креативная + укладка</a><a>3300 руб.</a></div>
-                    <div className='pr-line'><a>Стрижка мужская машинкой</a><a>1500 руб.</a></div>
-                    <div className='pr-line'><a>Дизайн бороды</a><a>1000 руб.</a></div>
-                    <div className='pr-line'><a>Дизайн усов</a><a>800 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Стрижка женская + укладка S/M/L/XL + сенсуалирование волос</a><a className='pr-list-price'>2800/ 3000/ 3200/ 3500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Стрижка с укладкой Креативная/Авторская</a><a className='pr-list-price'>3500/ 4000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Коррекций челки</a><a className='pr-list-price'>800 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Создание новой челки</a><a className='pr-list-price'>1500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Стрижка детская до 12 лет/ подростковая</a><a className='pr-list-price'>1500/ 2000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Стрижка мужская + укладка</a><a className='pr-list-price'>2500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Стрижка мужская креативная + укладка</a><a className='pr-list-price'>3300 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Стрижка мужская машинкой</a><a className='pr-list-price'>1500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Дизайн бороды</a><a className='pr-list-price'>1000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Дизайн усов</a><a className='pr-list-price'>800 руб.</a></div>
                 </div>            
             </div>
         </div>
@@ -212,16 +214,16 @@ const Salon = () => {
                     <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
-                    <div className='pr-line'><a>Коррекция седины Men Reshade (1фл./20мл.)/(2фл./40мл.)</a><a>3400/6600 руб.</a></div>
-                    <div className='pr-line'><a>Окрашивание волос в 1 тон SO PURE - S/M/L/XL</a><a>7000/10200/13500/16500 руб.</a></div>
-                    <div className='pr-line'><a>Окрашивание волос в 1 тон KEUNE S/M/L/XL</a><a>6000/7700/11500/13800 руб.</a></div>
-                    <div className='pr-line'><a>АНИМАЦИЯ ЦВЕТА @PURE PIGMENTS GW</a><a>500 руб.</a></div>
-                    <div className='pr-line'><a>Color Balancing KEUNE - S/M/L/XL</a><a>7100/8300/10500/12600 руб.</a></div>
-                    <div className='pr-line'><a>Color Balancing SO PURE - S/M/L/XL</a><a>8600/9700/12200/14500 руб.</a></div>
-                    <div className='pr-line'><a>Тонирование волос KEUNE - S/M/L/XL/XLL</a><a>4500/5800/8300/10800/13500 руб.</a></div>
-                    <div className='pr-line'><a>Тонирование волос SO PURE - S/M/L/XL/XLL</a><a>5500/7500/10600/14100/16000 руб.</a></div>
-                    <div className='pr-line'><a>Колорирование волос KEUNE- S/M/L/XL</a><a>7200/9300/13600/16200 руб.</a></div>
-                    <div className='pr-line'><a>Колорирование волос SO PURE - S/M/L/XL</a><a>8600/12000/15000/18000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Коррекция седины Men Reshade (1фл./20мл.)/(2фл./40мл.)</a><a className='pr-list-price'>3400/ 6600 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Окрашивание волос в 1 тон SO PURE - S/M/L/XL</a><a className='pr-list-price'>7000/ 10200/ 13500/ 16500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Окрашивание волос в 1 тон KEUNE S/M/L/XL</a><a className='pr-list-price'>6000/ 7700/ 11500/ 13800 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>АНИМАЦИЯ ЦВЕТА @PURE PIGMENTS GW</a><a className='pr-list-price'>500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Color Balancing KEUNE - S/M/L/XL</a><a className='pr-list-price'>7100/ 8300/ 10500/ 12600 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Color Balancing SO PURE - S/M/L/XL</a><a className='pr-list-price'>8600/ 9700/ 12200/ 14500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Тонирование волос KEUNE - S/M/L/XL/XLL</a><a className='pr-list-price'>4500/ 5800/ 8300/ 10800/ 13500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Тонирование волос SO PURE - S/M/L/XL/XLL</a><a className='pr-list-price'>5500/ 7500/ 10600/ 14100/ 16000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Колорирование волос KEUNE- S/M/L/XL</a><a className='pr-list-price'>7200/ 9300/ 13600/ 16200 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Колорирование волос SO PURE - S/M/L/XL</a><a className='pr-list-price'>8600/ 12000/ 15000/ 18000 руб.</a></div>
                 </div>                
             </div>
         </div>
@@ -233,11 +235,11 @@ const Salon = () => {
                     <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
-                    <div className='pr-line'><a>Ультра Блонд 3000+ Tinta-S/M/L/XL</a><a>7800/16500/25100/32500 руб.</a></div>
-                    <div className='pr-line'><a>Обесцвечивание волос KEUNE - S/M/L/XL</a><a>4500/5500/6800/7600 руб.</a></div>
-                    <div className='pr-line'><a>Блики (мелирование нескольких прядей)</a><a>4500руб.</a></div>
-                    <div className='pr-line'><a>Прикорневое мелирование волос</a><a>6000руб.</a></div>
-                    <div className='pr-line'><a>Мелирование волос S S/M/L/XL</a><a>6000/7000/9500/11800 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Ультра Блонд 3000+ Tinta-S/M/L/XL</a><a className='pr-list-price'>7800/ 16500/ 25100/ 32500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Обесцвечивание волос KEUNE - S/M/L/XL</a><a className='pr-list-price'>4500/ 5500/ 6800/ 7600 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Блики (мелирование нескольких прядей)</a><a className='pr-list-price'>4500руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Прикорневое мелирование волос</a><a className='pr-list-price'>6000руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Мелирование волос S S/M/L/XL</a><a className='pr-list-price'>6000/ 7000/ 9500/ 11800 руб.</a></div>
                 </div>  
             </div>
         </div>
@@ -248,10 +250,10 @@ const Salon = () => {
                     <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
-                    <div className='pr-line'><a>Элюминирование в 1 тон -S/M/L/XL</a><a>7000/96500/12100/15600руб.</a></div>
-                    <div className='pr-line'><a>Элюминирование Color Balancing (окрашивание корней и тонирование по длине ) S/M/L/XL</a><a>11400/14000/16700/18500 руб.</a></div>
-                    <div className='pr-line'><a>Снятие Элюмен RETURN -S/M/L/XL</a><a>3000/4600/6400/7400 руб.</a></div>
-                    <div className='pr-line'><a>Снятие Элюмен ERASER -S/M/L/XL</a><a>3000/3500/6100/6600 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Элюминирование в 1 тон -S/M/L/XL</a><a className='pr-list-price'>7000/ 96500/ 12100/ 15600руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Элюминирование Color Balancing (окрашивание корней и тонирование по длине ) S/M/L/XL</a><a className='pr-list-price'>11400/ 14000/ 16700/ 18500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Снятие Элюмен RETURN -S/M/L/XL</a><a className='pr-list-price'>3000/ 4600/ 6400/ 7400 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Снятие Элюмен ERASER -S/M/L/XL</a><a className='pr-list-price'>3000/ 3500/ 6100/ 6600 руб.</a></div>
                 </div>  
             </div>
         </div>
@@ -262,19 +264,19 @@ const Salon = () => {
                     <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
-                    <div className='pr-line'><a>Лечебная сенсуалирующая маска/Экспресс уход</a><a>600 руб.</a></div>
-                    <div className='pr-line'><a>Лечение волос BondPro</a><a>2500 руб.</a></div>
-                    <div className='pr-line'><a>Окрашивание волос + лечением BondPro S/M</a><a>2000 руб.</a></div>
-                    <div className='pr-line'><a>Окрашивание волос + лечением BondPro L/XL</a><a>2300 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Лечебная сенсуалирующая маска/Экспресс уход</a><a className='pr-list-price'>600 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Лечение волос BondPro</a><a className='pr-list-price'>2500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Окрашивание волос + лечением BondPro S/M</a><a className='pr-list-price'>2000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Окрашивание волос + лечением BondPro L/XL</a><a className='pr-list-price'>2300 руб.</a></div>
 
-                    <h3>Lebel</h3>
-                    <div className='pr-line'><a>SPA-программа «Hair Skin Relaxing» S/M/L/XL</a><a>2100/3000/3700/4700 руб.</a></div>
-                    <div className='pr-line'><a>Счастье для волос ЖИЗНЕННАЯ СИЛА S/M/L/XL</a><a>2000/3000/4000/5400 руб.</a></div>
-                    <div className='pr-line'><a>Абсолютное счастье для волос S/M/L/XL</a><a>2000/3000/4000/5400 руб.</a></div>
-                    <div className='pr-line'><a>Счастье для волос БЛЕСК и СИЛА S/M/L/XL</a><a>3000/5500/7500/10000 руб.</a></div>
-                    <h3>So pure</h3>
+                    <div className='pr-line'><h3>Lebel</h3></div>
+                    <div className='pr-line'><a className='pr-list-name'>SPA-программа «Hair Skin Relaxing» S/M/L/XL</a><a className='pr-list-price'>2100/ 3000/ 3700/ 4700 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Счастье для волос ЖИЗНЕННАЯ СИЛА S/M/L/XL</a><a className='pr-list-price'>2000/ 3000/ 4000/ 5400 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Абсолютное счастье для волос S/M/L/XL</a><a className='pr-list-price'>2000/ 3000/ 4000/ 5400 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Счастье для волос БЛЕСК и СИЛА S/M/L/XL</a><a className='pr-list-price'>3000/ 5500/ 7500/ 10000 руб.</a></div>
+                    <div className='pr-line'><h3>So pure</h3></div>
 
-                    <div className='pr-line'><a>СПА-уход SO PURE - S/M/L/XL</a><a>1100/1500/2100/2500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>СПА-уход SO PURE - S/M/L/XL</a><a className='pr-list-price'>1100/ 1500/ 2100/ 2500 руб.</a></div>
 
                 </div>             
             </div>
@@ -286,8 +288,8 @@ const Salon = () => {
                     <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
-                    <div className='pr-line'><a>Детокс-пилинг д/кожи головы MEDAVITA (П25/Ш20/Э15/без ампулы)</a><a>2000 руб.</a></div>
-                    <div className='pr-line'><a>Программа против выпадения волос MEDAVITA (пилинг+ампула)</a><a>3500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Детокс-пилинг д/кожи головы MEDAVITA (П25/Ш20/Э15/без ампулы)</a><a className='pr-list-price'>2000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Программа против выпадения волос MEDAVITA (пилинг+ампула)</a><a className='pr-list-price'>3500 руб.</a></div>
                 </div> 
             </div>
         </div>
@@ -298,10 +300,10 @@ const Salon = () => {
                     <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
-                    <div className='pr-line'><a>Брондирование Омбре- S/M/L/XL</a><a>11500/14000/17000/18500 руб.</a></div>
-                    <div className='pr-line'><a>Брондирование Шатуш - S/M/L/XL</a><a>12000/15000/17000/21000 руб.</a></div>
-                    <div className='pr-line'><a>Окрашивание Аиртач - М/L/XL</a><a>16500/19500/24000 руб.</a></div>
-                    <div className='pr-line'><a>Окрашивание Airtouch - М/L/XL</a><a>17000/20000/25000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Брондирование Омбре- S/M/L/XL</a><a className='pr-list-price'>11500/ 14000/ 17000/ 18500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Брондирование Шатуш - S/M/L/XL</a><a className='pr-list-price'>12000/ 15000/ 17000/ 21000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Окрашивание Аиртач - М/L/XL</a><a className='pr-list-price'>16500/ 19500/ 24000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Окрашивание Airtouch - М/L/XL</a><a className='pr-list-price'>17000/ 20000/ 25000 руб.</a></div>
                 </div> 
             </div>
         </div>
@@ -312,7 +314,7 @@ const Salon = () => {
                     <button><img src={arrowbottomImg}/></button>
                 </div> 
                 <div className='pr-hair-full-price'>
-                    <div className='pr-line'><a>Кератиновое выпрямление/восстановление волос -S/M/L/XL</a><a>6500/8500/11000/13500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Кератиновое выпрямление/восстановление волос -S/M/L/XL</a><a className='pr-list-price'>6500/ 8500/ 11000/ 13500 руб.</a></div>
                 </div>
             </div>
         </div>
@@ -323,8 +325,8 @@ const Salon = () => {
                     <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
-                    <div className='pr-line'><a>Щадящая химическая завивка Evolution - S/M/L</a><a>8500/9700/17600 руб.</a></div>
-                    <div className='pr-line'><a>Мягкая щелочная завивка-уход VITENSITY - S/M/L</a><a>5200/7100/11000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Щадящая химическая завивка Evolution - S/M/L</a><a className='pr-list-price'>8500/ 9700/ 17600 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Мягкая щелочная завивка-уход VITENSITY - S/M/L</a><a className='pr-list-price'>5200/ 7100/ 11000 руб.</a></div>
                 </div>
             </div>
         </div>
@@ -335,11 +337,11 @@ const Salon = () => {
                     <button><img src={arrowbottomImg}/></button>
                 </div>
                 <div className='pr-hair-full-price'>
-                    <div className='pr-line'><a>Удаление нежелательного оттенка/декапирование S/M/L/XL</a><a>3300/4000/6500/8500 руб.</a></div>
-                    <div className='pr-line'><a>Препигментация 1 (20гр)</a><a>1700/2400 руб.</a></div>
-                    <div className='pr-line'><a>Препигментация 2 (30гр)</a><a>2500/3100 руб.</a></div>
-                    <div className='pr-line'><a>Препигментация 3 (40гр)</a><a>3300/3700 pуб.</a></div>
-                    <div className='pr-line'><a>3300/3700 pуб.</a><a>1100/1300/1600/2000 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Удаление нежелательного оттенка/декапирование S/M/L/XL</a><a className='pr-list-price'>3300/ 4000/ 6500/ 8500 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Препигментация 1 (20гр)</a><a className='pr-list-price'>1700/ 2400 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Препигментация 2 (30гр)</a><a className='pr-list-price'>2500/ 3100 руб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>Препигментация 3 (40гр)</a><a className='pr-list-price'>3300/ 3700 pуб.</a></div>
+                    <div className='pr-line'><a className='pr-list-name'>3300/3700 pуб.</a><a className='pr-list-price'>1100/ 1300/ 1600/ 2000 руб.</a></div>
                 </div>
             </div>
         </div></div>}

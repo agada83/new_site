@@ -9,6 +9,9 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 .pr-content {
   margin: 3.5svw 5svw 5svw 5svw;
@@ -94,7 +97,7 @@
   border-bottom: 1px solid black;
 }
 .menu-5.expanded {
-  height: 350px; /* Установите максимальную высоту, подходящую для вашего контента */
+  height: 380px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: height 0.83s ease;
 }
 .menu-5.expanded .pr-menu-visible img{
@@ -111,7 +114,7 @@
   border-bottom: 1px solid black;
 }
 .menu-6.expanded {
-  height: 900px; /* Установите максимальную высоту, подходящую для вашего контента */
+  height: 960px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: height 2.67s ease;
 }
 .menu-6.expanded .pr-menu-visible img{
@@ -128,7 +131,7 @@
   border-bottom: 1px solid black;
 }
 .menu-7.expanded {
-  height: 250px; /* Установите максимальную высоту, подходящую для вашего контента */
+  height: 230px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: height 0.5s ease;
 }
 .menu-7.expanded .pr-menu-visible img{
@@ -209,7 +212,7 @@
   border-bottom: 1px solid black;
 }
 .menu-12.expanded {
-  height: 500px; /* Установите максимальную высоту, подходящую для вашего контента */
+  height: 470px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: height 1.33s ease;
 }
 .menu-12.expanded .pr-menu-visible img{
@@ -225,7 +228,7 @@
   border-bottom: 1px solid black;
 }
 .menu-13.expanded {
-  height: 600px; /* Установите максимальную высоту, подходящую для вашего контента */
+  height: 580px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: height 1.67s ease;
 }
 .menu-13.expanded .pr-menu-visible img{
@@ -236,13 +239,26 @@
   flex-direction: column;
 }
 .pr-line{
+  width: 80svw;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 40px;
 }
 .pr-menu-visible{
   display: flex;
   justify-content: space-between;
   height: 100px;
+}
+.pr-list-price{
+  text-align: right;
+  line-height: 30px;
+}
+.pr-list-name{
+  text-align: left;
+  line-height: 30px;
 }
 .pr-menu-visible h2{
   margin: 0;
@@ -266,7 +282,7 @@
   background-color: #ffffff00;
 }
 .pr-hair-full-price{
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -277,6 +293,7 @@
 }
 .pr-hair-full-price h3{
   font-family: "Montserrat-Medium";
+
 }
 .pr-diva a{
   font-size: 18px;
@@ -284,7 +301,6 @@
   color: rgb(255, 255, 255);
   transition: color 0.5s ease;
   cursor: pointer;
-
 }
 .pr-divht{
   flex: 1;
@@ -302,4 +318,513 @@
 
 .pr-diva.active .pr-divht {
   background-color: rgba(255, 255, 255);
+}
+@media (max-width:1050px) {
+  .menu-3.expanded {
+    height: 800px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-5.expanded {
+    height: 400px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-7.expanded {
+    height: 280px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+}
+@media (max-width:1000px) {
+  .menu-3.expanded {
+    height: 870px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-5.expanded {
+    height: 430px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-7.expanded {
+    height: 300px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+}
+@media (max-width:1000px) {
+  .menu-10.expanded {
+    height: 320px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-6.expanded {
+    height: 1020px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-7.expanded {
+    height: 300px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+}
+@media (max-width:930px) {
+  .menu-10.expanded {
+    height: 320px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-6.expanded {
+    height: 1020px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-3.expanded {
+    height: 950px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+}
+@media (max-width:860px) {
+  .menu-8.expanded {
+    height: 400px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-4.expanded {
+    height: 500px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-3.expanded {
+    height: 950px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+}
+@media (max-width:800px) {
+  .menu-2.expanded {
+    height: 780px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-6.expanded {
+    height: 1100px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-3.expanded {
+    height: 950px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+}
+
+@media (max-width:768px) {
+  .pr-content{
+    margin: 5svw 0svw 5svw 0svw;
+  }
+  .pr-switch{
+    width: 90svw;
+  }
+  .pr-hair-full-price{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 60px;
+    color: black;
+    font-size: 15px;
+  }
+  .pr-menu-visible h2{
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    padding-left: 3%;
+    font-size: 20px;
+  }
+  .pr-menu-visible img{
+    margin-right: 3svw;
+    width: 40px;
+    height: auto;
+    transition: all 1s ease;
+  }
+  .pr-diva a{
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.5s ease;
+    cursor: pointer;
+  }
+  .menu-1.expanded {
+    height: 570px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-2.expanded {
+    height: 710px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-3.expanded {
+    height: 820px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-4.expanded {
+    height: 400px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-5.expanded {
+    height: 400px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-6.expanded {
+    height: 920px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-7.expanded {
+    height: 280px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-8.expanded {
+    height: 340px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-9.expanded {
+    height: 200px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-10.expanded {
+    height: 230px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+}
+@media (max-width:700px) {
+
+  .menu-1.expanded {
+    height: 590px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-2.expanded {
+    height: 710px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-3.expanded {
+    height: 850px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-4.expanded {
+    height: 460px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-5.expanded {
+    height: 420px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-6.expanded {
+    height: 1030px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-7.expanded {
+    height: 280px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-8.expanded {
+    height: 340px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-9.expanded {
+    height: 200px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-10.expanded {
+    height: 270px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+}
+@media (max-width:600px) {
+  .pr-line h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .pr-line{
+    width: 80svw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    gap: 40px;
+  }
+  .pr-menu-visible{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+  }
+  .pr-list-price{
+    text-align: right;
+    line-height: 18px;
+  }
+  .pr-list-name{
+    text-align: left;
+    line-height: 18px;
+  }
+  .menu-1.expanded {
+    height: 480px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-2.expanded {
+    height: 580px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-3.expanded {
+    height: 700px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-4.expanded {
+    height: 360px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-5.expanded {
+    height: 370px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-6.expanded {
+    height: 800px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-7.expanded {
+    height: 200px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-8.expanded {
+    height: 320px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-9.expanded {
+    height: 180px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-10.expanded {
+    height: 220px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-11.expanded {
+    height: 340px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+}
+@media (max-width:514px) {
+  .pr-line h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .pr-diva a{
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.5s ease;
+    cursor: pointer;
+  }
+  .pr-menu-visible h2{
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    padding-left: 3svw;
+    font-size: 18px;
+  }
+  .pr-line{
+    width: 80svw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    gap: 40px;
+  }
+  .pr-menu-visible{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+  }
+  .pr-list-price{
+    text-align: right;
+    line-height: 18px;
+  }
+  .pr-list-name{
+    text-align: left;
+    line-height: 18px;
+  }
+  .menu-1.expanded {
+    height: 520px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-2.expanded {
+    height: 580px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-3.expanded {
+    height: 850px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-4.expanded {
+    height: 400px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-5.expanded {
+    height: 400px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-6.expanded {
+    height: 830px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-7.expanded {
+    height: 240px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-8.expanded {
+    height: 350px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-9.expanded {
+    height: 190px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-10.expanded {
+    height: 240px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-11.expanded {
+    height: 410px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+}
+@media (max-width:450px) {
+  .pr-line h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .pr-line{
+    width: 90svw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    gap: 20px;
+  }
+  .pr-menu-visible{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+  }
+  .pr-list-price{
+    text-align: right;
+    line-height: 18px;
+  }
+  .pr-list-name{
+    text-align: left;
+    line-height: 18px;
+  }
+  .menu-1.expanded {
+    height: 520px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-2.expanded {
+    height: 580px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-3.expanded {
+    height: 890px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-4.expanded {
+    height: 420px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-5.expanded {
+    height: 420px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-6.expanded {
+    height: 850px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-7.expanded {
+    height: 240px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-8.expanded {
+    height: 350px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-9.expanded {
+    height: 190px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-10.expanded {
+    height: 240px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-11.expanded {
+    height: 420px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+}
+@media (max-width:350px) {
+  .pr-line h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .pr-line{
+    width: 90svw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 20px;
+  }
+  .pr-menu-visible{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+  }
+  .pr-list-price{
+    text-align: right;
+    line-height: 16px;
+  }
+  .pr-list-name{
+    text-align: left;
+    line-height: 16px;
+  }
+  .menu-1.expanded {
+    height: 520px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-2.expanded {
+    height: 580px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-3.expanded {
+    height: 710px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-4.expanded {
+    height: 370px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-5.expanded {
+    height: 370px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-6.expanded {
+    height: 740px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-7.expanded {
+    height: 240px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-8.expanded {
+    height: 350px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-9.expanded {
+    height: 190px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-10.expanded {
+    height: 240px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
+  .menu-11.expanded {
+    height: 400px; /* Установите максимальную высоту, подходящую для вашего контента */
+    transition: height 0.5s ease;
+  }
 }
