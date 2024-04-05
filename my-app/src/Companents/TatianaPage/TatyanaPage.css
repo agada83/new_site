@@ -1,3 +1,391 @@
+.ttpmb-box{
+    width: 90svw;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+}
+.ttpmb-prof{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    gap: 30px;
+}
+.ttpmb-prof img{
+    height: 250px;
+    width: auto;
+}
+.ttpmb-prof-text{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.ttpmb-prof-text p{
+    margin: 0;
+}
+.ttpmb-prof-text h1{
+    font-size: 30px;
+    margin:0;
+    margin-top: 2px;
+}
+.ttpmb-prof-text{
+    width: 100%;
+    text-align: left;
+    font-size: 22px;
+    margin: 0;
+}
+.ttpmb-bold{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 25px;
+}
+.ttpmb-button{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.ttpmb-button button{
+    width: 100%;
+    height: 55px;
+    font-size: 23px;
+    border: 1px solid #474747;
+    background-color: #ffffff00;
+    border-radius: 28px;
+    font-family: 'Montserrat';
+    color:black;
+    transition: all 0.6s ease;
+}
+.ttpmb-button button:hover{
+    background-color: #474747;
+    color:white
+}
+.ttpmb-about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.ttpmb-about h1{
+    text-align: center;
+    font-size: 28px;
+}
+.ttpmb-subtitle{
+    background-color: #fff;
+    width: auto;
+    padding-top: 0;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.ttpmb-subtitle h1{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: "Montserrat";
+    
+    text-align: left;
+}
+.ttpmb-ul{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ttpmb-ul ul li{
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+.ttpmb-ul ul li::marker{
+    color: #474747;
+    font-size: 13px;
+}
+.ttpmb-services{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.ttpmb-services-item{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    gap:20px
+}
+.ttpmb-portfolio{
+    margin-top: 20px;
+}
+.ttpmb-portfolio h1{
+    text-align: center;
+    margin: 40px;
+    font-size: 28px;
+}
+.ttpmb-works {
+    margin-top: 50px;
+    width: 83svw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 5.2svw;
+    margin-bottom: 180px;
+}
+.ttpmb-row{
+    display: flex;
+    justify-content: space-between;
+}
+.ttpmb-row img{
+    width: 38.9svw;
+    height: auto;
+} 
+@media (max-width:570px) {
+    .ttpmb-prof{
+        gap: 20px;
+    }
+    .ttpmb-prof img{
+        height: 220px;
+    }
+    .ttpmb-prof-text{
+        gap: 30px;
+    }
+    .ttpmb-prof-text h1{
+        font-size: 26px;
+    }
+    .ttpmb-prof-text{
+        font-size: 20px;
+        margin: 0;
+    }
+    .ttpmb-bold{
+        font-size: 22px;
+    }
+    .ttpmb-button{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .ttpmb-button button{
+        height: 55px;
+        font-size: 22px;
+    }
+    .ttpmb-about h1{
+        font-size: 26px;
+    }
+    .ttpmb-subtitle{
+        margin-bottom: 20px;
+    }
+    .ttpmb-subtitle h1{
+        font-size: 22px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .ttpmb-ul{
+        width: 100%;
+        margin: 0;
+    }
+    .ttpmb-ul ul li{
+        margin-top: 20px;
+        font-size: 18px;
+        padding-left: 0;
+
+    }
+    .ttpmb-services{
+        width: 95%;
+        gap: 30px;
+    }
+    .ttpmb-services-item{
+        font-size: 18px;
+    }
+    .ttpmb-portfolio h1{
+        margin: 30px;
+        font-size: 26px;
+    }
+    .ttpmb-works {
+        margin-top: 30px;
+        width: 87svw;
+        gap: 5.2svw;
+        margin-bottom: 70px;
+    }
+    .ttpmb-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ttpmb-row img{
+        width: 40.9svw;
+        height: auto;
+    } 
+}
+@media (max-width:450px) {
+    .ttpmb-prof{
+        gap: 15px;
+    }
+    .ttpmb-prof img{
+        height: 180px;
+    }
+    .ttpmb-prof-text{
+        gap: 20px;
+    }
+    .ttpmb-prof-text h1{
+        font-size: 22px;
+    }
+    .ttpmb-prof-text{
+        font-size: 18px;
+        margin: 0;
+    }
+    .ttpmb-bold{
+        font-size: 20px;
+    }
+    .ttpmb-button{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .ttpmb-button button{
+        height: 45px;
+        font-size: 20px;
+    }
+    .ttpmb-about{
+        margin-top: 10px;
+    }
+    .ttpmb-about h1{
+        font-size: 22px;
+    }
+    .ttpmb-subtitle{
+        margin-bottom: 20px;
+    }
+    .ttpmb-subtitle h1{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .ttpmb-ul{
+        width: 100%;
+        margin: 0;
+        margin-left: -10px;
+    }
+    .ttpmb-ul ul li{
+        margin-top: 20px;
+        font-size: 17px;
+        padding-left: 0;
+
+    }
+    .ttpmb-services{
+        width: 95%;
+        gap: 30px;
+    }
+    .ttpmb-services-item{
+        font-size: 17px;
+    }
+    .ttpmb-portfolio h1{
+        margin: 30px;
+        font-size: 22px;
+    }
+    .ttpmb-works {
+        margin-top: 30px;
+        width: 87svw;
+        gap: 5.2svw;
+        margin-bottom: 70px;
+    }
+    .ttpmb-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ttpmb-row img{
+        width: 40.9svw;
+        height: auto;
+    } 
+}
+@media (max-width:400px) {
+    .ttpmb-prof{
+        gap: 13px;
+    }
+    .ttpmb-prof img{
+        height: 140px;
+    }
+    .ttpmb-prof-text{
+        gap: 18px;
+    }
+    .ttpmb-prof-text h1{
+        font-size: 20px;
+    }
+    .ttpmb-prof-text{
+        font-size: 16px;
+        margin: 0;
+    }
+    .ttpmb-bold{
+        font-size: 18px;
+    }
+    .ttpmb-button{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .ttpmb-button button{
+        height: 45px;
+        font-size: 20px;
+    }
+    .ttpmb-about{
+        margin-top: 10px;
+    }
+    .ttpmb-about h1{
+        font-size: 22px;
+    }
+    .ttpmb-subtitle{
+        margin-bottom: 20px;
+    }
+    .ttpmb-subtitle h1{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .ttpmb-ul{
+        width: 100%;
+        margin: 0;
+        margin-left: -10px;
+    }
+    .ttpmb-ul ul li{
+        margin-top: 20px;
+        font-size: 17px;
+        padding-left: 0;
+
+    }
+    .ttpmb-services{
+        width: 95%;
+        gap: 30px;
+    }
+    .ttpmb-services-item{
+        font-size: 17px;
+    }
+    .ttpmb-portfolio h1{
+        margin: 30px;
+        font-size: 22px;
+    }
+    .ttpmb-works {
+        margin-top: 30px;
+        width: 87svw;
+        gap: 5.2svw;
+        margin-bottom: 70px;
+    }
+    .ttpmb-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ttpmb-row img{
+        width: 40.9svw;
+        height: auto;
+    } 
+}
+
+
+
+
 .ttp-box{
     width: 1400px;
     height: auto;

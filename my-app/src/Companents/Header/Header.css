@@ -130,7 +130,12 @@ margin-right: 0;
 .navbarmb-nav .navmb-link:hover {
   color: #ffffff; /* Цвет ссылки при наведении */
 }
-
+@media (max-width:600px) {
+  .navbarmb-brand img {
+    width: 77px;
+    height: auto;
+  }
+}
 
 
 

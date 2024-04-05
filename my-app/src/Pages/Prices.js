@@ -10,9 +10,9 @@ export default class Prices extends Component {
         return (
             <div id='main'>
                 <Salon />
-                {/* <Sale />
+                <Sale />
                 <PartnerBrands />
-                <Footer /> */}
+                <Footer />
             </div>
         );
     }

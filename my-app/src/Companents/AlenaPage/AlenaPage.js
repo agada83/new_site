@@ -5,8 +5,35 @@ import './AlenaPage.css';
 import { HashLink } from 'react-router-hash-link';
 
 class AlenaPage extends Component {
-    render() {
-        return (
+    constructor(props) {
+        super(props);
+        this.state = {
+            windowWidth: window.innerWidth
+        };
+    }
+    
+    componentDidMount() {
+        window.addEventListener('resize', this.handleWindowSizeChange);
+    }
+    
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleWindowSizeChange);
+    }
+    
+    handleWindowSizeChange = () => {
+        this.setState({ windowWidth: window.innerWidth });
+    };
+      scrollToTopServices = () => {
+        const topServicesElement = document.getElementById('top-services');
+        if (topServicesElement) {
+           topServicesElement.scrollIntoView({ behavior: 'smooth' });
+        }
+     };    
+        render() {
+          const { windowWidth } = this.state;
+    
+        if (windowWidth > 768) {
+          return (
             <div className='alp-box'>
                 <div className='alp-prof'>
                     <img src={veraImg} />
@@ -15,7 +42,6 @@ class AlenaPage extends Component {
                             <h1>АЛЕНА ГАЛАН</h1>
                             <p className='alp-bold'>Визажист</p>
                             <p>Опыт работы: 11 лет</p>
-                            <p>Выполнение любого вида макияжа, оформление бровей (окрашивание и коррекция), ламинирование бровей и ресниц. Несложный пластический грим.</p>
                         </div>
                         <div className='alp-button'>
                             <HashLink to='/#registration' smooth='boolean'>
@@ -74,7 +100,72 @@ class AlenaPage extends Component {
                 </div>
             </div>
         );
-    }
+    } else {
+        return (
+            <div className='alpmb-box'>
+            <div className='alpmb-prof'>
+                <img src={veraImg} />
+                <div className='alpmb-prof-text'>
+                    <h1>АЛЕНА ГАЛАН</h1>
+                    <p className='alpmb-bold'>Визажист</p>
+                    <p>Опыт работы: 11 лет</p>
+                </div>
+            </div>
+            <div className='alpmb-button'>
+                <HashLink to='/#registration' smooth='boolean'>
+                    <button>Записаться</button>
+                </HashLink>
+            </div>
+            <div className='alpmb-about'>
+                <h1>О МАСТЕРЕ</h1>
+                <div className='alpmb-general-info'>
+                    <div className='alpmb-subtitle'><h1>Общая информация</h1></div>
+                    <div className='alpmb-ul'>
+                        <ul>
+                            <li>опыт работы 11 лет: на съёмках, показах, фотосессиях</li>
+                            <li>работа с селебрити: Юлианна Караулова, Алла Михеева, Влад Топалов, Мария Миногарова, также, ведущие, блогеры. </li>
+                            <li>работа с журналами: Grazia, Cosmopolitan, Wedding by Mercury, РБК</li>
+                            <li>выполнение любого вида макияжа, оформление бровей (окрашивание и коррекция), ламинирование бровей и ресниц. несложный пластический грим. </li>
+                        </ul>
+                    </div>
+                    <div className='alpmb-subtitle'><h1>Услуги оказываемые мастером</h1></div>
+                    <div className='alpmb-services'>
+                        <div className='alpmb-services-item'>
+                            <a>Замечательная услуга 1</a>
+                            <a>от XX00 руб.</a>
+                        </div>
+                        <div className='alpmb-services-item'>
+                            <a>Замечательная услуга 2</a>
+                            <a>от XX00 руб.</a>
+                        </div>
+                        <div className='alpmb-services-item'>
+                            <a>Замечательная услуга 3</a>
+                            <a>от XX00 руб.</a>
+                        </div>
+                        <div className='alpmb-services-item'>
+                            <a>Замечательная услуга 4</a>
+                            <a>от XX00 руб.</a>
+                        </div>
+                        <div className='alpmb-services-item'>
+                            <a>Замечательная услуга 5</a>
+                            <a>от XX00 руб.</a>
+                        </div>
+                        <div className='alpmb-services-item'>
+                            <a>Замечательная услуга 6</a>
+                            <a>от XX00 руб.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='alpmb-portfolio'>
+                <h1>ПОРТФОЛИО</h1>
+                <div className='alpmb-works'>
+                    <div className='alpmb-row'><img src={workImg1} alt=''/><img src={workImg1} alt=''/></div>
+                    <div className='alpmb-row'><img src={workImg1} alt=''/></div>
+                </div>
+            </div>
+        </div>        )
+    }}
 }
 
 export default AlenaPage;

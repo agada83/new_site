@@ -1,5 +1,5 @@
 import React from 'react';
-import Reviews from '../Companents/Reviews.js'
+import Reviews from '../Companents/Reviews/Reviews.js'
 import AlenaPage from '../Companents/AlenaPage/AlenaPage.js';
 import Sale from '../Companents/Sale/Sale.js';
 import PartnerBrands from '../Companents/PartnerBrands/PartnerBrands.js';
