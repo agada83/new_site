@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../fonts/Montserrat-Black.ttf'
 import '../App.css'
 import FirstComp from '../Companents/FirstComp/FirstComp.js'
-import Test from '../Companents/test/test.js'
 import ServicesComp from '../Companents/ServicesComp/ServicesComp.js'
 import Info from '../Companents/Info/Info.js'
 import Team from '../Companents/Team/Team.js'

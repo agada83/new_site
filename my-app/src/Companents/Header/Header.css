@@ -125,6 +125,7 @@ margin-right: 0;
   text-decoration: none;
   transition: color 0.5s ease;
   font-family: 'Montserrat-Light';
+  font-size: 23px;
 }
 
 .navbarmb-nav .navmb-link:hover {
@@ -135,7 +136,52 @@ margin-right: 0;
     width: 77px;
     height: auto;
   }
+  .navbarmb-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    width: 70svw;
+  }
+  .navbarmb-nav .navmb-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    font-family: 'Montserrat-Light';
+    font-size: 23px;
+  }
+  
 }
+@media (max-width:420px) {
+  .navbarmb-brand img {
+    width: 77px;
+    height: auto;
+  }
+  .navbarmb-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    width: 70svw;
+  }
+  .navbarmb-nav .navmb-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    font-family: 'Montserrat-Light';
+    font-size: 20px;
+  }
+  .navbarmb-nav .navmb-item {
+    margin-left: 10px;
+    font-size: 24px;
+    width: 70px;
+  }
+}
+
 
 
 
