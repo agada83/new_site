@@ -4,7 +4,7 @@
 .navbarmb {
   background-color: #474747;
   color: white;
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
   position: sticky;
@@ -132,8 +132,11 @@ margin-right: 0;
   color: #ffffff; /* Цвет ссылки при наведении */
 }
 @media (max-width:600px) {
+  .navbarmb {
+    height: 80px;
+  }
   .navbarmb-brand img {
-    width: 77px;
+    width: 70px;
     height: auto;
   }
   .navbarmb-nav ul {
