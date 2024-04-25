@@ -41,14 +41,14 @@
   margin: 0;
   background-color: #ffffff;
   width: 100%;
-  max-height: 100px;
+  height: auto;
   overflow: hidden;
-  transition: max-height 3s ease;
+  transition: all 300000000000000000000s ease;
   border-bottom: 1px solid black;
 }
 .menu-2.expanded {
-  max-height: 1500px; /* Установите максимальную высоту, подходящую для вашего контента */
-  transition: max-height 2.06s;
+  max-height: 100px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: all 20000006s ease;
 }
 .menu-2.expanded .pr-menu-visible img{
   rotate:180deg;

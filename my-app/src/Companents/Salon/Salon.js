@@ -8,19 +8,19 @@ import { HashLink } from 'react-router-hash-link';
 
 
 const Salon = () => {
-    const [expanded1, setExpanded1] = useState(false);
-    const [expanded2, setExpanded2] = useState(false);
-    const [expanded3, setExpanded3] = useState(false);
-    const [expanded4, setExpanded4] = useState(false);
-    const [expanded5, setExpanded5] = useState(false);
-    const [expanded6, setExpanded6] = useState(false);
-    const [expanded7, setExpanded7] = useState(false);
-    const [expanded8, setExpanded8] = useState(false);
-    const [expanded9, setExpanded9] = useState(false);
-    const [expanded10, setExpanded10] = useState(false);
-    const [expanded11, setExpanded11] = useState(false);
-    const [expanded12, setExpanded12] = useState(false);
-    const [expanded13, setExpanded13] = useState(false);
+    const [expanded1, setExpanded1] = useState(true);
+    const [expanded2, setExpanded2] = useState(true);
+    const [expanded3, setExpanded3] = useState(true);
+    const [expanded4, setExpanded4] = useState(true);
+    const [expanded5, setExpanded5] = useState(true);
+    const [expanded6, setExpanded6] = useState(true);
+    const [expanded7, setExpanded7] = useState(true);
+    const [expanded8, setExpanded8] = useState(true);
+    const [expanded9, setExpanded9] = useState(true);
+    const [expanded10, setExpanded10] = useState(true);
+    const [expanded11, setExpanded11] = useState(true);
+    const [expanded12, setExpanded12] = useState(true);
+    const [expanded13, setExpanded13] = useState(true);
 
   const toggleExpand = (menuNumber) => {
     switch (menuNumber) {
