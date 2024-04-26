@@ -1,5 +1,4 @@
 /* Ваш файл стилей для Header.css */
-
 /* Стили для основного контейнера навигационного меню */
 .navbarmb {
   background-color: #474747;
@@ -25,7 +24,7 @@
 /* Стили для ссылок в навигационном меню */
 .navbarmb-nav {
   align-items: center;
-  margin-right: 60px;
+  margin-right: 60px; /*отступ справа от края для полос*/
   width: max-content;
   height: 75px;
   position: relative;
@@ -121,7 +120,7 @@ margin-right: 0;
 }
 
 .navbarmb-nav .navmb-link {
-  color: #ffffff;
+  color: #ffffff58;
   text-decoration: none;
   transition: color 0.5s ease;
   font-family: 'Montserrat-Light';
@@ -139,6 +138,11 @@ margin-right: 0;
     width: 70px;
     height: auto;
   }
+  .navbarmb-toggler div hr{
+    width: 43px;
+    margin:  0px 0px 13px 0px;
+    padding: 0;
+  }
   .navbarmb-nav ul {
     list-style: none;
     padding: 0;
@@ -155,11 +159,22 @@ margin-right: 0;
     font-family: 'Montserrat-Light';
     font-size: 23px;
   }
+  .navbarmb-brand {
+    margin-left: 40px;
+    flex-grow: 1;
+  }
+  .navbarmb-nav {
+    align-items: center;
+    margin-right: 28px; /*отступ справа от края для полос*/
+    width: max-content;
+    height: 75px;
+    position: relative;
   
+  }
 }
 @media (max-width:420px) {
   .navbarmb-brand img {
-    width: 77px;
+    width: 60px;
     height: auto;
   }
   .navbarmb-nav ul {
@@ -182,6 +197,22 @@ margin-right: 0;
     margin-left: 10px;
     font-size: 24px;
     width: 70px;
+  }
+  .navbarmb-brand {
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+  .navbarmb-nav {
+    align-items: center;
+    margin-right: 8px; /*отступ справа от края для полос*/
+    width: max-content;
+    height: 75px;
+    position: relative;
+  }
+  .navbarmb-toggler div hr{
+    width: 35px;
+    margin: 5px 0px 10px 0px;
+    padding: 0;
   }
 }
 

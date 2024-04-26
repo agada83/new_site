@@ -49,7 +49,7 @@ class Interior extends Component {
       );
     } else {
         return (
-        <div className='invmb-box'>
+        <div className='invmb-box' id='interior'>
             <h1>ИНТЕРЬЕР</h1>
             <div className='invmb-content'>
                 <div className='invmb-item1'><img className='invmb-img' src={interoirImgmb2}/></div>

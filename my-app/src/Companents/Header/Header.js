@@ -5,6 +5,9 @@ import { HashLink } from 'react-router-hash-link';
 import './Header.css'; // Импорт файла стилей
 
 class Header extends React.Component {
+    closeMenu() {
+        this.setState({ menuVisible: false });
+    }
     constructor(props) {
         super(props);
         this.state = {
@@ -92,19 +95,19 @@ class Header extends React.Component {
                             </div>
                         <ul className={menuVisible ? 'active' : ''}>
                             <li className="navmb-item">
-                                <HashLink to="/#services" className="navmb-link">Услуги</HashLink>
+                                <HashLink to="/#services" className="navmb-link" onClick={() => this.closeMenu()}>Услуги</HashLink>
                             </li>
                             <li className="navmb-item">
-                                <Link to="/about" className="navmb-link">О нас</Link>
+                                <Link to="/about" className="navmb-link" onClick={() => this.closeMenu()}>О нас</Link>
                             </li>
                             <li className="navmb-item">
-                                <HashLink to="/#promo" className="navmb-link">Акции</HashLink>
+                                <HashLink to="/#promo" className="navmb-link" onClick={() => this.closeMenu()}>Акции</HashLink>
                             </li>
                             <li className="navmb-item">
-                                <Link to="/prices" className="navmb-link">Прайс</Link>
+                                <Link to="/prices" className="navmb-link" onClick={() => this.closeMenu()}>Прайс</Link>
                             </li>
                             <li className="navmb-item">
-                                <HashLink to="/#team" className="navmb-link">Специалисты</HashLink>
+                                <HashLink to="/#team" className="navmb-link" onClick={() => this.closeMenu()}>Специалисты</HashLink>
                             </li>
                         </ul>
                     </div>

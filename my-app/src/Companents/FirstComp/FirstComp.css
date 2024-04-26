@@ -45,7 +45,7 @@
     margin-top: 10px;
     font-family: 'Montserrat';
     width: 50svw;
-    height: 10svw;
+    height: 60px;
     background-color: #eb7a0900;
     border: 1px solid white;
     color: white;
@@ -85,7 +85,7 @@
     .fcmb-button button{
         margin-top: 9px;
         width: 50svw;
-        height: 10svw;
+        height: 60px;
         background-color: #eb7a0900;
         border: 1px solid white;
         color: white;

@@ -76,7 +76,7 @@ const priceHairData = [
         { name: 'Укладка мужская', price: '1000 руб.' },
         { name: 'Сушка волос феном S/M/L/XL', price: '1000/ 1100/ 1200/ 1400 руб.' },
         { name: 'Укладка женская S/M/L/XL', price: '1600/ 1800/ 2000/ 2300 руб.' },
-        { name: 'Укладка Коктейльная Cloud Nine S/M/L/XL', price: '2100/2900/3300/3600 руб.' },
+        { name: 'Укладка Коктейльная Cloud Nine S/M/L/XL', price: '2100/ 2900/ 3300/ 3600 руб.' },
         { name: 'Укладка празничная S/M/L/XL', price: '2100/ 3500/ 3900/ 4600 руб.' },
         { name: 'Укладка нарощенных волос', price: '2800 руб.' },
         { name: 'Экспресс плетение косы', price: '1200 руб.' },
@@ -254,7 +254,7 @@ const priceHairData = [
     const [displayText2, setDisplayText2] = useState('TINTO beauty salon–пространство для вашей индивидуальности!');
     const [displayText3, setDisplayText3] = useState('Мы предлагаем широкий выбор стрижек, укладок, окрашиваний и других услугдля всех типов и структур волос. Наши опытные мастера используют только качественные материалы и современное оборудование, чтобы гарантировать превосходный результат.');
     const [displayText4, setDisplayText4] = useState('Мы также предлагаем индивидуальный подход к каждому клиенту, чтобы создать идеальный образ для вас. Посетите наш салон и позвольте нам сделать вашу мечту о красивых и здоровых волосах реальностью!');
-    const [activeButton, setActiveButton] = useState(null);
+    const [activeButton, setActiveButton] = useState(1);
 
     const handleButtonClick = () => {
         setActiveButton(1);

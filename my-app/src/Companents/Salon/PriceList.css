@@ -365,6 +365,8 @@
     margin-right: auto;
     margin-left: auto;
     height: auto;
+    text-align: center;
+    gap: 100px;
   }
   .pr-diva a{
     font-size: 16px;
@@ -372,5 +374,51 @@
     color: rgb(255, 255, 255);
     transition: color 0.5s ease;
     cursor: pointer;
+  }
+}
+@media (max-width:410px) {
+  .pr-switch{
+    gap:17svw;
+  }
+  .pr-diva a{
+    font-size: 13px;}
+  .pr-switch{
+    width: 96svw;
+  }
+  .pr-divht{
+    flex: 1;
+    background-color: #ffffff00;
+    width: 80%;}
+  .pr-menu-visible h2{
+    padding-left: 30px;
+    font-size: 17px;
+  }
+  .pr-menu-visible img{
+    margin-right: 30px;
+    width: 30px;}
+
+  .pr-hair-full-price{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 60px;
+    color: black;
+    font-size: 15px;
+  }
+  }
+@media (max-width:340px) {
+  .pr-switch{
+    gap:10px;
+  }
+  .pr-divht{
+    flex: 1;
+    background-color: #ffffff00;
+    width: 80%;}
+}
+@media (max-width:340px) {
+  .pr-switch{
+    gap:10px;
   }
 }

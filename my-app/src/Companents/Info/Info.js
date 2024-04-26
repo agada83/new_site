@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Info.css'
+import { HashLink } from 'react-router-hash-link';
 
 
 class Info extends Component {
@@ -38,12 +39,24 @@ handleWindowSizeChange = () => {
             <div className='mbdivhr' />
         </div>
         <div className='firstmb-about'>
-        <div className='mbdiva'><a href='/#team'>НАШИ СПЕЦИАЛИСТЫ</a><div className='mbdivht' /></div>
-        <div className='mbdiva'><a href='#interior'>ИНТЕРЬЕР ПОМЕЩЕНИЯ</a><div className='mbdivht' /></div>
-        <div className='mbdiva'><a href='/prices'>СТОИМОСТЬ УСЛУГ</a><div className='mbdivht' /></div>
-        <div className='mbdiva'><a href='#footer'>НАШИ КОНТАКТЫ</a><div className='mbdivht' /></div>
-        <div className='mbdiva'><a href='/#top-services'>ФИРМЕННЫЕ ПРОЦЕДУРЫ</a><div className='mbdivht' /></div>
-        <div className='mbdiva'><a href='#partner-brands'>БРЕДНЫ У НАС</a><div className='mbdivht' /></div>
+        <HashLink to={'/#team'} style={{ textDecoration: 'none' }}>
+        <div className='mbdiva'><a>НАШИ СПЕЦИАЛИСТЫ</a><div className='mbdivht' /></div>
+        </HashLink>
+        <HashLink to={'#interior'} style={{ textDecoration: 'none' }}>
+        <div className='mbdiva'><a>ИНТЕРЬЕР ПОМЕЩЕНИЯ</a><div className='mbdivht' /></div>
+        </HashLink>
+        <HashLink to={'/prices'} style={{ textDecoration: 'none' }}>
+        <div className='mbdiva'><a>СТОИМОСТЬ УСЛУГ</a><div className='mbdivht' /></div>
+        </HashLink>
+        <HashLink to={'#footer'} style={{ textDecoration: 'none' }}>
+        <div className='mbdiva'><a>НАШИ КОНТАКТЫ</a><div className='mbdivht' /></div>
+        </HashLink>
+        <HashLink to={'/#top-services'} style={{ textDecoration: 'none' }}>
+        <div className='mbdiva'><a>ФИРМЕННЫЕ ПРОЦЕДУРЫ</a><div className='mbdivht' /></div>
+        </HashLink>
+        <HashLink to={'#partner-brands'} style={{ textDecoration: 'none' }}>
+        <div className='mbdiva'><a>БРЕДНЫ У НАС</a><div className='mbdivht' /></div>
+        </HashLink>
       </div>
 
   </div>
@@ -57,14 +70,26 @@ handleWindowSizeChange = () => {
             <div className='divhr' />
             </div>
             <div className='first-about'>
-              <div className='diva'><a href='/#team'>НАШИ СПЕЦИАЛИСТЫ</a><div className='divht' /></div>
-              <div className='diva'><a href='#interior'>ИНТЕРЬЕР ПОМЕЩЕНИЯ</a><div className='divht' /></div>
-              <div className='diva'><a href='/prices'>СТОИМОСТЬ УСЛУГ</a><div className='divht' /></div>
+            <HashLink to={'/#team'} style={{ textDecoration: 'none' }}>
+              <div className='diva'><a>НАШИ СПЕЦИАЛИСТЫ</a><div className='divht' /></div>
+              </HashLink>
+              <HashLink to={'#interior'} style={{ textDecoration: 'none' }}>
+              <div className='diva'><a>ИНТЕРЬЕР ПОМЕЩЕНИЯ</a><div className='divht' /></div>
+              </HashLink>
+              <HashLink to={'/prices'} style={{ textDecoration: 'none' }}>
+              <div className='diva'><a>СТОИМОСТЬ УСЛУГ</a><div className='divht' /></div>
+              </HashLink>
             </div>
-            <div className='second-about'>
-              <div className='diva'><a href='#footer'>НАШИ КОНТАКТЫ</a><div className='divht' /></div>
-              <div className='diva'><a href='/#top-services'>ФИРМЕННЫЕ ПРОЦЕДУРЫ</a><div className='divht' /></div>
-              <div className='diva'><a href='#partner-brands'>БРЕДНЫ У НАС</a><div className='divht' /></div>
+            <div className='second-about' >
+              <HashLink to={'#footer'} style={{ textDecoration: 'none' }}>
+              <div className='diva'><a>НАШИ КОНТАКТЫ</a><div className='divht' /></div>
+              </HashLink>
+              <HashLink to={'/#top-services'} style={{ textDecoration: 'none' }}>
+              <div className='diva'><a>ФИРМЕННЫЕ ПРОЦЕДУРЫ</a><div className='divht' /></div>
+              </HashLink>
+              <HashLink to={'#partner-brands'} style={{ textDecoration: 'none' }}>
+              <div className='diva'><a>БРЕДНЫ У НАС</a><div className='divht' /></div>
+              </HashLink>
             </div>
 
         </div>

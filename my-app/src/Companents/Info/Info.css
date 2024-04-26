@@ -1,3 +1,7 @@
+.HashLink{
+    text-decoration: none;
+
+}
 .infomb-box{
     height: 500px;
     background-image: url('../../assets/brandfull.png');
@@ -56,6 +60,7 @@
 }
 .mbdiva{
     margin-top: 20px;
+    text-decoration: none;
 
 }
 .mbdiva a{
@@ -64,6 +69,7 @@
     color: rgb(199, 199, 199);
     transition: color 0.5s ease;
     cursor: pointer;
+    text-decoration: none;
 
 }
 .mbdivht{
@@ -217,7 +223,6 @@
     color: rgb(199, 199, 199);
     transition: color 0.5s ease;
     cursor: pointer;
-
 }
 .divht{
     flex: 1;
