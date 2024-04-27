@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import veraImg from '../../assets/Alena.jpg';
-import workImg1 from '../../assets/work1.png';
+import workImg1 from '../../assets/worksImg/alWork1.jpeg';
+import workImg2 from '../../assets/worksImg/alWork2.jpeg';
+import workImg3 from '../../assets/worksImg/alWork3.jpeg';
 import './AlenaPage.css';
 import { HashLink } from 'react-router-hash-link';
 
@@ -94,8 +96,7 @@ class AlenaPage extends Component {
                 <div className='alp-portfolio'>
                     <h1>ПОРТФОЛИО</h1>
                     <div className='alp-works'>
-                        <div className='alp-row'><img src={workImg1} alt=''/><img src={workImg1} alt=''/><img src={workImg1} alt=''/></div>
-                        <div className='alp-row'><img src={workImg1} alt=''/><img src={workImg1} alt=''/><img src={workImg1} alt=''/></div>
+                        <div className='alp-row'><img src={workImg1} alt=''/><img src={workImg2} alt=''/><img src={workImg3} alt=''/></div>
                     </div>
                 </div>
             </div>
