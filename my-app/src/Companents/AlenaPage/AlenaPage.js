@@ -67,28 +67,28 @@ class AlenaPage extends Component {
                         <div className='alp-hr'><h1>Услуги оказываемые мастером</h1><div><hr/></div></div>
                         <div className='alp-services'>
                             <div className='alp-services-item'>
-                                <a>Замечательная услуга 1</a>
-                                <a>от XX00 руб.</a>
+                                <a>Макияж</a>
+                                <a>от 2900 руб.</a>
                             </div>
                             <div className='alp-services-item'>
-                                <a>Замечательная услуга 2</a>
-                                <a>от XX00 руб.</a>
+                                <a>Коррекция бровей</a>
+                                <a>от 750 руб.</a>
                             </div>
                             <div className='alp-services-item'>
-                                <a>Замечательная услуга 3</a>
-                                <a>от XX00 руб.</a>
+                                <a>Окрашивание бровей</a>
+                                <a>от 1200 руб.</a>
                             </div>
                             <div className='alp-services-item'>
-                                <a>Замечательная услуга 4</a>
-                                <a>от XX00 руб.</a>
+                                <a>Окрашивание ресниц</a>
+                                <a>от 800 руб.</a>
                             </div>
                             <div className='alp-services-item'>
-                                <a>Замечательная услуга 5</a>
-                                <a>от XX00 руб.</a>
+                                <a>Ламинирование ресниц</a>
+                                <a>от 4200 руб.</a>
                             </div>
                             <div className='alp-services-item'>
-                                <a>Замечательная услуга 6</a>
-                                <a>от XX00 руб.</a>
+                                <a>Макияж-обучение</a>
+                                <a>от 8000 руб.</a>
                             </div>
                         </div>
                     </div>

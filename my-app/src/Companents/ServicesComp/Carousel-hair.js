@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Carousel-hair.css';
 import hairImg from '../../assets/hair.png';
+import lisImg from '../../assets/serviceImg/servises/lis.jpeg';
 import { HashLink } from 'react-router-hash-link';
 import arrow from '../../assets/arrowbottomImg.png'
 
@@ -16,7 +17,7 @@ const slidesData = [
   {
     image1: hairImg,
     image2: hairImg,
-    image3: hairImg,
+    image3: lisImg,
     text1: 'Рассветление',
     text2: 'Элюмирование',
     text3: 'Лечение и спа',

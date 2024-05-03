@@ -68,66 +68,78 @@ const Salon = () => {
     }
 };
 const priceHairData = [
-    {
+  {
     id: 1,
-    title: 'Укладка',
+    title: 'Стрижка',
     expand: expanded1,
     items: [
-      { name:'Укладка мужская KEUNE', price: '1000 руб.' },
-      { name:'Укладка мужская SO PURE', price: '1800 руб.' },
-      { name:'Сушка волос феном S/M/L/XL KEUNE', price: '1000/ 1100/ 1200/ 1400 руб.' },
-      { name:'Сушка волос феном S/M/L/XL SO PURE', price: '1800/ 1900/ 2000/ 2200 руб.' },
-      { name:'Укладка женская S/M/L/XL KEUNE', price: '1600/ 1800/ 2000/ 2300 руб.' },
-      { name:'Укладка женская S/M/L/XL SO PURE', price: '2400/ 2600/ 2800/ 3100 руб.' },
-      { name:'Укладка Коктейльная Cloud Nine S/M/L/XL KEUNE', price: '2100/ 2900/ 3300/ 3600 руб.' },
-      { name:'Укладка Коктейльная Cloud Nine S/M/L/XL SO PURE', price: '2900/ 3700/ 4100/ 4400 руб.' },
-      { name:'Укладка Праздничная S/M/L/XL KEUNE', price: '2100/ 3500/ 3900/ 4600 руб.' },
-      { name:'Укладка Праздничная S/M/L/XL SO PURE', price: '2900/ 4300/ 4700/ 5400 руб.' },
-      { name:'Укладка нарощенных волос KEUNE', price: '3000 руб.' },
-      { name:'Укладка нарощенных волос SO PURE', price: '3800 руб.' },
-      { name:'Экспресс плетение- косы (без мытья головы) ', price: '1500 руб.' },
-      { name:'Декоративное плетение-косы (без мытья головы) ', price: '2800 руб.' },
+      { name:'', price: 'KEUNE/SO PURE',stat:true },
+      { name:'Стрижка женская + укладка + сенсуализация волос (по форме)', price: '4000/4800 руб.',stat:false },
+      { name:'Стрижка Авторская женская + укладка + сенсуализация волос (новая форма)', price: '5500/6300 руб.',stat:false },
+      { name:'Коррекция челки', price: '800/1600 руб.',stat:false },
+      { name:'Создание новой челки', price: '1500/2300 руб.',stat:false },
+      { name:'Стрижка детская до 12 лет', price: '2000/2800 руб.',stat:false },
+      { name:'Стрижка детская подростковая', price: '2500/3300 руб.',stat:false },
+      { name:'Стрижка мужская + укладка', price: '3500/4300 руб.',stat:false },
+      { name:'Стрижка мужская машинкой', price: '2500/3300 руб.',stat:false },
+      { name:'Дизайн бороды', price: '1000 руб.',stat:false },
+      { name:'Дизайн усов', price: '800 руб.',stat:false },
+    ]
+  },
+    {
+    id: 2,
+    title: 'Укладка',
+    expand: expanded2,
+    items: [
+      { name:'', price: 'KEUNE/SO PURE',stat:true },
+      { name:'Укладка мужская', price: '1000/1800	руб.',stat:false },
+      { name:'Сушка волос феном S', price: '1000/ 1800 руб.',stat:false },
+      { name:'Сушка волос феном M', price: '1100/1900 руб.',stat:false },
+      { name:'Сушка волос феном L', price: '1200/2000 руб.',stat:false },
+      { name:'Сушка волос феном XL', price: '1400/2200 руб.',stat:false },
+      { name:'Укладка женская S', price: '1600/2400 руб.',stat:false },
+      { name:'Укладка женская M', price: '1800/2600 руб.',stat:false },
+      { name:'Укладка женская L', price: '2000/2800 руб.',stat:false },
+      { name:'Укладка женская XL', price: '2300/3100 руб.',stat:false },
+      { name:'Укладка Коктейльная Cloud Nine S', price: '2100/2900 руб.',stat:false },
+      { name:'Укладка Коктейльная Cloud Nine M', price: '2900/3700 руб.',stat:false },
+      { name:'Укладка Коктейльная Cloud Nine L', price: '3300/4100 руб.',stat:false },
+      { name:'Укладка Коктейльная Cloud Nine XL', price: '3600/4400 руб.',stat:false },
+      { name:'Укладка Праздничная S', price: '2100/2900 руб.',stat:false },
+      { name:'Укладка Праздничная M', price: '3500/4300 руб.',stat:false },
+      { name:'Укладка Праздничная L', price: '3900/4700 руб.',stat:false },
+      { name:'Укладка Праздничная XL', price: '4600/5400 руб.',stat:false },
+      { name:'Укладка нарощенных волос', price: '3000/3800 руб.',stat:false },
+      { name:'Экспресс плетение- косы (без мытья головы) ', price: '1500 руб.',stat:false },
+      { name:'Декоративное плетение-косы (без мытья головы) ', price: '2800 руб.',stat:false },
     ]
     },
-    {
-      id: 2,
-      title: 'Стрижка',
-      expand: expanded2,
-      items: [
-        { name:'Стрижка женская + укладка + сенсуализация волос (по форме) KEUNE', price: '4000 руб.' },
-        { name:'Стрижка женская + укладка + сенсуализация волос (по форме) SO PURE', price: '4800 руб.' },
-        { name:'Стрижка Авторская женская + укладка + сенсуализация волос (новая форма) KEUNE', price: '5500 руб.' },
-        { name:'Стрижка Авторская женская + укладка + сенсуализация волос (новая форма) SO PURE', price: '6300 руб.' },
-        { name:'Коррекция челки KEUNE', price: '800 руб.' },
-        { name:'Коррекция челки SO PURE', price: '1600 руб.' },
-        { name:'Создание новой челки KEUNE', price: '1500 руб.' },
-        { name:'Создание новой челки SO PURE', price: '2300 руб.' },
-        { name:'Стрижка детская до 12 лет KEUNE', price: '2000 руб.' },
-        { name:'Стрижка детская до 12 лет SO PURE', price: '2800 руб.' },
-        { name:'Стрижка детская подростковая KEUNE', price: '2500 руб.' },
-        { name:'Стрижка детская подростковая SO PURE', price: '3300 руб.' },
-        { name:'Стрижка мужская + укладка KEUNE', price: '3500 руб.' },
-        { name:'Стрижка мужская + укладка SO PURE', price: '4300 руб.' },
-        { name:'Стрижка мужская машинкой KEUNE', price: '2500 руб.' },
-        { name:'Стрижка мужская машинкой SO PURE', price: '3300 руб.' },
-        { name:'Дизайн бороды', price: '1000 руб.' },
-        { name:'Дизайн усов', price: '800 руб.' },
-      ]
-    },
+
     {
       id: 3,
       title: 'Окрашивание',
       expand: expanded3,
       items: [
-        { name:'Коррекция седины Men Reshade 1фл./20мл./2фл./40мл. ', price: '3400/ 6600 руб.' },
-        { name:'Окрашивание волос в 1 тон S/M/L/XL KEUNE', price: '6000/ 7700/ 11500/ 13800 руб.' },
-        { name:'Окрашивание волос в 1 тон S/M/L/XL SO PURE', price: '7000/ 10200/ 13500/ 16500 руб.' },
-        { name:'Color Balancing S/M/L/XL KEUNE', price: '7100/ 8300/ 10500/ 12600 руб.' },
-        { name:'Color Balancing S/M/L/XL SO PURE', price: '8600/ 9700/ 12200/ 14500 руб.' },
-        { name:'Колорирование волос S/M/L/XL KEUNE', price: '7200/ 9300/ 13600/ 16200 руб.' },
-        { name:'Колорирование волос S/M/L/XL SO PURE', price: '8600/ 12000/ 15000/ 18000 руб.' },
-        { name:'Тонирование волос S/M/L/XL/XXL KEUNE', price: '4500/ 5800/ 8300/ 10800/ 13500 руб.' },
-        { name:'Тонирование волос S/M/L/XL/XXL SO PURE', price: '5500/ 7500/ 10600/ 14100/ 16000 руб.' },
+        { name:'Коррекция седины Men Reshade 1фл./20мл.', price: '3400 руб.',stat:false },
+        { name:'Коррекция седины Men Reshade 2фл./40мл. ', price: '6600 руб.',stat:false },
+        { name:'', price: 'KEUNE/SO PURE',stat:true },
+        { name:'Окрашивание волос в 1 тон S', price: '6000/7000 руб.',stat:false },
+        { name:'Окрашивание волос в 1 тон M', price: '7700/10200 руб.',stat:false },
+        { name:'Окрашивание волос в 1 тон L', price: '11500/13500 руб.',stat:false },
+        { name:'Окрашивание волос в 1 тон XL', price: '13800/16500 руб.',stat:false },
+        { name:'Color Balancing S', price: '7100/8600 руб.',stat:false },
+        { name:'Color Balancing M', price: '8300/9700 руб.',stat:false },
+        { name:'Color Balancing L', price: '10500/12200 руб.',stat:false },
+        { name:'Color Balancing XL', price: '12600/14500 руб.',stat:false },
+        { name:'Колорирование волос S', price: '7200/8600 руб.',stat:false },
+        { name:'Колорирование волос M', price: '9300/12000 руб.',stat:false },
+        { name:'Колорирование волос L', price: '13600/15000 руб.',stat:false },
+        { name:'Колорирование волос XL', price: '16200/18000 руб.',stat:false },
+        { name:'Тонирование волос S', price: '4500/5500 руб.',stat:false },
+        { name:'Тонирование волос M', price: '5800/7500 руб.',stat:false },
+        { name:'Тонирование волос L', price: '8300/10600 руб.',stat:false },
+        { name:'Тонирование волос XL', price: '10800/14100 руб.',stat:false },
+        { name:'Тонирование волос XXL', price: '13500/16000 руб.',stat:false },
       ]
     },
     {
@@ -135,11 +147,32 @@ const priceHairData = [
         title: 'Рассветление',
         expand: expanded4,
         items: [
-            { name: 'Ультра Блонд 3000+ Tinta-S/M/L/XL', price: '7800/ 16500/ 25100/ 32500 руб.' },
-            { name: 'Обесцвечивание волос KEUNE - S/M/L/XL', price: '4500/ 5500/ 6800/ 7600 руб.' },
-            { name: 'Блики (мелирование нескольких прядей)', price: '4500 руб.' },
-            { name: 'Прикорневое мелирование волос', price: '6000 руб.' },
-            { name: 'Мелирование волос S S/M/L/XL', price: '6000/ 7000/ 9500/ 11800 руб.' }
+            { name: 'Ультра Блонд 3000+ Tinta окрашивание корней', price: '7800 руб.',stat:false },
+            { name: 'Ультра Блонд 3000+ Tinta S', price: '12000 руб.',stat:false },
+            { name: 'Ультра Блонд 3000+ Tinta M', price: '16500 руб.',stat:false },
+            { name: 'Ультра Блонд 3000+ Tinta L', price: '25100 руб.',stat:false },
+            { name: 'Ультра Блонд 3000+ Tinta XL', price: '32500 руб.',stat:false },
+            { name: 'Обесцвечивание волос KEUNE S', price: '4500 руб.',stat:false },
+            { name: 'Обесцвечивание волос KEUNE M', price: '5500 руб.',stat:false },
+            { name: 'Обесцвечивание волос KEUNE L', price: '6800 руб.',stat:false },
+            { name: 'Обесцвечивание волос KEUNE XL', price: '7600 руб.',stat:false },
+            { name: 'Блики (мелирование нескольких прядей)', price: '4500 руб.',stat:false },
+            { name: 'Прикорневое мелирование волос', price: '6000 руб.',stat:false },
+            { name: 'Мелирование волос S', price: '6000 руб.',stat:false },
+            { name: 'Мелирование волос M', price: '7000 руб.',stat:false },
+            { name: 'Мелирование волос L', price: '9500 руб.',stat:false },
+            { name: 'Мелирование волос XL', price: '11800 руб.',stat:false },
+            { name: 'Мелирование волос красителем Tinto S', price: '6500 руб.',stat:false },
+            { name: 'Мелирование волос красителем Tinto M', price: '8000 руб.',stat:false },
+            { name: 'Мелирование волос красителем Tinto L', price: '11700 руб.',stat:false },
+            { name: 'Мелирование волос красителем Tinto XL', price: '15300 руб.',stat:false },
+            { name: 'Брондирование / Омбре/Шатуш S', price: '11500/12000 руб.',stat:false },
+            { name: 'Брондирование / Омбре/Шатуш M', price: '14000/15000 руб.',stat:false },
+            { name: 'Брондирование / Омбре/Шатуш L', price: '17000/17500 руб.',stat:false },
+            { name: 'Брондирование / Омбре/Шатуш XL  ', price: '18500/21000 руб.',stat:false },
+            { name: 'Окрашивание Аиртач/Airtouch М', price: '16500/17000 руб.',stat:false },
+            { name: 'Окрашивание Аиртач/Airtouch L', price: '19500/20000 руб.',stat:false },
+            { name: 'Окрашивание Аиртач/Airtouch XL', price: '24000/25000 руб.',stat:false },
         ]
     },
     {
@@ -147,10 +180,22 @@ const priceHairData = [
       title: 'Элюмирование',
       expand: expanded5,
       items: [
-        { name: 'Элюминирование в 1 тон -S/M/L/XL', price: '7000/ 96500/ 12100/ 15600 руб.' },
-        { name: 'Элюминирование Color Balancing (окрашивание корней и тонирование по длине ) S/M/L/XL', price: '11400/ 14000/ 16700/ 18500 руб.' },
-        { name: 'Снятие Элюмен RETURN -S/M/L/XL', price: '3000/ 4600/ 6400/ 7400 руб.' },
-        { name: 'Снятие Элюмен ERASER -S/M/L/XL', price: '3000/ 3500/ 6100/ 6600 руб.' }
+        { name: 'Элюминирование в 1 тон S', price: '7000 руб.',stat:false },
+        { name: 'Элюминирование в 1 тон M', price: '9650 руб.',stat:false },
+        { name: 'Элюминирование в 1 тон L', price: '12100 руб.',stat:false },
+        { name: 'Элюминирование в 1 тон XL', price: '15600 руб.',stat:false },
+        { name: 'Элюминирование Color Balancing (окрашивание корней и тонирование по длине ) S', price: '11400 руб.',stat:false },
+        { name: 'Элюминирование Color Balancing (окрашивание корней и тонирование по длине ) M', price: '14000 руб.',stat:false },
+        { name: 'Элюминирование Color Balancing (окрашивание корней и тонирование по длине ) L', price: '16700 руб.',stat:false },
+        { name: 'Элюминирование Color Balancing (окрашивание корней и тонирование по длине ) XL', price: '18500 руб.',stat:false },
+        { name: 'Снятие Элюмен RETURN S', price: '3000 руб.',stat:false },
+        { name: 'Снятие Элюмен RETURN M', price: '4600 руб.',stat:false },
+        { name: 'Снятие Элюмен RETURN L', price: '6400 руб.',stat:false },
+        { name: 'Снятие Элюмен RETURN XL', price: '7400 руб.',stat:false },
+        { name: 'Снятие Элюмен ERASER S', price: '3000 руб.',stat:false },
+        { name: 'Снятие Элюмен ERASER M', price: '3500 руб.',stat:false },
+        { name: 'Снятие Элюмен ERASER L', price: '6100 руб.',stat:false },
+        { name: 'Снятие Элюмен ERASER XL', price: '6600 руб.',stat:false },
       ]
     },
     {
@@ -158,15 +203,27 @@ const priceHairData = [
       title: 'Лечение и спа',
       expand: expanded6,
       items: [
-        { name: 'Лечебная сенсуалирующая маска/Экспресс уход', price: '600 руб.' },
-        { name: 'Лечение волос BondPro', price: '2500 руб.' },
-        { name: 'Окрашивание волос + лечением BondPro S/M', price: '2000 руб.' },
-        { name: 'Окрашивание волос + лечением BondPro L/XL', price: '2300 руб.' },
-        { name: 'SPA-программа «Hair Skin Relaxing» S/M/L/XL', price: '2100/ 3000/ 3700/ 4700 руб.' },
-        { name: 'Счастье для волос ЖИЗНЕННАЯ СИЛА S/M/L/XL', price: '2000/ 3000/ 4000/ 5400 руб.' },
-        { name: 'Абсолютное счастье для волос S/M/L/XL', price: '2000/ 3000/ 4000/ 5400 руб.' },
-        { name: 'Счастье для волос БЛЕСК и СИЛА S/M/L/XL', price: '3000/ 5500/ 7500/ 10000 руб.' },
-        { name: 'СПА-уход SO PURE - S/M/L/XL', price: '1100/ 1500/ 2100/ 2500 руб.' }
+        { name: 'Лечебная сенсуалирующая маска/Экспресс уход', price: '600 руб.',stat:false },
+        { name: 'Лечение волос BondPro', price: '2500 руб.',stat:false },
+        { name: 'Окрашивание волос + лечением BondPro S/M', price: '2000 руб.',stat:false },
+        { name: 'Окрашивание волос + лечением BondPro L/XL', price: '2300 руб.',stat:false },
+        { name: 'LEBEL', price: '',stat:true },
+        { name: 'SPA-программа «Hair Skin Relaxing» S', price: '2100 руб.',stat:false },
+        { name: 'SPA-программа «Hair Skin Relaxing» M', price: '3000 руб.',stat:false },
+        { name: 'SPA-программа «Hair Skin Relaxing» L', price: '3700 руб.',stat:false },
+        { name: 'SPA-программа «Hair Skin Relaxing» XL', price: '4700 руб.',stat:false },
+        { name: 'Счастье для волос БЛЕСК и СИЛА S', price: '2000 руб.',stat:false },
+        { name: 'Счастье для волос БЛЕСК и СИЛА M', price: '3000 руб.',stat:false },
+        { name: 'Счастье для волос БЛЕСК и СИЛА L', price: '4000 руб.',stat:false },
+        { name: 'Счастье для волос БЛЕСК и СИЛА XL', price: '5400 руб.',stat:false },
+        { name: 'Счастье для волос ЖИЗНЕННАЯ СИЛА S', price: '2000 руб.',stat:false },
+        { name: 'Счастье для волос ЖИЗНЕННАЯ СИЛА M', price: '3000 руб.',stat:false },
+        { name: 'Счастье для волос ЖИЗНЕННАЯ СИЛА L', price: '4000 руб.',stat:false },
+        { name: 'Счастье для волос ЖИЗНЕННАЯ СИЛА XL', price: '5400 руб.',stat:false },
+        { name: 'Абсолютное счастье для волос S', price: '2000 руб.',stat:false },
+        { name: 'Абсолютное счастье для волос M', price: '3000 руб.',stat:false },
+        { name: 'Абсолютное счастье для волос L', price: '4000 руб.',stat:false },
+        { name: 'Абсолютное счастье для волос XL', price: '5400 руб.',stat:false },
       ]
     },
     {
@@ -174,36 +231,21 @@ const priceHairData = [
       title: 'Трихология',
       expand: expanded7,
       items: [
-        { name: 'Детокс-пилинг д/кожи головы MEDAVITA (П25/Ш20/Э15/без ампулы)', price: '2000 руб.' },
-        { name: 'Программа против выпадения волос MEDAVITA (пилинг+ампула)', price: '3500 руб.' }
-      ]
-    },
-    {
-      id: 8,
-      title: 'Техники',
-      expand: expanded8,
-      items: [
-        { name: 'Брондирование Омбре- S/M/L/XL', price: '11500/ 14000/ 17000/ 18500 руб.' },
-        { name: 'Брондирование Шатуш - S/M/L/XL', price: '12000/ 15000/ 17000/ 21000 руб.' },
-        { name: 'Окрашивание Аиртач - М/L/XL', price: '16500/ 19500/ 24000 руб.' },
-        { name: 'Окрашивание Airtouch - М/L/XL', price: '17000/ 20000/ 25000 руб.' }
-      ]
-    },
-    {
-      id: 9,
-      title: 'Выпрямление',
-      expand: expanded9,
-      items: [
-        { name: 'Кератиновое выпрямление/восстановление волос -S/M/L/XL', price: '6500/ 8500/ 11000/ 13500 руб.' }
+        { name: 'Детокс-пилинг д/кожи головы MEDAVITA (П25/Ш20/Э15/без ампулы)', price: '2000 руб.',stat:false },
+        { name: 'Программа против выпадения волос MEDAVITA (пилинг+ампула)', price: '3500 руб.',stat:false }
       ]
     },
     {
       id: 10,
-      title: 'Завивка',
+      title: 'Химия',
       expand: expanded10,
       items: [
-        { name: 'Щадящая химическая завивка Evolution - S/M/L', price: '8500/ 9700/ 17600 руб.' },
-        { name: 'Мягкая щелочная завивка-уход VITENSITY - S/M/L', price: '5200/ 7100/ 11000 руб.' }
+        { name: 'Щадящая химическая завивка Evolution S', price: '8500 руб.',stat:false },
+        { name: 'Щадящая химическая завивка Evolution M', price: '9700 руб.',stat:false },
+        { name: 'Щадящая химическая завивка Evolution L', price: '17600 руб.',stat:false },
+        { name: 'Мягкая щелочная завивка-уход VITENSITY - S', price: '5200 руб.',stat:false },
+        { name: 'Мягкая щелочная завивка-уход VITENSITY - M', price: '7100 руб.',stat:false },
+        { name: 'Мягкая щелочная завивка-уход VITENSITY - L', price: '11000 руб.',stat:false },
       ]
     },
     {
@@ -211,11 +253,17 @@ const priceHairData = [
       title: 'Доп услуги',
       expand: expanded11,
       items: [
-        { name: 'Удаление нежелательного оттенка/декапирование S/M/L/XL', price: '3300/ 4000/ 6500/ 8500 руб.' },
-        { name: 'Препигментация 1 (20гр)', price: '1700/ 2400 руб.' },
-        { name: 'Препигментация 2 (30гр)', price: '2500/ 3100 руб.' },
-        { name: 'Препигментация 3 (40гр)', price: '3300/ 3700 руб.' },
-        { name: '3300/3700 руб.', price: '1100/ 1300/ 1600/ 2000 руб.' }
+        { name: 'Удаление нежелательного оттенка/декапирование S', price: '3300 руб.',stat:false },
+        { name: 'Удаление нежелательного оттенка/декапирование M', price: '4000 руб.',stat:false },
+        { name: 'Удаление нежелательного оттенка/декапирование L', price: '6500 руб.',stat:false },
+        { name: 'Удаление нежелательного оттенка/декапирование XL', price: '8500 руб.',stat:false },
+        { name: 'Препигментация 1 (20гр)', price: '1700/ 2400 руб.',stat:false },
+        { name: 'Препигментация 2 (30гр)', price: '2500/ 3100 руб.',stat:false },
+        { name: 'Препигментация 3 (40гр)', price: '3300/ 3700 руб.',stat:false },
+        { name: 'Блондирующая смывка S', price: '1100 руб.',stat:false },
+        { name: 'Блондирующая смывка M', price: '1300 руб.',stat:false },
+        { name: 'Блондирующая смывка L', price: '1600 руб.',stat:false },
+        { name: 'Блондирующая смывка XL', price: '2000 руб.',stat:false },
       ]
     }
   ];
@@ -226,12 +274,12 @@ const priceHairData = [
       title: 'Услуги визажиста',
       expand: expanded12,
       items: [
-        { name: 'Макияж дневной повседневный - BUSINESS LADY', price: '2500 руб.' },
-        { name: 'Макияж коктейльный - PARTY GIRL', price: '2500 руб.' },
-        { name: 'Макияж вечерний - NIGHT PARTY', price: '2800 руб.' },
-        { name: 'Макияж возрасной- ANTI-AGE', price: '3000 руб.' },
-        { name: 'Макияж пробный свадебный- TEST MARRIDE DAY', price: '2800 руб.' },
-        { name: 'Макияж свадебный- MARRIDE DAY', price: '3800 руб.' }
+        { name: 'Макияж дневной повседневный - BUSINESS LADY', price: '2900 руб.',stat:false },
+        { name: 'Макияж коктейльный - PARTY GIRL', price: '2900 руб.',stat:false },
+        { name: 'Макияж вечерний - NIGHT PARTY', price: '3800 руб.',stat:false },
+        { name: 'Макияж возрасной- ANTI-AGE', price: '4800 руб.',stat:false },
+        { name: 'Макияж пробный свадебный- TEST MARRIDE DAY', price: '3800 руб.',stat:false },
+        { name: 'Макияж свадебный- MARRIDE DAY', price: '4900 руб.',stat:false }
       ]
     },
     {
@@ -239,17 +287,30 @@ const priceHairData = [
       title: 'Услуги бровиста',
       expand: expanded13,
       items: [
-        { name: 'Коррекция бровей (раннее созданной формы)', price: '750 руб.' },
-        { name: 'Создание новой формы бровей', price: '1500 руб.' },
-        { name: 'Окрашивание бровей ХНА', price: '1500 руб.' },
-        { name: 'Окрашивание бровей краска', price: '850 руб.' },
-        { name: 'Ламинирование бровей', price: '3800 руб.' },
-        { name: 'Счастье для бровей', price: '1200 руб.' },
-        { name: 'Окрашивание ресниц', price: '800 руб.' },
-        { name: 'Ламинирование ресниц', price: '4200 руб.' }
+        { name: 'Коррекция бровей (раннее созданной формы)', price: '750 руб.',stat:false },
+        { name: 'Создание новой формы бровей', price: '1500 руб.',stat:false },
+        { name: 'Окрашивание бровей ХНА', price: '1200 руб.',stat:false },
+        { name: 'Окрашивание бровей краска', price: '1200 руб.',stat:false },
+        { name: 'Ламинирование бровей', price: '3800 руб.',stat:false },
+        { name: 'Коллагенирование бровей', price: '4500 руб.',stat:false },
+        { name: 'Счастье для бровей', price: '1200 руб.',stat:false },
+        { name: 'Окрашивание ресниц', price: '800 руб.',stat:false },
+        { name: 'Ламинирование ресниц', price: '4200 руб.',stat:false },
+        { name: 'Коллагенирование ресниц', price: '5000 руб.',stat:false },
+        { name: 'Макияж с комментарием+разбор косметички', price: '5000 руб.',stat:false },
+        { name: 'Макияж-обучение', price: '8000 руб.',stat:false },
       ]
-    }
-  ];
+    },
+    {
+      id: 8,
+      title: 'Депиляция воском',
+      expand: expanded8,
+      items: [
+        { name: 'Верхняя губя', price: '500 руб.',stat:false },
+        { name: 'Подбородок', price: '500 руб.',stat:false },
+        { name: 'Лицо', price: '1000 руб.',stat:false },
+      ]
+    }  ];
   const [showContent1, setShowContent1] = useState(true);
   const [showContent2, setShowContent2] = useState(false);
   const showContentHandler = (contentNumber) => {
@@ -303,6 +364,9 @@ const priceHairData = [
                     </HashLink>
                 </div>
             </div>
+            <div className='sl-prim'>
+              <a>**Стоимость услуги увеличивается на 30 % при записи за час до начала  и после окончания графика работы**</a>
+            </div>
         </div>
 
     <div className='pr-box'>
@@ -322,8 +386,8 @@ const priceHairData = [
               <div className='pr-hair-full-price'>
                 {menu.items.map((item, index) => (
                   <div className='pr-line'>
-                    <a className='pr-list-name'>{item.name}</a>
-                    <a className='pr-list-price'>{item.price}</a>
+                    <a className={`pr-list-name${menu.stat ? 'stat':''}`}>{item.name}</a>
+                    <a className={`pr-list-price${menu.stat ? 'stat':''}`}>{item.price}</a>
                   </div>
                 ))}
               </div>
@@ -342,8 +406,8 @@ const priceHairData = [
               <div className='pr-hair-full-price'>
                 {menu.items.map((item, index) => (
                   <div className='pr-line'>
-                    <a className='pr-list-name'>{item.name}</a>
-                    <a className='pr-list-price'>{item.price}</a>
+                    <a className={`pr-list-name${item.stat ? 'stat':''}`}>{item.name}</a>
+                    <a className={`pr-list-price${item.stat ? 'stat    ':''}`}>{item.price}</a>
                   </div>
                 ))}
               </div>

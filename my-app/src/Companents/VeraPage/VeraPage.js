@@ -70,29 +70,25 @@ class VeraPage extends Component {
                         </div>
                         <div className='vrp-hr'><h1>Услуги оказываемые мастером</h1><div><hr/></div></div>
                         <div className='vrp-services'>
-                            <div className='vrp-services-item'>
-                                <a>Замечательная услуга 1</a>
-                                <a>от XX00 руб.</a>
+                        <div className='vrp-services-item'>
+                                <a>Укладка</a>
+                                <a>от 1000 руб.</a>
                             </div>
                             <div className='vrp-services-item'>
-                                <a>Замечательная услуга 2</a>
-                                <a>от XX00 руб.</a>
+                                <a>Стрижка</a>
+                                <a>от 2500 руб.</a>
                             </div>
                             <div className='vrp-services-item'>
-                                <a>Замечательная услуга 3</a>
-                                <a>от XX00 руб.</a>
+                                <a>Окрашивание</a>
+                                <a>от 6000 руб.</a>
                             </div>
                             <div className='vrp-services-item'>
-                                <a>Замечательная услуга 4</a>
-                                <a>от XX00 руб.</a>
+                                <a>Элюминирование</a>
+                                <a>от 7000 руб.</a>
                             </div>
                             <div className='vrp-services-item'>
-                                <a>Замечательная услуга 5</a>
-                                <a>от XX00 руб.</a>
-                            </div>
-                            <div className='vrp-services-item'>
-                                <a>Замечательная услуга 6</a>
-                                <a>от XX00 руб.</a>
+                                <a>Рассветление</a>
+                                <a>от 4500 руб.</a>
                             </div>
                         </div>
                     </div>

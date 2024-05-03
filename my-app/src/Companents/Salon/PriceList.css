@@ -48,7 +48,7 @@
   border-bottom: 1px solid black;
 }
 .menu-2.expanded {
-  max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 1400px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: all 2.06s ease;
 }
 .menu-2.expanded .pr-menu-visible img{
@@ -64,7 +64,7 @@
   border-bottom: 1px solid black;
 }
 .menu-3.expanded {
-  max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 1300px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-3.expanded .pr-menu-visible img{
@@ -81,7 +81,7 @@
   border-bottom: 1px solid black;
 }
 .menu-4.expanded {
-  max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 1650px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-4.expanded .pr-menu-visible img{
@@ -98,7 +98,7 @@
   border-bottom: 1px solid black;
 }
 .menu-5.expanded {
-  max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 1100px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-5.expanded .pr-menu-visible img{
@@ -115,7 +115,7 @@
   border-bottom: 1px solid black;
 }
 .menu-6.expanded {
-  max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 1350px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-6.expanded .pr-menu-visible img{
@@ -128,12 +128,12 @@
   width: 100%;
   max-height: 100px;
   overflow: hidden;
-  transition: max-height 2.06s ease;
+  transition: max-height 1.06s ease;
   border-bottom: 1px solid black;
 }
 .menu-7.expanded {
-  max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
-  transition: max-height 2.06s ease;
+  max-height: 250px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: max-height 1.06s ease;
 }
 .menu-7.expanded .pr-menu-visible img{
   rotate:180deg;
@@ -149,8 +149,8 @@
   border-bottom: 1px solid black;
 }
 .menu-8.expanded {
-  max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
-  transition: max-height 2.06s ease;
+  max-height: 265px; /* Установите максимальную высоту, подходящую для вашего контента */
+  transition: max-height 1.2s ease;
 }
 .menu-8.expanded .pr-menu-visible img{
   rotate:180deg;
@@ -181,7 +181,7 @@
   border-bottom: 1px solid black;
 }
 .menu-10.expanded {
-  max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 500px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-10.expanded .pr-menu-visible img{
@@ -197,7 +197,7 @@
   border-bottom: 1px solid black;
 }
 .menu-11.expanded {
-  max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 750px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-11.expanded .pr-menu-visible img{
@@ -213,7 +213,7 @@
   border-bottom: 1px solid black;
 }
 .menu-12.expanded {
-  max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 450px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-12.expanded .pr-menu-visible img{
@@ -229,7 +229,7 @@
   border-bottom: 1px solid black;
 }
 .menu-13.expanded {
-  max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 800px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-13.expanded .pr-menu-visible img{
@@ -257,10 +257,21 @@
   text-align: right;
   line-height: 30px;
 }
+.pr-list-pricestat{
+  text-align: right;
+  line-height: 30px;
+  font-family: 'Montserrat-SemiBold';
+}
 .pr-list-name{
   text-align: left;
   line-height: 30px;
 }
+.pr-list-namestat{
+  text-align: left;
+  line-height: 30px;
+  font-family: 'Montserrat-SemiBold';
+}
+
 .pr-menu-visible h2{
   margin: 0;
   padding: 0;

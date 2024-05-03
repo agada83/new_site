@@ -7,14 +7,13 @@
 }
 .sl-box{
     width: 100%;
-    height: 950px;
+    height: auto;
     /* background-color: red; */
     text-align: center;
     font-family: 'Montserrat';
     display: flex;
     flex-direction: column;
     color:#474747;
-    padding-bottom: 50px;
 }
 .sl-box h1{
     color: black;
@@ -31,8 +30,21 @@
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-}
+    padding-bottom: 20px;
 
+}
+.sl-prim{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1350px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.sl-prim a{
+    font-family: 'Montserrat';
+    color: #a5a5a5;
+    font-size: 25px;
+}
 .sl-desctop-img{
     border-radius: 20px;
     min-width: 680px;
@@ -64,7 +76,7 @@
 }
 .sl-text a{
     font-size: 25px;
-    line-height: 50px;
+    line-height: 47px;
     text-align: justify;
 }
 
@@ -76,7 +88,7 @@
 
 }
 .sl-text button{
-    width: 300px;
+    width: 350px;
     height: 75px;
     border-radius: 39px;
     border: 1px solid black;
@@ -85,7 +97,8 @@
     font-family: 'Montserrat';
     font-size: 27px;
     transition: all 1s ease;
-    color:#474747
+    color:#474747;
+    margin-top: 15px;
 }
 .sl-text button:hover{
     background-color: #474747;
