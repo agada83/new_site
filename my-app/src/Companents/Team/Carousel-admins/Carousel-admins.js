@@ -1,28 +1,18 @@
 // src/App.js
 import React, { useState, useEffect  } from 'react';
 import '../Carousel.css';
-import imgIgul from '../../../assets/Igul_3x4.jpg'
 import imgDanila from '../../../assets/Danila_3x4.jpg'
-import img2Igul from '../../../assets/Igul_2x3.jpg'
 import img2Danila from '../../../assets/Danila_2x3.jpg'
 
 
 const slidesData = [
-  {
-    image: imgIgul,
-    image2: img2Igul,
-    text1: 'Администратор',
-    text2: 'Айгуль',
-    text3: 'Опыт работы: 5 лет',
-    text4: 'Обладает отличными коммуникативными навыками, что позволяет ей эффективно взаимодействовать с коллегами и клиентами, обеспечивая быстрое решение вопросов и качественное обслуживание',
-  },
   {
     image: imgDanila,
     image2: img2Danila,
     text1: 'Администратор',
     text2: 'Данила',
     text3: 'Опыт работы: 5 лет',
-    text4: '?????????????????? ?????????????????? ??????????????????',
+    text4: 'Обладает отличными коммуникативными навыками, что позволяет ему эффективно взаимодействовать с коллегами и клиентами, обеспечивая быстрое решение вопросов и качественное обслуживание',
   },
 ];
 const useWindowWidth = () => {
@@ -100,7 +90,7 @@ const CarouselAdmins = () => {
               </div>
             ))}
           </div>
-          <div className="navigation-mb">
+          {/* <div className="navigation-mb">
             <div className="dots-mb">
               {slidesData.map((_, index) => (
                 <span
@@ -110,7 +100,7 @@ const CarouselAdmins = () => {
                 />
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
           )}
         </>
