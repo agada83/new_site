@@ -106,7 +106,7 @@
 }
 @media (max-width:1500px) {
     .sl-box{
-        height: 700px;
+        height: auto;
     }
     .sl-box h1{
         color: black;
@@ -122,6 +122,12 @@
         display: flex;
         margin-left: auto;
         margin-right: auto;
+    }
+    .sl-prim{
+        width: 950px;
+    }
+    .sl-prim a{
+        font-size: 20px;
     }
     .sl-desctop-img{
         border-radius: 20px;
@@ -166,7 +172,7 @@
 }
 @media (max-width:1024px) {
     .sl-box{
-        height: 750px;
+        height: auto;
     }
     .sl-box h1{
         color: black;
@@ -177,11 +183,18 @@
     }
     .sl-content{
         width: 718px;
-        height: 100%;
+        height: auto;
         /* background-color: #3cff00; */
         display: flex;
         margin-left: auto;
         margin-right: auto;
+    }
+    .sl-prim{
+        width: 718px;
+        margin-top: 90px;
+    }
+    .sl-prim a{
+        font-size: 20px;
     }
     .sl-desctop-img{
         border-radius: 20px;
@@ -258,6 +271,15 @@
         width: auto;
         height: auto;
     }
+    .sl-prim{
+        width: auto;
+        margin-left: 4svw;
+        margin-right: 4svw;
+        margin-top: 0;
+    }
+    .sl-prim a{
+        font-size: 23px;
+    }
     .sl-desctop-img{
         display: none;
     }
@@ -331,6 +353,10 @@
     .sl-text a{
         font-size: 19px;
         line-height: 33px;
+    }
+    .sl-prim a{
+        font-size: 19px;
+
     }
     .sl-text button{
         width: 92svw;
