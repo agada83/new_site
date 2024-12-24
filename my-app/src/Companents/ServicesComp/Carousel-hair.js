@@ -1,72 +1,85 @@
 import React, { useState, useEffect } from 'react';
 import './Carousel-hair.css';
-import hairImg from '../../assets/hair.png';
-import lisImg from '../../assets/serviceImg/servises/lis.jpeg';
+import coloringImg from '../../assets/serviceImg/servises/coloring.jpeg';
+import curlsImg from '../../assets/serviceImg/servises/curls.jpeg';
+import eluminationImg from '../../assets/serviceImg/servises/elumination.jpeg';
+import straighteningIng from '../../assets/serviceImg/servises/straightening.jpeg';
+
+import haircutImg from '../../assets/serviceImg/servises/haircut.jpeg';
+import lighteningImg from '../../assets/serviceImg/servises/lightening.jpeg';
+import stylingImg from '../../assets/serviceImg/servises/styling.jpeg';
+import techniquesImg from '../../assets/serviceImg/servises/techniques.jpeg';
+import treatmentImg from '../../assets/serviceImg/servises/treatment.jpeg';
+import trichologyImg from '../../assets/serviceImg/servises/trichology.jpeg';
 import { HashLink } from 'react-router-hash-link';
 import arrow from '../../assets/arrowbottomImg.png'
 
 const slidesData = [
   {
-    image1: hairImg,
-    image2: hairImg,
-    image3: hairImg,
-    text1: 'Укладки',
-    text2: 'Стрижки',
-    text3: 'Окрашивания',
+    image1: haircutImg,
+    image2: curlsImg,
+    image3: eluminationImg,
+    text1: 'Стрижки',
+    text2: 'Укладки',
+    text3: 'Элюмирование',
   },
   {
-    image1: hairImg,
-    image2: hairImg,
-    image3: lisImg,
-    text1: 'Рассветление',
-    text2: 'Элюмирование',
-    text3: 'Лечение и спа',
+    image1: treatmentImg,
+    image2: trichologyImg,
+    image3: stylingImg,
+    text1: 'Лечение и спа',
+    text2: 'Трихология',
+    text3: 'Химия',
   },
   {
-    image1: hairImg,
-    image2: hairImg,
-    image3: hairImg,
-    text1: 'Трихология',
-    text2: 'Техники',
-    text3: 'Выпрямление',
+    image1: coloringImg,
+    image2: lighteningImg,
+    image3: techniquesImg,
+    text1: 'Окрашивания',
+    text2: 'Рассветление',
+    text3: 'Техники',
   },
 ];
 const slidesDatamb = [
   {
-    image: hairImg,
-    text:'Укладки',
-  },
-  {
-    image: hairImg,
+    image: haircutImg,
     text:'Стрижки',
   },
   {
-    image: hairImg,
-    text:'Окрашивания',
+    image: curlsImg,
+    text:'Укладки',
   },
   {
-    image: hairImg,
-    text:'Рассветление',
-  },
-  {
-    image: hairImg,
+    image: eluminationImg,
     text:'Элюмирование',
   },
   {
-    image: hairImg,
+    image: treatmentImg,
     text:'Лечение и спа',
   },
   {
-    image: hairImg,
+    image: trichologyImg,
     text:'Трихология',
   },
   {
-    image: hairImg,
+    image: stylingImg,
+    text:'Химия',
+  },
+  {
+    image: coloringImg,
+    text:'Окрашивания',
+  },
+  {
+    image: lighteningImg,
+    text:'Рассветление',
+  },
+  {
+    image: techniquesImg,
     text:'Техники',
   },
   {
-    image: hairImg,
-    text:'Выпрямление',
+    image: straighteningIng,
+    text:'Доп услуги',
   },
 ];
 
@@ -133,18 +146,13 @@ const CarouselHair = () => {
             <div key={3} className="sc-slide">
                 <div className="sc-content">
             <div className='sc-item'>
-                    <img src={hairImg} alt={`Hair`} />
-                    <a>Трихология</a>
+                    <img src={straighteningIng} alt={`Hair`} />
+                    <a>Доп услуги</a>
                     <HashLink to={'/prices'}>
                       <button>Прайс-лист</button>
                     </HashLink>
                   </div>
-                  <div className='sc-item'>
-                    <img src={hairImg} alt={`Hair`} />
-                    <a>Трихология</a>
-                    <HashLink to={'/prices'}>
-                      <button>Прайс-лист</button>
-                    </HashLink>
+                  <div className='sc-void'>
                   </div>
                   <div className='sc-void'>
                   </div>

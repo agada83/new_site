@@ -31,7 +31,7 @@
   border-bottom: 1px solid black;
 }
 .menu-1.expanded {
-  max-height: 1000px;
+  max-height:800px;
   transition: max-height 2.06s ease;
 }
 .menu-1.expanded .pr-menu-visible img{
@@ -48,7 +48,7 @@
   border-bottom: 1px solid black;
 }
 .menu-2.expanded {
-  max-height: 1400px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 600px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: all 2.06s ease;
 }
 .menu-2.expanded .pr-menu-visible img{
@@ -98,7 +98,7 @@
   border-bottom: 1px solid black;
 }
 .menu-5.expanded {
-  max-height: 1100px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 350px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-5.expanded .pr-menu-visible img{
@@ -115,7 +115,7 @@
   border-bottom: 1px solid black;
 }
 .menu-6.expanded {
-  max-height: 1350px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 600px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-6.expanded .pr-menu-visible img{
@@ -132,7 +132,7 @@
   border-bottom: 1px solid black;
 }
 .menu-7.expanded {
-  max-height: 250px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 1400px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 1.06s ease;
 }
 .menu-7.expanded .pr-menu-visible img{
@@ -149,7 +149,7 @@
   border-bottom: 1px solid black;
 }
 .menu-8.expanded {
-  max-height: 265px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 350px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 1.2s ease;
 }
 .menu-8.expanded .pr-menu-visible img{
@@ -165,7 +165,7 @@
   border-bottom: 1px solid black;
 }
 .menu-9.expanded {
-  max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 500px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-9.expanded .pr-menu-visible img{
@@ -181,7 +181,7 @@
   border-bottom: 1px solid black;
 }
 .menu-10.expanded {
-  max-height: 500px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 2000px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-10.expanded .pr-menu-visible img{
@@ -213,7 +213,7 @@
   border-bottom: 1px solid black;
 }
 .menu-12.expanded {
-  max-height: 450px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 850px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-12.expanded .pr-menu-visible img{
@@ -229,7 +229,7 @@
   border-bottom: 1px solid black;
 }
 .menu-13.expanded {
-  max-height: 800px; /* Установите максимальную высоту, подходящую для вашего контента */
+  max-height: 350px; /* Установите максимальную высоту, подходящую для вашего контента */
   transition: max-height 2.06s ease;
 }
 .menu-13.expanded .pr-menu-visible img{
@@ -335,32 +335,8 @@
 .pr-diva.active .pr-divht {
   background-color: rgba(255, 255, 255);
 }
-@media (max-width:1300px) {
-  .menu-5.expanded {
-    max-height: 1300px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 2.06s ease;
-  }
-}
-@media (max-width:1000px) {
-  .menu-7.expanded {
-    max-height: 270px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-12.expanded {
-    max-height: 700px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-}
-@media (max-width:800px) {
-  .menu-6.expanded {
-    max-height: 1500px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-11.expanded {
-    max-height: 930px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-}
+
+
 
 @media (max-width:768px) {
   .pr-content {
@@ -414,68 +390,30 @@
     cursor: pointer;
   }
 }
-@media (max-width:600px) {
-  .menu-2.expanded {
-    max-height: 1550px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
+@media (max-width:670px) {
+ 
+  .menu-4.expanded {
+    max-height: 2200px; /* Установите максимальную высоту, подходящую для вашего контента */
   }
   .menu-3.expanded {
-    max-height: 1400px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-4.expanded {
-    max-height: 2100px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
+    max-height: 1600px; /* Установите максимальную высоту, подходящую для вашего контента */
+  }  
+  .menu-2.expanded {
+    max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
   }
   .menu-6.expanded {
-    max-height: 1600px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
+    max-height: 800px; /* Установите максимальную высоту, подходящую для вашего контента */
   }
   .menu-10.expanded {
-    max-height: 600px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-13.expanded {
-    max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
+    max-height: 2200px; /* Установите максимальную высоту, подходящую для вашего контента */
   }
 }
-@media (max-width:450px) {
-  .menu-1.expanded {
-    max-height: 1100px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-2.expanded {
-    max-height: 1700px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-3.expanded {
-    max-height: 1700px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-4.expanded {
-    max-height: 2300px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-6.expanded {
-    max-height: 2000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
+@media (max-width:500px) {
   .menu-7.expanded {
-    max-height: 500px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
+    max-height: 1600px; /* Установите максимальную высоту, подходящую для вашего контента */
   }
-  .menu-10.expanded {
-    max-height: 800px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-11.expanded {
+  .menu-1.expanded {
     max-height: 1000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-13.expanded {
-    max-height: 1200px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
   }
 }
 @media (max-width:410px) {
@@ -510,12 +448,7 @@
     font-size: 15px;
   }
 }
-@media (max-width:450px) {
-  .menu-5.expanded {
-    max-height: 1800px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-}
+
 @media (max-width:340px) {
   .pr-switch{
     gap:10px;
@@ -530,53 +463,4 @@
     gap:10px;
   }
 }
-@media (max-width:300px) {
-  .menu-1.expanded {
-    max-height: 110000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-2.expanded {
-    max-height: 170000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-3.expanded {
-    max-height: 170000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-4.expanded {
-    max-height: 230000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-5.expanded {
-    max-height: 230000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-6.expanded {
-    max-height: 2000000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-7.expanded {
-    max-height: 50000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-10.expanded {
-    max-height: 80000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-11.expanded {
-    max-height: 100000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-12.expanded {
-    max-height: 100000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-13.expanded {
-    max-height: 120000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-  .menu-8.expanded {
-    max-height: 100000px; /* Установите максимальную высоту, подходящую для вашего контента */
-    transition: max-height 1.06s ease;
-  }
-}
+

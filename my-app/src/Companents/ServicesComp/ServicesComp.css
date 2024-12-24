@@ -41,7 +41,7 @@
 @media (max-width:1350px) {
     .sc-box{
         width: 100%;
-        height: 1200px;
+        height: 1300px;
     }
     .sc-serv{
         width: 924px;/* 1024-100 */
@@ -77,7 +77,7 @@
 }
 @media (max-width:768px) {
     .sc-box{
-        height: 1130px;
+        height: 1170px;
 
     }
     .sc-serv{

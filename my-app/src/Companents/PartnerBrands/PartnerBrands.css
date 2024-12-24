@@ -29,6 +29,15 @@
     justify-content: space-between;
     align-items: center;
 }
+.mb-third-line{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .pbmb-item{
     width: 200px; 
     color: white;
@@ -138,8 +147,14 @@
         justify-content: space-around;
 
     }
+    .mb-third-line{
+        height: 28svw;
+        display: flex;
+        justify-content: space-around;
+
+    }
     .pbmb-item{
-        width: 30%; 
+        width: 50%; 
         color: white;
         justify-content: center;
         text-align:center;
@@ -187,7 +202,7 @@
 .pb-body{
     padding-top: 40px;
     width: 100%;
-    height: 550px;
+    height: 750px;
     background-color:#474747;
 }
 .pb-content{
@@ -217,7 +232,7 @@
     align-items: center;
 }
 .pb-item{
-    width: 300px; 
+    width: 250px; 
     color: white;
     justify-content: center;
     text-align:center;
@@ -255,7 +270,13 @@
 .terra-kostil h1{
     font-size: 72px;
 }
-
+.endorphia{
+    display: flex;
+    align-items: center;
+}
+.endorphia a{
+    font-size: 42px;
+}
 .pb-hr h1{
     color:white;
     font-size: 20px;
@@ -266,6 +287,15 @@
 }
 .pb-hr hr{
     width: 800px;
+}
+.third-line{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 @media (max-width:1400px) {
     .lux a{

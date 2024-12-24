@@ -1,14 +1,16 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
 import './Carousel-hair.css';
-import hairImg from '../../assets/hair.png'
+import eyebrowImg from '../../assets/serviceImg/servises/eyebrow.jpeg';
+import makeupImg from '../../assets/serviceImg/servises/makeup.jpeg';
+
 import { HashLink } from 'react-router-hash-link';
 import arrow from '../../assets/arrowbottomImg.png'
 
 const slidesData = [
   {
-    image1: hairImg,
-    image2: hairImg,
+    image1: makeupImg,
+    image2: eyebrowImg,
     text1: 'Услуги визажиста',
     text2: 'Услуги бровиста',
 
@@ -17,11 +19,11 @@ const slidesData = [
 ];
 const slidesDatamb = [
   {
-    image: hairImg,
+    image: makeupImg,
     text: 'Услуги визажиста',
   },
   {
-    image: hairImg,
+    image: eyebrowImg,
     text: 'Услуги бровиста',
   },
 ];
